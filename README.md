@@ -54,9 +54,9 @@ Master authority. The version source is `config` until an official discovery
 endpoint is configured; `gameVersion: null` is represented as unavailable.
 
 `onwatch notify` sends a `repository_dispatch` event only when chart entries
-were added, changed, or removed. It sends the event ID, snapshot revision,
-catalog hash, and chart-key lists; ChartDB always fetches and validates its own
-upstream data. Workflow failure alerts use a distinct `our-notes-update-failure`
+were added, changed, or removed. Its payload contains the event ID, snapshot
+revision, catalog hash, and chart-key lists; it does not include a full
+snapshot. Workflow failure alerts use a distinct `our-notes-update-failure`
 event and do not send ordinary `NO_CHANGE` probes.
 
 Update webhooks include `X-OnWatch-Timestamp`, an HMAC-SHA256
