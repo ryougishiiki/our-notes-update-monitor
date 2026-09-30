@@ -60,6 +60,10 @@ catalog hash, and chart-key lists; it does not include a full snapshot. Workflow
 failure alerts use a distinct `our-notes-update-failure`
 event and do not send ordinary `NO_CHANGE` probes.
 
+For automatic cross-repository dispatch, configure the Actions variable
+`CHARTDB_REPOSITORY` and the secret `CHARTDB_DISPATCH_TOKEN` in this repository.
+The secret must be authorized to dispatch events to that target repository.
+
 Update webhooks include `X-OnWatch-Timestamp`, an HMAC-SHA256
 `X-OnWatch-Signature`, and an `Idempotency-Key`. A minimal local contract
 receiver is available at `tools/webhook_receiver.py`; it rejects invalid or
