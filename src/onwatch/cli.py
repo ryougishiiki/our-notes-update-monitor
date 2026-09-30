@@ -94,6 +94,9 @@ def cmd_probe(args: argparse.Namespace) -> int:
             ),
             "gameVersionAvailable": current["sources"].get("gameVersion") is not None,
             "masterAuthority": provenance.get("masterAuthority", "unavailable"),
+            "masterVersion": current["sources"].get("masterVersion"),
+            "masterResourceVersion": current["sources"].get("masterResourceVersion"),
+            "masterManifestSha256": current["sources"].get("masterManifestSha256"),
             "source": {
                 "catalog": "ok",
                 "master": "ok",

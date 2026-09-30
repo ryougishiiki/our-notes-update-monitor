@@ -3,7 +3,7 @@
   "$id": "https://our-notes-update-monitor.invalid/schemas/update-event.schema.json",
   "title": "Our Notes update event",
   "type": "object",
-  "required": ["schema", "id", "server", "detectedAt", "severity", "source", "summary", "categories", "charts", "assets", "masterChanges", "snapshot"],
+  "required": ["schema", "id", "server", "detectedAt", "severity", "source", "summary", "categories", "charts", "songs", "assets", "masterChanges", "snapshot"],
   "properties": {
     "schema": {"const": "our-notes-update-event/1"},
     "id": {"type": "string", "minLength": 1},
@@ -20,6 +20,12 @@
         "catalogVersionAfter": {"type": ["string", "null"]},
         "catalogVersionSourceBefore": {"type": ["string", "null"]},
         "catalogVersionSourceAfter": {"type": ["string", "null"]},
+        "masterVersionBefore": {"type": ["string", "null"]},
+        "masterVersionAfter": {"type": ["string", "null"]},
+        "masterResourceVersionBefore": {"type": ["string", "null"]},
+        "masterResourceVersionAfter": {"type": ["string", "null"]},
+        "masterManifestSha256Before": {"type": ["string", "null"]},
+        "masterManifestSha256After": {"type": ["string", "null"]},
         "catalogBefore": {"type": ["string", "null"]},
         "catalogAfter": {"type": ["string", "null"]},
         "masterBefore": {"type": ["string", "null"]},
@@ -42,11 +48,24 @@
         "chartsAdded": {"type": "integer", "minimum": 0},
         "chartsChanged": {"type": "integer", "minimum": 0},
         "chartsRemoved": {"type": "integer", "minimum": 0}
+        ,"songsAdded": {"type": "integer", "minimum": 0}
+        ,"songsChanged": {"type": "integer", "minimum": 0}
+        ,"songsRemoved": {"type": "integer", "minimum": 0}
       },
       "additionalProperties": true
     },
     "categories": {"type": "object", "additionalProperties": {"$ref": "#/$defs/changeCounts"}},
     "charts": {
+      "type": "object",
+      "required": ["added", "changed", "removed"],
+      "properties": {
+        "added": {"type": "array", "items": {"type": "string"}},
+        "changed": {"type": "array", "items": {"type": "string"}},
+        "removed": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "songs": {
       "type": "object",
       "required": ["added", "changed", "removed"],
       "properties": {

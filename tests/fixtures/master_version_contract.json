@@ -1,0 +1,32 @@
+{
+  "source": "haneoka-gakuen/haneoka/scripts/ingest/master.py::decode_master_version",
+  "protocol": "gRPC over HTTP/2; VersionResponse field 1=masterVersion, field 2=resourceVersion",
+  "cases": [
+    {
+      "name": "valid-fields-1-and-2",
+      "frameHex": "000000002d0a2037343633396263336639383438366132326231323332663233323231336465661209312e302e302e323031",
+      "masterVersion": "74639bc3f98486a22b1232f232213def",
+      "resourceVersion": "1.0.0.201",
+      "valid": true
+    },
+    {
+      "name": "resource-version-fallback-to-leading-path-segment",
+      "frameHex": "00000000120a10312e302e302e3230322f6d6173746572",
+      "masterVersion": "1.0.0.202/master",
+      "resourceVersion": "1.0.0.202",
+      "valid": true
+    },
+    {
+      "name": "truncated-frame",
+      "frameHex": "00000000060a2037",
+      "valid": false
+    },
+    {
+      "name": "compressed-frame-rejected",
+      "frameHex": "01000000010a",
+      "valid": false
+    }
+  ],
+  "retryDelaysSeconds": [0, 3, 8],
+  "nonZeroGrpcStatusMustFail": true
+}

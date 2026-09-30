@@ -14,7 +14,10 @@
         "catalogVersion": {"type": ["string", "null"]},
         "catalogVersionResolved": {"type": ["string", "null"]},
         "catalogVersionConfiguredFloor": {"type": ["string", "null"]},
-        "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint"]}
+        "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint", "master-anchor+probe"]},
+        "masterVersion": {"type": ["string", "null"]},
+        "masterResourceVersion": {"type": ["string", "null"]},
+        "masterManifestSha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}
       },
       "additionalProperties": true
     },
@@ -59,7 +62,13 @@
           "properties": {
             "catalog": {"type": "string"},
             "master": {"type": "string"},
-            "masterAuthority": {"type": "string"}
+            "masterAuthority": {"type": "string"},
+            "masterVersion": {"type": ["string", "null"]},
+            "masterResourceVersion": {"type": ["string", "null"]},
+            "masterManifestSha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+            "catalogVersionResolved": {"type": ["string", "null"]},
+            "mirrorStatus": {"type": "string"},
+            "mirrorRevision": {"type": ["string", "null"]}
           }
         }
       },

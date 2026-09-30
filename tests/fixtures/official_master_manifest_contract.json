@@ -1,0 +1,19 @@
+{
+  "source": "haneoka-gakuen/haneoka/scripts/extract/master.py::validate_master_manifest",
+  "expectedVersion": "74639bc3f98486a22b1232f232213def",
+  "valid": {
+    "version": "74639bc3f98486a22b1232f232213def",
+    "files": [
+      {"name": "MasterLiveMusic.bin", "size": 128, "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+      {"name": "MasterLiveMusicScore.bin", "size": 256, "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}
+    ]
+  },
+  "invalid": [
+    {"name": "version-mismatch", "value": {"version": "other", "files": [{"name": "MasterLiveMusic.bin", "size": 128, "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}]}},
+    {"name": "duplicate-filename", "value": {"version": "74639bc3f98486a22b1232f232213def", "files": [{"name": "MasterLiveMusic.bin", "size": 128, "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, {"name": "MasterLiveMusic.bin", "size": 128, "hash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}]}},
+    {"name": "unsafe-filename", "value": {"version": "74639bc3f98486a22b1232f232213def", "files": [{"name": "../MasterLiveMusic.bin", "size": 128, "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}]}},
+    {"name": "invalid-size", "value": {"version": "74639bc3f98486a22b1232f232213def", "files": [{"name": "MasterLiveMusic.bin", "size": 0, "hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}]}},
+    {"name": "invalid-hash", "value": {"version": "74639bc3f98486a22b1232f232213def", "files": [{"name": "MasterLiveMusic.bin", "size": 128, "hash": "not-a-sha256"}]}}
+  ],
+  "requiredFiles": ["MasterLiveMusic.bin", "MasterLiveMusicScore.bin"]
+}

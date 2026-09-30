@@ -14,6 +14,9 @@
     {"name": "higher patch line", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.1.0", "1.0.1.1"], "expected": "1.0.1.1"},
     {"name": "higher minor line", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.1.0.0"], "expected": "1.1.0.0"},
     {"name": "higher major line", "floor": "1.0.0.100", "existing": ["1.0.0.100", "2.0.0.0"], "expected": "2.0.0.0"},
-    {"name": "candidate gap stops at three", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.1.0", "1.0.1.4"], "expected": "1.0.1.0"}
+    {"name": "candidate gap stops at three", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.1.0", "1.0.1.4"], "expected": "1.0.1.0"},
+    {"name": "large catalog gap is bridged by official Master resourceVersion", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.0.101", "1.0.0.102", "1.0.0.103", "1.0.0.104", "1.0.0.105", "1.0.0.201"], "masterAnchor": "1.0.0.201", "expected": "1.0.0.201", "expectedSource": "master-anchor+probe"},
+    {"name": "bounded build probing continues from official Master anchor", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.0.101", "1.0.0.102", "1.0.0.103", "1.0.0.104", "1.0.0.105", "1.0.0.201", "1.0.0.202"], "masterAnchor": "1.0.0.201", "expected": "1.0.0.202", "expectedSource": "master-anchor+probe"},
+    {"name": "configured floor equals a published official Master anchor", "floor": "1.0.0.201", "existing": ["1.0.0.201"], "masterAnchor": "1.0.0.201", "expected": "1.0.0.201", "expectedSource": "master-anchor+probe"}
   ]
 }

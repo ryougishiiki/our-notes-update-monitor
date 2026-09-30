@@ -26,6 +26,8 @@ def make_snapshot(
     assets: list[dict[str, Any]],
     tables: dict[str, dict[str, Any]],
     parent: str | None,
+    mirror_comparison: dict[str, Any] | None = None,
+    catalog_master_alignment: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     sources = probe["sources"]
     table_hashes = {
@@ -38,6 +40,9 @@ def make_snapshot(
         "catalogVersionResolved": sources.get("catalogVersionResolved", sources.get("catalogVersion")),
         "catalogVersionConfiguredFloor": sources.get("catalogVersionConfiguredFloor"),
         "catalogVersionSource": probe.get("provenance", {}).get("catalogVersionSource"),
+        "masterVersion": sources.get("masterVersion"),
+        "masterResourceVersion": sources.get("masterResourceVersion"),
+        "masterManifestSha256": sources.get("masterManifestSha256"),
     }
     catalog = {
         "catalogHash": sources.get("catalogHash"),
@@ -45,6 +50,7 @@ def make_snapshot(
         "resourceManifestRevision": sources.get("resourceManifestRevision"),
         "downloadableAssetCount": len(assets),
         "source": "official-cdn",
+        "masterAlignment": catalog_master_alignment,
     }
     content = {
         "schema": SNAPSHOT_SCHEMA,
@@ -75,9 +81,19 @@ def make_snapshot(
             "resourceManifestRevision": catalog["resourceManifestRevision"],
             "source": {
                 "catalog": "official-cdn",
-                "master": "haneoka-public-mirror",
-                "masterAuthority": probe.get("provenance", {}).get("masterAuthority", "derived"),
+            "master": "official-master-cdn",
+            "masterAuthority": "official",
+            "masterVersion": sources.get("masterVersion"),
+            "masterResourceVersion": sources.get("masterResourceVersion"),
+            "masterManifestSha256": sources.get("masterManifestSha256"),
+            "catalogVersionResolved": sources.get("catalogVersionResolved", sources.get("catalogVersion")),
+            "mirrorStatus": (mirror_comparison or {}).get("status", "UNAVAILABLE"),
+            "mirrorRevision": (mirror_comparison or {}).get("mirrorRevision"),
             },
+        "diagnostics": {
+            "catalogMasterAlignment": catalog_master_alignment,
+            "mirrorComparison": mirror_comparison or {"status": "UNAVAILABLE"},
+        },
         },
         "version": version,
         "catalog": catalog,

@@ -1,26 +1,25 @@
 {
-  "checkedAt": "2026-09-30T10:00:06Z",
+  "checkedAt": "2026-09-30T11:13:50Z",
   "provenance": {
     "catalog": "official-cdn-hash",
-    "catalogVersionSource": "probe",
+    "catalogVersionSource": "master-anchor+probe",
     "gameVersion": "unavailable",
-    "master": "public-mirror-index",
-    "masterAuthority": "derived"
+    "master": "official-master-cdn",
+    "masterAuthority": "official",
+    "mirror": "comparison-only"
   },
   "schema": "our-notes-probe/1",
   "server": "intl",
   "sources": {
-    "catalogHash": "e73e4d75c61d3f66780daa6d2fc753c7",
-    "catalogVersion": "1.0.0.105",
-    "catalogVersionConfiguredFloor": "1.0.0.100",
-    "catalogVersionResolved": "1.0.0.105",
+    "catalogHash": "58eb0dc549119b91c923514b80a7859e",
+    "catalogVersion": "1.0.0.201",
+    "catalogVersionConfiguredFloor": "1.0.0.201",
+    "catalogVersionResolved": "1.0.0.201",
     "gameVersion": null,
-    "masterIndexRevisions": {
-      "characters": "45eb8efcc5358518396b2005cd9aedc898f34f2811d53c5f291ffdd9b4b0e4d3",
-      "events": "0065ef01abcd82a2f5252d259726d411aa879641911b93b4d443b8e9079f2628",
-      "songs": "0a06fc2c0bd8c898ae2e3846a13df2616870749d92b9667e50c15f2ab6c43675"
-    },
-    "masterRevision": "724a7be20d9ae09b6c1dee7564794fc6ceb64ef5987c7d416dbf988cc6209c99",
-    "resourceManifestRevision": "e73e4d75c61d3f66780daa6d2fc753c7"
+    "masterManifestSha256": "5955c092fd1991f2996aad38bca6eea799e831907e7dee9c739895a03f7a587e",
+    "masterResourceVersion": "1.0.0.201",
+    "masterRevision": "86c57594cb6e41a49ff3f37563b023c2c3ce3523ff6fae6e1aa5a070d36d63d0",
+    "masterVersion": "74639bc3f98486a22b1232f232213def",
+    "resourceManifestRevision": "58eb0dc549119b91c923514b80a7859e"
   }
 }

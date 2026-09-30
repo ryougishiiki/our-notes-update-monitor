@@ -34,13 +34,17 @@ def latest_event(root: Path) -> dict[str, Any] | None:
 
 
 def repository_dispatch_payload(event: dict[str, Any]) -> dict[str, Any]:
+    songs = event.get("songs") or {"added": [], "changed": [], "removed": []}
     return {
         "event_type": CHARTDB_EVENT_TYPE,
         "client_payload": {
             "eventId": event["id"],
-            "snapshot": event["snapshot"]["revision"],
             "catalogVersion": event["source"].get("catalogVersionAfter"),
             "catalogHash": event["source"].get("catalogAfter"),
+            "masterVersion": event["source"].get("masterVersionAfter"),
+            "masterResourceVersion": event["source"].get("masterResourceVersionAfter"),
+            "masterManifestSha256": event["source"].get("masterManifestSha256After"),
+            "songs": songs,
             "added": event["charts"]["added"],
             "changed": event["charts"]["changed"],
             "removed": event["charts"]["removed"],
@@ -59,7 +63,17 @@ def dispatch_repository(
         event["source"].get("catalogVersionBefore")
         != event["source"].get("catalogVersionAfter")
     )
-    if not has_chart_changes and not has_version_change:
+    summary = event.get("summary", {})
+    has_song_changes = any(summary.get(f"songs{suffix}", 0) for suffix in ("Added", "Changed", "Removed"))
+    has_master_version_change = any(
+        event["source"].get(before) != event["source"].get(after)
+        for before, after in (
+            ("masterVersionBefore", "masterVersionAfter"),
+            ("masterResourceVersionBefore", "masterResourceVersionAfter"),
+            ("masterManifestSha256Before", "masterManifestSha256After"),
+        )
+    )
+    if not has_chart_changes and not has_version_change and not has_song_changes and not has_master_version_change:
         return {"status": "skipped", "reason": "no chart changes"}
     if not repository:
         return {"status": "skipped", "reason": "repository is not configured"}
@@ -67,6 +81,8 @@ def dispatch_repository(
         raise ValueError("ONWATCH_GITHUB_TOKEN is required when ONWATCH_CHARTDB_REPOSITORY is set")
     if not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", repository):
         raise ValueError("repository must be formatted as owner/repository")
+    if len(payload["client_payload"]) > 10:
+        raise ValueError("GitHub repository_dispatch client_payload supports at most 10 top-level properties")
 
     receipt = state_dir / "notifications" / "repository-dispatch" / f"{event['id']}.json"
     if receipt.is_file():

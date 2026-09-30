@@ -140,11 +140,27 @@ class NotifyTests(unittest.TestCase):
         self.assertEqual(payload["event_type"], CHARTDB_EVENT_TYPE)
         self.assertEqual(
             set(payload["client_payload"]),
-            {"eventId", "snapshot", "catalogVersion", "catalogHash", "added", "changed", "removed"},
+            {
+                "eventId", "catalogVersion", "catalogHash", "masterVersion",
+                "masterResourceVersion", "masterManifestSha256", "songs", "added", "changed", "removed"
+            },
         )
+        self.assertLessEqual(len(payload["client_payload"]), 10)
         self.assertEqual(payload["client_payload"]["eventId"], "intl-event-2")
         self.assertEqual(payload["client_payload"]["catalogVersion"], "1.0.0.101")
         self.assertTrue(payload["client_payload"]["added"])
+
+    def test_master_version_only_transition_dispatches_chartdb(self) -> None:
+        event = _event()
+        event["charts"] = {"added": [], "changed": [], "removed": []}
+        event["source"].update({"masterVersionBefore": "old", "masterVersionAfter": "new"})
+        event["summary"].update({"chartsAdded": 0, "chartsChanged": 0, "chartsRemoved": 0})
+        with TemporaryDirectory() as temp:
+            with patch("onwatch.notify.urllib.request.urlopen", return_value=FakeResponse()):
+                result = dispatch_repository(
+                    event, repository="owner/chartdb", token="test-token", state_dir=Path(temp)
+                )
+        self.assertEqual(result["status"], "sent")
 
         no_chart_change = _event()
         no_chart_change["charts"] = {"added": [], "changed": [], "removed": []}
@@ -211,6 +227,7 @@ def _event() -> dict:
         },
         "summary": {"assetsAdded": 1, "masterAdded": 3, "chartsAdded": 1},
         "charts": {"added": ["100084/easy"], "changed": ["100084/hard"], "removed": []},
+        "songs": {"added": ["100084"], "changed": [], "removed": []},
         "snapshot": {"revision": "intl-revision-2"},
     }
 

@@ -1,0 +1,10 @@
+{
+  "catalogVersion": "1.0.0.201",
+  "catalogVersionConfiguredFloor": "1.0.0.201",
+  "catalogVersionResolved": "1.0.0.201",
+  "catalogVersionSource": "master-anchor+probe",
+  "gameVersion": null,
+  "masterManifestSha256": "5955c092fd1991f2996aad38bca6eea799e831907e7dee9c739895a03f7a587e",
+  "masterResourceVersion": "1.0.0.201",
+  "masterVersion": "74639bc3f98486a22b1232f232213def"
+}

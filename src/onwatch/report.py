@@ -23,6 +23,10 @@ def render_report(event: dict[str, Any], timezone_name: str = "Asia/Shanghai") -
         f"Catalog hash: {_shown(source.get('catalogBefore'))} → {_shown(source.get('catalogAfter'))}",
         f"Master revision: {_shown(source.get('masterBefore'))} → {_shown(source.get('masterAfter'))}",
         f"Master source: {_shown(source.get('masterSource'))} ({_shown(source.get('masterAuthority'))})",
+        f"Master version/resourceVersion: {_shown(source.get('masterVersionBefore'))} → {_shown(source.get('masterVersionAfter'))} / {_shown(source.get('masterResourceVersionAfter'))}",
+        f"Master manifest SHA-256: {_shown(source.get('masterManifestSha256After'))}",
+        f"Catalog/Master alignment: {_shown((source.get('catalogMasterAlignment') or {}).get('status') if isinstance(source.get('catalogMasterAlignment'), dict) else source.get('catalogMasterAlignment'))}",
+        f"Mirror status/revision: {_shown(source.get('mirrorStatus'))} / {_shown(source.get('mirrorRevision'))}",
         "",
         "## 资源",
         "",
@@ -42,7 +46,9 @@ def render_report(event: dict[str, Any], timezone_name: str = "Asia/Shanghai") -
         [
             "## Master",
             "",
-            f"新增 {summary['masterAdded']}　修改 {summary['masterChanged']}　删除 {summary['masterRemoved']}",
+            f"新增歌曲 {summary.get('songsAdded', 0)}　修改 {summary.get('songsChanged', 0)}　删除 {summary.get('songsRemoved', 0)}",
+            "",
+            f"新增 Master 行 {summary['masterAdded']}　修改 {summary['masterChanged']}　删除 {summary['masterRemoved']}",
             "",
         ]
     )

@@ -24,6 +24,9 @@ class ServerConfig:
     game_version_url: str | None
     game_version_pointer: str | None
     resource_manifest_url: str | None
+    master_version_endpoint: str
+    master_remote_root: str
+    master_crypto: dict[str, str]
     master_base_url: str
     master_endpoints: dict[str, str]
     master_authority: str
@@ -50,7 +53,8 @@ def load_config(path: Path | None = None, server: str | None = None) -> ServerCo
         raise ValueError(f"unknown server {chosen!r} in {config_path}")
 
     catalog = raw["catalog"]
-    mirror = raw["masterMirror"]
+    master = raw.get("master", {})
+    mirror = master.get("mirror", raw.get("masterMirror", {}))
     version = raw.get("gameVersion", {})
     if not isinstance(version, dict):
         version = {}
@@ -78,9 +82,12 @@ def load_config(path: Path | None = None, server: str | None = None) -> ServerCo
         game_version_url=version.get("url"),
         game_version_pointer=version.get("jsonPointer"),
         resource_manifest_url=catalog.get("resourceManifestUrl"),
+        master_version_endpoint=str(master.get("versionEndpoint") or ""),
+        master_remote_root=str(master.get("remoteRoot") or "").rstrip("/"),
+        master_crypto={str(k): str(v) for k, v in raw.get("masterCrypto", {}).items()},
         master_base_url=base.rstrip("/"),
         master_endpoints={str(k): str(v) for k, v in mirror["endpoints"].items()},
-        master_authority=str(mirror.get("authority", "derived")),
+        master_authority=str(master.get("authority", "official")),
         request_timeout_seconds=float(raw.get("requestTimeoutSeconds", 30)),
         allow_empty_tables=frozenset(str(value) for value in raw.get("allowEmptyTables", [])),
     )

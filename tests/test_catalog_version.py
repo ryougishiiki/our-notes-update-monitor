@@ -23,9 +23,11 @@ class CatalogVersionResolverTests(unittest.TestCase):
         for case in contract["cases"]:
             with self.subTest(case=case["name"]):
                 hits = set(case["existing"])
-                result = catalog_version.resolve_catalog_version(case["floor"], hits.__contains__)
+                result = catalog_version.resolve_catalog_version(
+                    case["floor"], hits.__contains__, case.get("masterAnchor")
+                )
                 self.assertEqual(result.resolved, case["expected"])
-                self.assertEqual(result.source, "probe")
+                self.assertEqual(result.source, case.get("expectedSource", "probe"))
 
     def test_nonstandard_version_is_returned_without_network_probes(self) -> None:
         called: list[str] = []

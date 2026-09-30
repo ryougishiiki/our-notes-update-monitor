@@ -21,6 +21,9 @@ def diff_master(
 ) -> list[dict[str, Any]]:
     changes: list[dict[str, Any]] = []
     for table_name in sorted(before.keys() | after.keys()):
+        if table_name == "MusicCatalog":
+            # Retired Haneoka-derived display index; official Master rows now own song changes.
+            continue
         old_rows = _rows(before.get(table_name))
         new_rows = _rows(after.get(table_name))
         for key in sorted(new_rows.keys() - old_rows.keys(), key=_key_sort):

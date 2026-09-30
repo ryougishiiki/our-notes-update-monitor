@@ -10,6 +10,15 @@ def classify_severity(event: dict[str, Any]) -> str:
     master = summary["masterAdded"] + summary["masterChanged"] + summary["masterRemoved"]
     if source.get("gameVersionBefore") != source.get("gameVersionAfter"):
         return "CLIENT"
+    if any(
+        source.get(before) != source.get(after)
+        for before, after in (
+            ("masterVersionBefore", "masterVersionAfter"),
+            ("masterResourceVersionBefore", "masterResourceVersionAfter"),
+            ("masterManifestSha256Before", "masterManifestSha256After"),
+        )
+    ):
+        return "MINOR"
     if assets >= 100 and master >= 50:
         return "MAJOR"
     if any(summary[f"charts{suffix}"] for suffix in ("Added", "Changed", "Removed")) or master:

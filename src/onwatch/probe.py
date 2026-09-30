@@ -10,21 +10,35 @@ from .config import ServerConfig, endpoint_url
 from .hashing import sha256_bytes, sha256_json
 from .http import fetch_bytes, probe_exists
 from .io import utc_now
-from .sources.master import collect_master_indexes, master_index_revisions
+from .master_protocol import discover_master_version
+from .sources.master import fetch_master_manifest
 
 
 def fetch_probe(config: ServerConfig) -> dict[str, Any]:
-    with ThreadPoolExecutor(max_workers=3) as pool:
-        catalog_version_future = pool.submit(_fetch_catalog_version, config)
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        master_future = pool.submit(
+            discover_master_version,
+            config.master_version_endpoint,
+            timeout=config.request_timeout_seconds,
+        )
         version_future = pool.submit(_fetch_game_version, config)
-        indexes_future = pool.submit(collect_master_indexes, config)
-        catalog_version, catalog_version_source = catalog_version_future.result()
+        master_version = master_future.result()
         game_version = version_future.result()
-        indexes = indexes_future.result()
+    _manifest, _manifest_raw, master_manifest_sha256 = fetch_master_manifest(
+        config, master_version.version
+    )
+    catalog_version, catalog_version_source = _fetch_catalog_version(
+        config, master_version.resource_version
+    )
     catalog_hash = _fetch_catalog_hash(config, catalog_version)
 
-    revisions = master_index_revisions(indexes)
-    master_revision = sha256_json(revisions)
+    master_revision = sha256_json(
+        {
+            "masterVersion": master_version.version,
+            "masterResourceVersion": master_version.resource_version,
+            "masterManifestSha256": master_manifest_sha256,
+        }
+    )
     resource_manifest_revision = catalog_hash
     if config.resource_manifest_url:
         resource_manifest_revision = sha256_bytes(
@@ -43,18 +57,21 @@ def fetch_probe(config: ServerConfig) -> dict[str, Any]:
             "catalogVersionResolved": catalog_version,
             "catalogVersionConfiguredFloor": config.catalog_version,
             "catalogHash": catalog_hash,
+            "masterVersion": master_version.version,
+            "masterResourceVersion": master_version.resource_version,
+            "masterManifestSha256": master_manifest_sha256,
             "masterRevision": master_revision,
-            "masterIndexRevisions": revisions,
             "resourceManifestRevision": resource_manifest_revision,
         },
         "provenance": {
             "catalog": "official-cdn-hash",
             "catalogVersionSource": catalog_version_source,
-            "master": "public-mirror-index",
-            "masterAuthority": config.master_authority,
+            "master": "official-master-cdn",
+            "masterAuthority": "official",
+            "mirror": "comparison-only",
             "gameVersion": "configured-endpoint" if config.game_version_url else "unavailable",
         },
-        "_masterIndexes": indexes,
+        "_masterVersion": master_version,
     }
 
 
@@ -70,14 +87,24 @@ def _fetch_catalog_hash(config: ServerConfig, version: str) -> str:
     return value
 
 
-def _fetch_catalog_version(config: ServerConfig) -> tuple[str, str]:
+def _catalog_version_published(config: ServerConfig, version: str) -> bool:
+    if not probe_exists(
+        config.catalog_hash_url_for(version), timeout=config.request_timeout_seconds
+    ):
+        return False
+    return probe_exists(
+        config.catalog_url_for(version), timeout=config.request_timeout_seconds
+    )
+
+
+def _fetch_catalog_version(
+    config: ServerConfig, master_resource_version: str | None = None
+) -> tuple[str, str]:
     if not config.catalog_version_url:
         resolution = resolve_catalog_version(
             config.catalog_version,
-            lambda version: probe_exists(
-                config.catalog_hash_url_for(version),
-                timeout=config.request_timeout_seconds,
-            ),
+            lambda version: _catalog_version_published(config, version),
+            master_resource_version,
         )
         return resolution.resolved, resolution.source
     raw = fetch_bytes(

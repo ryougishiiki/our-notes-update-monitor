@@ -17,7 +17,7 @@ from .publish import rebuild_feed
 from .report import render_report
 from .snapshot import load_current_snapshot, make_snapshot, write_snapshot
 from .sources.addressables import parse_catalog
-from .sources.master import make_master_tables
+from .sources.master import compare_master_mirror, fetch_official_master_tables
 
 
 class IncompleteSnapshotError(RuntimeError):
@@ -61,10 +61,28 @@ def run_scan(root: Path, config: ServerConfig, *, force: bool = True) -> dict[st
             current_snapshot is not None
             and current_snapshot["meta"].get("masterIndexRevision")
             == initial_probe["sources"].get("masterRevision")
+            and all(name in current_snapshot["master"] for name in (
+                "MasterLiveMusic", "MasterLiveMusicScore", "MasterEvent", "MasterCharacter"
+            ))
         ):
-            tables = current_snapshot["master"]
+            tables = {
+                name: current_snapshot["master"][name]
+                for name in ("MasterLiveMusic", "MasterLiveMusicScore", "MasterEvent", "MasterCharacter")
+            }
         else:
-            tables = make_master_tables(config, initial_probe["_masterIndexes"])
+            tables = fetch_official_master_tables(
+                config,
+                str(initial_probe["sources"]["masterVersion"]),
+                str(initial_probe["sources"]["masterManifestSha256"]),
+            )
+
+        try:
+            mirror_comparison, _mirror_music_catalog = compare_master_mirror(config, tables)
+        except Exception as error:
+            mirror_comparison = {
+                "status": "MIRROR_UNAVAILABLE",
+                "error": f"{type(error).__name__}: {error}",
+            }
 
         # A source changing during download means the collected pieces may not
         # describe one coherent revision. Leave the pointer untouched and retry
@@ -77,6 +95,7 @@ def run_scan(root: Path, config: ServerConfig, *, force: bool = True) -> dict[st
 
         _validate_complete(assets, tables, current_snapshot, config)
         parent = current_snapshot["meta"]["revision"] if current_snapshot else None
+        catalog_master_alignment = _catalog_master_alignment(assets, tables)
         snapshot = make_snapshot(
             server=config.server,
             probe=_public_probe(final_probe),
@@ -84,6 +103,8 @@ def run_scan(root: Path, config: ServerConfig, *, force: bool = True) -> dict[st
             assets=assets,
             tables=tables,
             parent=parent,
+            mirror_comparison=mirror_comparison,
+            catalog_master_alignment=catalog_master_alignment,
         )
         revision = snapshot["meta"]["revision"]
         if (
@@ -184,6 +205,9 @@ def _status(
         "catalogVersionResolved": sources.get("catalogVersionResolved", sources.get("catalogVersion")),
         "gameVersionAvailable": sources.get("gameVersion") is not None,
         "masterAuthority": provenance.get("masterAuthority", "unavailable"),
+        "masterVersion": sources.get("masterVersion"),
+        "masterResourceVersion": sources.get("masterResourceVersion"),
+        "masterManifestSha256": sources.get("masterManifestSha256"),
         "source": {
             "catalog": "ok",
             "master": "ok",
@@ -200,7 +224,7 @@ def _validate_complete(
 ) -> None:
     if not assets:
         raise IncompleteSnapshotError("catalog is empty; refusing to interpret it as deletions")
-    required_tables = ("MasterLiveMusic", "MasterLiveMusicScore", "MasterCharacter", "MusicCatalog")
+    required_tables = ("MasterLiveMusic", "MasterLiveMusicScore", "MasterCharacter")
     for name in required_tables:
         table = tables.get(name)
         if not isinstance(table, dict) or not table.get("rows"):
@@ -217,6 +241,9 @@ def _validate_complete(
         )
     old_tables = previous.get("master", {})
     for name, old_table in old_tables.items():
+        if name == "MusicCatalog":
+            # Retired mirror-derived display index; it is not official Master data.
+            continue
         old_rows = old_table.get("rows", {})
         new_rows = tables.get(name, {}).get("rows", {})
         if old_rows and not new_rows and name not in config.allow_empty_tables:
@@ -233,7 +260,53 @@ def _event_identity(event: dict[str, Any]) -> tuple[Any, ...]:
         event.get("summary"),
         event.get("categories"),
         event.get("charts"),
+        event.get("songs"),
         event.get("assets"),
         event.get("masterChanges"),
         event.get("snapshot"),
     )
+
+
+def _catalog_master_alignment(
+    assets: list[dict[str, Any]], tables: dict[str, dict[str, Any]]
+) -> dict[str, Any]:
+    scores = tables["MasterLiveMusicScore"]["rows"]
+    songs = tables["MasterLiveMusic"]["rows"]
+    referenced: set[str] = set()
+    for song in songs.values():
+        for field in ("_easyID", "_normalID", "_hardID", "_expertID", "_specialID"):
+            score = scores.get(str(song.get(field) or ""))
+            name = str(score.get("_musicScoreTextFileName") or "") if score else ""
+            if name:
+                referenced.add(name)
+    chart_assets = [asset for asset in assets if asset.get("category") == "music_score"]
+
+    def matches(chart_file: str, asset: dict[str, Any]) -> bool:
+        token = chart_file.replace("/", "_").casefold()
+        return any(
+            token in str(asset.get(field) or "").replace("/", "_").casefold()
+            for field in ("key", "bundle", "internalId", "url")
+        )
+
+    missing = sorted(
+        name for name in referenced if not any(matches(name, asset) for asset in chart_assets)
+    )
+    preloaded = sorted(
+        str(asset.get("key") or "")
+        for asset in chart_assets
+        if not any(matches(name, asset) for name in referenced)
+    )
+    status = (
+        "MASTER_AHEAD_OF_CATALOG"
+        if missing
+        else "CATALOG_PRELOADED_CHARTS"
+        if preloaded
+        else "CATALOG_MASTER_ALIGNED"
+    )
+    return {
+        "status": status,
+        "masterReferencedChartCount": len(referenced),
+        "catalogNamedChartCount": len(chart_assets),
+        "masterReferencesWithoutCatalog": missing,
+        "catalogNamedWithoutMaster": preloaded,
+    }

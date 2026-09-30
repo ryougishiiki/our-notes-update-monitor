@@ -18,11 +18,14 @@
     "lastSuccessfulScan": {"type": ["string", "null"], "format": "date-time"},
     "currentSnapshot": {"type": ["string", "null"]},
     "latestEvent": {"type": ["string", "null"]},
-    "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint"]},
+    "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint", "master-anchor+probe"]},
     "catalogVersionConfiguredFloor": {"type": ["string", "null"]},
     "catalogVersionResolved": {"type": ["string", "null"]},
     "gameVersionAvailable": {"type": "boolean"},
     "masterAuthority": {"enum": ["official", "derived", "unavailable"]},
+    "masterVersion": {"type": ["string", "null"]},
+    "masterResourceVersion": {"type": ["string", "null"]},
+    "masterManifestSha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
     "source": {"type": "object"}
   },
   "additionalProperties": true

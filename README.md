@@ -16,7 +16,16 @@ onwatch probe --trigger-scan
 onwatch scan
 ```
 
-The configured server is `intl`. The catalog floor and CDN root are in `config/intl.json`. For four-part numeric floors, each probe checks official `catalog_<version>.hash` objects using the bounded Haneoka probing strategy; an explicit `catalog.versionUrl` remains supported. The resolved catalog hash is checked on every probe. The Master index uses the public Haneoka data mirror and is marked as derived. A game-version endpoint can be configured under `gameVersion`; it is unset by default.
+The configured server is `intl`. Each lightweight probe calls the official Master
+version service over gRPC/HTTP2, validates its `masterVersion` and
+`resourceVersion`, fetches the versioned Manifest, and resolves the catalog from
+that anchor. Catalog candidates count as published only when both `.hash` and
+`.bin` exist. A deep scan downloads and verifies only the four required Master
+tables (`MasterLiveMusic`, `MasterLiveMusicScore`, `MasterEvent`, and
+`MasterCharacter`); any manifest, size, hash, decrypt, or parse failure prevents
+the snapshot from advancing. Haneoka is used for a non-authoritative mirror
+comparison only. A game-version endpoint can be configured under `gameVersion`;
+it is unset by default.
 
 `probe --trigger-scan` waits for changed fingerprints only when `--settle-seconds` is provided. For a server timer, for example:
 
@@ -44,25 +53,37 @@ Each update writes `events/<event-id>.json` and `reports/<event-id>.md`. Event I
 
 `.github/workflows/probe.yml` checks fingerprints every five minutes and calls the deep-scan workflow only after a change. Deep scans validate all inputs before advancing the current pointer. The Pages workflow publishes the static JSON API and feed.
 
-The probe tracks the official catalog hash and hashes of the configured mirror indexes. On a change, a deep scan refreshes song details and the configured event and character collections. Mirror data is derived rather than an official Master endpoint; the source authority is recorded in every snapshot and event.
+The probe fingerprint includes official `masterVersion`, `resourceVersion`, the
+Manifest SHA-256, resolved catalog version, and catalog hash. Any of these
+changes triggers a deep scan. Snapshots record official Master provenance and
+keep mirror status and revision in separate diagnostic fields. A catalog chart
+without a Master reference is reported as `CATALOG_PRELOADED_CHARTS`; a Master
+reference missing from the catalog is `MASTER_AHEAD_OF_CATALOG`.
+
+Events report `songsAdded`/`songsChanged`/`songsRemoved` separately from chart
+asset counts. A song added to Master with a preloaded chart therefore reports a
+new song while keeping `chartsAdded` at zero.
 
 ## Status API and integrations
 
 `site/api/status.json` reports health, the last successful scan, current
 snapshot, latest event, configured catalog floor, resolved catalog version and
-its source (`probe`, `official-endpoint`, or `config`), game-version availability,
+its source (`master-anchor+probe`, `probe`, `official-endpoint`, or `config`),
+official Master version/resourceVersion/manifest hash, game-version availability,
 and Master authority. `gameVersion: null` is represented as unavailable.
 
-`onwatch notify` sends a `repository_dispatch` event when chart entries were
-added, changed, or removed, or when the resolved catalog version changes. Its
-payload contains the event ID, snapshot revision, resolved catalog version,
-catalog hash, and chart-key lists; it does not include a full snapshot. Workflow
+`onwatch notify` sends a `repository_dispatch` event when songs or chart entries
+change, or when the catalog or official Master version changes. Its payload
+contains the event ID, snapshot revision, resolved catalog version and hash,
+Master versions, song ID lists, and chart-key lists; it does not include a full snapshot. Workflow
 failure alerts use a distinct `our-notes-update-failure`
 event and do not send ordinary `NO_CHANGE` probes.
 
-For automatic cross-repository dispatch, configure the Actions variable
-`CHARTDB_REPOSITORY` and the secret `CHARTDB_DISPATCH_TOKEN` in this repository.
-The secret must be authorized to dispatch events to that target repository.
+For automatic cross-repository dispatch, set the Actions variable
+`CHARTDB_REPOSITORY=ryougishiiki/our-notes-chartdb` and configure the secret
+`CHARTDB_DISPATCH_TOKEN` with a token authorized to dispatch to that repository.
+The secret is consumed by the scan and retry workflows and is never stored in
+public configuration.
 
 Update webhooks include `X-OnWatch-Timestamp`, an HMAC-SHA256
 `X-OnWatch-Signature`, and an `Idempotency-Key`. A minimal local contract

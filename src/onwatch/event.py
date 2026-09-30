@@ -19,6 +19,7 @@ def build_event(
     old_meta = before_snapshot["meta"]
     new_meta = after_snapshot["meta"]
     charts = charts_from_asset_diff(asset_diff)
+    song_changes = _song_changes(master_diff)
     counts = {
         "assetsAdded": len(asset_diff["added"]),
         "assetsChanged": len(asset_diff["changed"]),
@@ -29,6 +30,9 @@ def build_event(
         "chartsAdded": len(charts["added"]),
         "chartsChanged": len(charts["changed"]),
         "chartsRemoved": len(charts["removed"]),
+        "songsAdded": len(song_changes["added"]),
+        "songsChanged": len(song_changes["changed"]),
+        "songsRemoved": len(song_changes["removed"]),
     }
     categories: dict[str, dict[str, int]] = {}
     for change_type in ("added", "changed", "removed"):
@@ -52,6 +56,15 @@ def build_event(
         "masterIndexAfter": new_meta.get("masterIndexRevision"),
         "masterSource": new_meta.get("source", {}).get("master"),
         "masterAuthority": new_meta.get("source", {}).get("masterAuthority"),
+        "masterVersionBefore": _version(before_snapshot, "masterVersion"),
+        "masterVersionAfter": _version(after_snapshot, "masterVersion"),
+        "masterResourceVersionBefore": _version(before_snapshot, "masterResourceVersion"),
+        "masterResourceVersionAfter": _version(after_snapshot, "masterResourceVersion"),
+        "masterManifestSha256Before": _version(before_snapshot, "masterManifestSha256"),
+        "masterManifestSha256After": _version(after_snapshot, "masterManifestSha256"),
+        "mirrorStatus": new_meta.get("source", {}).get("mirrorStatus"),
+        "mirrorRevision": new_meta.get("source", {}).get("mirrorRevision"),
+        "catalogMasterAlignment": after_snapshot.get("catalog", {}).get("masterAlignment"),
         "resourceManifestBefore": old_meta.get("resourceManifestRevision"),
         "resourceManifestAfter": new_meta.get("resourceManifestRevision"),
     }
@@ -68,6 +81,7 @@ def build_event(
         "summary": counts,
         "categories": categories,
         "charts": charts,
+        "songs": song_changes,
         "assets": asset_diff,
         "masterChanges": master_diff,
         "snapshot": {"revision": new_meta["revision"], "path": f"snapshots/{new_meta['revision']}"},
@@ -82,3 +96,13 @@ def event_fingerprint(event: dict[str, Any]) -> str:
 
 def _version(snapshot: dict[str, Any], key: str) -> Any:
     return snapshot.get("version", {}).get(key)
+
+
+def _song_changes(master_diff: list[dict[str, Any]]) -> dict[str, list[str]]:
+    result: dict[str, list[str]] = {kind: [] for kind in ("added", "changed", "removed")}
+    for change in master_diff:
+        if change.get("table") == "MasterLiveMusic" and change.get("type") in result:
+            result[change["type"]].append(str(change.get("key")))
+    for keys in result.values():
+        keys.sort(key=lambda value: (0, int(value)) if value.isdigit() else (1, value))
+    return result

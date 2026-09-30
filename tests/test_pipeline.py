@@ -45,7 +45,8 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
             patch.object(scan_module, "fetch_bytes", side_effect=self._catalog_bytes),
             patch.object(scan_module, "parse_catalog", side_effect=lambda data, *args: data),
             patch.object(scan_module, "normalize_catalog", side_effect=self._assets),
-            patch.object(scan_module, "make_master_tables", side_effect=self._tables),
+            patch.object(scan_module, "fetch_official_master_tables", side_effect=self._tables),
+            patch.object(scan_module, "compare_master_mirror", side_effect=self._mirror),
         ]
         for patcher in self.patchers:
             patcher.start()
@@ -69,7 +70,7 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
         self.assertEqual(
             status["gameVersionAvailable"], self.active["sources"]["gameVersion"] is not None
         )
-        self.assertEqual(status["masterAuthority"], "derived")
+        self.assertEqual(status["masterAuthority"], "official")
 
         no_op_files = [
             "state/current.json",
@@ -99,7 +100,8 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
 
         self.active = self._fixture("snapshot-c.json")
         event_two = scan_module.run_scan(self.root, self.config)
-        self.assertEqual(event_two["summary"]["masterAdded"], 3)
+        self.assertEqual(event_two["summary"]["masterAdded"], 2)
+        self.assertEqual(event_two["summary"]["songsAdded"], 1)
         self.assertEqual(event_two["summary"]["chartsAdded"], 1)
         self.assertEqual(event_two["summary"]["chartsChanged"], 1)
         self.assertEqual(event_two["severity"], "CONTENT")
@@ -142,7 +144,10 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
         self.assertEqual(payload["client_payload"]["eventId"], event_two["eventId"])
         self.assertEqual(
             set(payload["client_payload"]),
-            {"eventId", "snapshot", "catalogVersion", "catalogHash", "added", "changed", "removed"},
+            {
+                "eventId", "catalogVersion", "catalogHash", "masterVersion",
+                "masterResourceVersion", "masterManifestSha256", "songs", "added", "changed", "removed"
+            },
         )
 
     def test_catalog_version_only_change_emits_event_and_dispatch(self) -> None:
@@ -187,6 +192,34 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
         self.assertEqual(payload["client_payload"]["catalogVersion"], "1.0.0.101")
         self.assertEqual(payload["client_payload"]["added"], [])
 
+    def test_master_version_only_change_emits_event_and_dispatch(self) -> None:
+        scan_module.run_scan(self.root, self.config)
+        self.active["sources"]["masterVersion"] = "master-version-b"
+        event_result = scan_module.run_scan(self.root, self.config)
+        self.assertTrue(event_result["changed"])
+        self.assertEqual(event_result["summary"]["chartsAdded"], 0)
+        self.assertEqual(event_result["summary"]["songsAdded"], 0)
+        event = json.loads(
+            (self.root / "events" / f"{event_result['eventId']}.json").read_text("utf-8")
+        )
+        self.assertEqual(event["source"]["masterVersionBefore"], "master-version-a")
+        self.assertEqual(event["source"]["masterVersionAfter"], "master-version-b")
+
+        with patch.dict(
+            os.environ,
+            {
+                "ONWATCH_CHARTDB_REPOSITORY": "ryougishiiki/our-notes-chartdb",
+                "ONWATCH_GITHUB_TOKEN": "test-token",
+                "ONWATCH_WEBHOOK_URL": "",
+                "ONWATCH_WEBHOOK_SECRET": "",
+            },
+        ):
+            with patch("onwatch.notify.urllib.request.urlopen", return_value=FakeResponse()) as dispatch:
+                notification = notify_latest(self.root)
+        self.assertEqual(notification["repositoryDispatch"]["status"], "sent")
+        payload = json.loads(dispatch.call_args.args[0].data.decode("utf-8"))
+        self.assertEqual(payload["client_payload"]["masterVersion"], "master-version-b")
+
     def test_empty_catalog_rejection_does_not_advance_current(self) -> None:
         scan_module.run_scan(self.root, self.config)
         current_before = json.loads((self.root / "state" / "current.json").read_text("utf-8"))
@@ -205,13 +238,16 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
         sources = copy.deepcopy(self.active["sources"])
         sources.setdefault("catalogVersionResolved", sources.get("catalogVersion"))
         sources.setdefault("catalogVersionConfiguredFloor", "1.0.0.100")
+        sources.setdefault("masterVersion", "master-version-a")
+        sources.setdefault("masterResourceVersion", "1.0.0.201")
+        sources.setdefault("masterManifestSha256", "a" * 64)
         return {
             "schema": "our-notes-probe/1",
             "server": "intl",
             "checkedAt": self.active["checkedAt"],
             "sources": sources,
-            "provenance": {"masterAuthority": "derived", "catalogVersionSource": "probe"},
-            "_masterIndexes": {},
+            "provenance": {"masterAuthority": "official", "catalogVersionSource": "probe"},
+            "_masterVersion": None,
         }
 
     def _catalog_bytes(self, _url, **_kwargs):
@@ -220,8 +256,27 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
     def _assets(self, _reader):
         return copy.deepcopy(self.active["assets"])
 
-    def _tables(self, _config, _indexes):
-        return copy.deepcopy(self.active["tables"])
+    def _tables(self, _config, _version, _manifest_sha256):
+        return {
+            name: copy.deepcopy(table)
+            for name, table in self.active["tables"].items()
+            if name != "MusicCatalog"
+        }
+
+    def _mirror(self, _config, _tables):
+        return ({"status": "MIRROR_CURRENT", "mirrorRevision": "mirror-a"}, {})
+
+    def test_new_master_song_with_preloaded_catalog_chart_is_not_a_new_chart(self) -> None:
+        scan_module.run_scan(self.root, self.config)
+        self.active = self._fixture("snapshot-c.json")
+        self.active["assets"] = self._fixture("snapshot-a.json")["assets"]
+        result = scan_module.run_scan(self.root, self.config)
+        self.assertEqual(result["summary"]["songsAdded"], 1)
+        self.assertEqual(result["summary"]["chartsAdded"], 0)
+        event = json.loads(
+            (self.root / "events" / f"{result['eventId']}.json").read_text("utf-8")
+        )
+        self.assertEqual(event["charts"]["added"], [])
 
     def _event_count(self) -> int:
         directory = self.root / "events"
