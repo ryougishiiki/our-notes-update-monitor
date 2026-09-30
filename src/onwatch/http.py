@@ -12,6 +12,10 @@ class HttpError(RuntimeError):
     pass
 
 
+class InvalidResponseError(HttpError):
+    pass
+
+
 USER_AGENT = "our-notes-update-monitor/0.1 (+automated data and resource update tracker)"
 
 
@@ -45,4 +49,4 @@ def fetch_json(url: str, *, timeout: float = 30.0, retries: int = 3) -> Any:
     try:
         return json.loads(raw.decode("utf-8"))
     except (UnicodeError, json.JSONDecodeError) as error:
-        raise HttpError(f"invalid UTF-8 JSON response from {url}: {error}") from error
+        raise InvalidResponseError(f"invalid UTF-8 JSON response from {url}: {error}") from error

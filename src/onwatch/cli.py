@@ -13,7 +13,7 @@ from .io import read_json, write_json
 from .notify import notify_latest, send_failure_webhook
 from .probe import changed_sources, fetch_probe
 from .publish import rebuild_feed
-from .http import HttpError
+from .http import HttpError, InvalidResponseError
 from .scan import IncompleteSnapshotError, run_scan
 
 
@@ -196,6 +196,8 @@ def _write_scan_github_output(path: str | None, result: dict[str, Any], server: 
 
 
 def _failure_status(error: Exception) -> str:
+    if isinstance(error, InvalidResponseError):
+        return "SCHEMA_INVALID"
     if isinstance(error, HttpError):
         return "SOURCE_UNAVAILABLE"
     if isinstance(error, (IncompleteSnapshotError, UnicodeError, json.JSONDecodeError, ValueError)):
