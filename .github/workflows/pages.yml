@@ -5,6 +5,9 @@ on:
     paths:
       - "site/**"
   workflow_dispatch:
+  repository_dispatch:
+    types:
+      - onwatch-pages-deploy
 
 permissions:
   contents: read

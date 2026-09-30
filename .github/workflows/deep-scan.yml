@@ -73,6 +73,19 @@ jobs:
           ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
         run: onwatch notify-failure --root . --status PUBLISH_FAILED --json
         continue-on-error: true
+      - name: Trigger Pages after a generated-data push
+        id: pages-dispatch
+        if: steps.scan.outputs.changed == 'true' && steps.commit.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api "repos/${GITHUB_REPOSITORY}/dispatches" --method POST -f event_type=onwatch-pages-deploy
+      - name: Alert on Pages trigger failure
+        if: always() && steps.pages-dispatch.outcome == 'failure'
+        env:
+          ONWATCH_WEBHOOK_URL: ${{ secrets.ONWATCH_WEBHOOK_URL }}
+          ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
+        run: onwatch notify-failure --root . --status PUBLISH_FAILED --json
+        continue-on-error: true
       - name: Send optional event integrations
         env:
           ONWATCH_GITHUB_TOKEN: ${{ secrets.CHARTDB_DISPATCH_TOKEN }}
