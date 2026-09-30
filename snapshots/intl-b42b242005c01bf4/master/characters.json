@@ -1,0 +1,2733 @@
+{
+  "authority": "derived",
+  "primaryKey": "characterId",
+  "rows": {
+    "1": {
+      "bandId": 1,
+      "bandPart": "Vo.",
+      "birthday": {
+        "day": 22,
+        "month": 11
+      },
+      "catchCopy": [
+        "「一生、バンドしてくれる？」",
+        "Will you be in a band with me for the rest of our lives?",
+        "「一輩子……和我一起組樂團嗎？」",
+        "「你愿意，和我组一辈子乐队吗？」",
+        "「평생, 밴드 해줄래?」"
+      ],
+      "characterId": 1,
+      "characterKey": "001",
+      "characterName": [
+        "高松 燈",
+        "Tomori Takamatsu",
+        "高松燈",
+        "高松灯",
+        "타카마츠 토모리"
+      ],
+      "characterType": "unique",
+      "colorCode": "#77BBDD",
+      "constellation": [
+        "蠍座 ",
+        "Scorpio ",
+        "天蠍座 ",
+        "天蝎座 ",
+        "전갈자리 "
+      ],
+      "description": [
+        "独特の感性を持ったMyGO!!!!!のボーカル。\r\n気に入ったものを集めるのが好きで、道に落ちた石や葉っぱを拾ったりすることもしばしば。自分の感覚がまわりとズレていることを気にしているが、学校ではマスコット的な存在として親しまれている。",
+        "The vocalist of MyGO!!!!!, who has a unique sense of perception.\r\nShe likes collecting things she finds appealing, and often picks up stones or leaves she finds on the street. She is aware that her sense of perception is somewhat different from those around her, and worries about it, but at school she is loved as something of a mascot-like presence.",
+        "MyGO!!!!!的主唱，擁有獨特的感性。\r\n喜歡收集自己喜愛的事物，經常會撿拾路邊的石頭或葉子。儘管在意自己似乎與周遭的人不太一樣，但她在校園內就像是吉祥物一般的存在，深受大家喜愛。",
+        "MyGO!!!!!的主唱，拥有独特的感性。\r\n喜欢收集心仪的物品，经常会去捡掉在路上的石头或树叶。她有些在意自己的感觉和周围的人不一样，但她在学校里却是如同吉祥物一般的存在，备受大家的喜爱。",
+        "독특한 감성을 지닌 MyGO!!!!!의 보컬.\r\n마음에 드는 것을 모으는 걸 좋아해 길에 떨어진 돌이나 나뭇잎을 종종 줍는다. 자신의 감각이 주변과 어긋나 있다는 점을 신경 쓰고 있지만, 학교에서는 마스코트 같은 존재로 사랑받고 있다."
+      ],
+      "displayOrder": 3,
+      "englishName": [
+        "Tomori Takamatsu",
+        "高松 燈",
+        "Tomori Takamatsu",
+        "Tomori Takamatsu",
+        "Tomori Takamatsu"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/1/character_face_icon.png",
+      "favoriteFood": [
+        "金平糖、味付けのり、ふりかけ",
+        "Konpeitō, seasoned seaweed, furikake",
+        "金平糖、調味海苔、香鬆",
+        "金平糖、调味海苔、香松",
+        "별사탕, 양념김, 후리카케"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "155cm",
+        "155cm",
+        "155cm",
+        "155cm",
+        "155cm"
+      ],
+      "hobby": [
+        "好きなもの集め（石、絆創膏、きれいな葉っぱなど）",
+        "Collecting things she likes (stones, bandages, pretty leaves, etc.)",
+        "收集喜歡的東西（石頭、OK繃、美麗的樹葉等）",
+        "收集喜欢的东西（石头、创可贴、漂亮的树叶等）",
+        "좋아하는 물건 수집 (돌, 반창고, 예쁜 나뭇잎 등)"
+      ],
+      "nickname": [
+        "燈",
+        "Tomori",
+        "燈",
+        "灯",
+        "토모리"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/1/character_thumbnail.png",
+      "school": [
+        "羽丘女子学園",
+        "Haneoka Girls' Academy",
+        "羽丘女子學園",
+        "羽丘女子学园",
+        "하네오카 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・A組(1-A)",
+        "First-Year Student, Class A (1-A)",
+        "高中一年級·A班（1-A）",
+        "高中1年级・A班(1-A)",
+        "고등학교 1학년·A반 (1-A)"
+      ],
+      "slug": "tomori-takamatsu",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/1/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/1/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 羊宮 妃那",
+        "CV. Hina Youmiya",
+        "CV. 羊宮妃那",
+        "CV. 羊宫妃那",
+        "CV. 요우미야 히나"
+      ]
+    },
+    "10": {
+      "bandId": 2,
+      "bandPart": "Key.",
+      "birthday": {
+        "day": 14,
+        "month": 2
+      },
+      "catchCopy": [
+        "「——残りの人生、わたくしにくださいませんか？」",
+        "Would you entrust the rest of your life to me?",
+        "「──妳願意將剩餘的人生交給我嗎？」",
+        "「——你愿意，将剩余的人生交给我吗？」",
+        "「......남은 인생, 제게 맡겨주시겠어요?」"
+      ],
+      "characterId": 10,
+      "characterKey": "010",
+      "characterName": [
+        "オブリビオニス / 豊川 祥子",
+        "Oblivionis / Sakiko Togawa",
+        "Oblivionis / 豐川祥子",
+        "Oblivionis / 丰川祥子",
+        "오블리비오니스 / 토가와 사키코"
+      ],
+      "characterType": "unique",
+      "colorCode": "#7799cc",
+      "constellation": [
+        "水瓶座",
+        "Aquarius",
+        "水瓶座",
+        "水瓶座",
+        "물병자리"
+      ],
+      "description": [
+        "羽丘女子学園の高校1年生。\r\n豊川グループの令嬢であり、気品のある言葉遣いで話す。メンバー全員の人生を預かる覚悟でAve Mujicaを結成した。Ave Mujicaの世界観を守るべく、心血を注ぐ。",
+        "A first-year high school student at Haneoka Girls' Academy.\r\nAs the daughter from the prestigious Togawa Group, she speaks with refined, elegant manners. With the resolve to take responsibility for the lives of all the members, she formed Ave Mujica. She devotes herself wholeheartedly to preserving the world of Ave Mujica.",
+        "羽丘女子學園高一生。\r\n豐川集團的千金小姐，言談舉止優雅而有氣質。她懷著背負所有團員人生的覺悟，創立了Ave Mujica。為了守護Ave Mujica的世界觀，她傾注了全部的心血。",
+        "羽丘女子学园高中1年级的学生。\r\n身为丰川集团的千金，谈吐言辞优雅。怀着为全体成员的人生负责的觉悟，组建了Ave Mujica。为了守护Ave Mujica的世界观，她倾注了全部心血。",
+        "하네오카 여학원 고등학교 1학년.\r\n토가와 그룹의 영애로, 기품 있는 말투로 이야기한다. 멤버 전원의 인생을 책임질 각오로 Ave Mujica를 결성했다. Ave Mujica의 세계관을 지키기 위해 심혈을 기울이고 있다."
+      ],
+      "displayOrder": 1,
+      "englishName": [
+        "Oblivionis / Sakiko Togawa",
+        "オブリビオニス / 豊川 祥子",
+        "Oblivionis / Sakiko Togawa",
+        "Oblivionis / Sakiko Togawa",
+        "Oblivionis / Sakiko Togawa"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/10/character_face_icon.png",
+      "favoriteFood": [
+        "紅茶、チョコレート",
+        "Black tea, chocolate",
+        "紅茶、巧克力",
+        "红茶、巧克力",
+        "홍차, 초콜릿"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "155cm",
+        "155cm",
+        "155cm",
+        "155cm",
+        "155cm"
+      ],
+      "hobby": [
+        "芸術鑑賞\r\n読書",
+        "Art appreciation\r\nReading",
+        "藝術欣賞\r\n閱讀",
+        "艺术鉴赏\r\n读书",
+        "예술 감상\r\n독서"
+      ],
+      "nickname": [
+        "祥子",
+        "Sakiko",
+        "祥子",
+        "祥子",
+        "사키코"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/10/character_thumbnail.png",
+      "school": [
+        "羽丘女子学園",
+        "Haneoka Girls' Academy",
+        "羽丘女子學園",
+        "羽丘女子学园",
+        "하네오카 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・B組(1-B)",
+        "First-Year Student, Class B (1-B)",
+        "高中一年級·B班（1-B）",
+        "高中1年级・B班(1-B)",
+        "고등학교 1학년·B반 (1-B)"
+      ],
+      "slug": "oblivionis-sakiko-togawa",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/10/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/10/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 高尾 奏音",
+        "CV. Kanon Takao",
+        "CV. 高尾奏音",
+        "CV. 高尾奏音",
+        "CV. 타카오 카논"
+      ]
+    },
+    "11": {
+      "bandId": 3,
+      "bandPart": "Vo.",
+      "birthday": {
+        "day": 16,
+        "month": 8
+      },
+      "catchCopy": [
+        "「ねえねえ、おしゃべりって歌になるんだよ！」",
+        "Hey, did you know chatting can turn into a song?",
+        "「妳知道嗎？聊天的內容可以變成歌曲喔！」",
+        "「其实，聊天也是可以变成歌的哦！」",
+        "「있잖아, 그냥 말하는 것도 전부 노래가 된다니까!」"
+      ],
+      "characterId": 11,
+      "characterKey": "011",
+      "characterName": [
+        "仲町 あられ",
+        "Arale Nakamachi",
+        "仲町阿拉蕾",
+        "仲町阿拉蕾",
+        "나카마치 아라레"
+      ],
+      "characterType": "unique",
+      "colorCode": "#FFEE55",
+      "constellation": [
+        "獅子座",
+        "Leo",
+        "獅子座",
+        "狮子座",
+        "사자자리"
+      ],
+      "description": [
+        "歌とおしゃべりが大好きな女の子。基本的には明るくて元気だが空回りしたり、落ち込んだり、忙しい性格。\r\n音楽面では力強い歌声で夢限大みゅーたいぷを引っ張るパワフルガール。",
+        "A girl who loves singing and chatting. She's generally bright and energetic, but can sometimes get carried away or feel down—a bit of a whirlwind of emotions.\r\nMusically, she leads Mugendai MewType with her powerful, strong singing voice—a truly energetic and dynamic girl.",
+        "非常喜愛唱歌和說話的女孩。基本上性格開朗且充滿朝氣，但偶爾會白忙一場或陷入低潮，情緒變化相當豐富。\r\n在音樂方面是透過充滿力量的歌聲，帶領夢限大MewType在音樂道路上前行的活力女孩。",
+        "非常热爱唱歌和聊天的女孩。平时明朗开朗、精力充沛，但偶尔也会陷入情绪低落、冒冒失失的状态，整个人总是风风火火、闲不下来。\r\n在音乐方面，她总是以充满力量的歌声引领着梦限大MewType前行，是个十足的活力少女。",
+        "노래와 수다를 아주 좋아하는 여자아이. 기본적으로는 활기차고 밝지만, 허둥대거나, 우울해지는 등 한시도 가만히 있지 못하는 성격이다.\r\n음악적인 부분에서는 힘찬 보컬로 무겐다이 뮤타입을 이끄는 파워풀 걸이다."
+      ],
+      "displayOrder": 3,
+      "englishName": [
+        "Arale Nakamachi",
+        "仲町 あられ",
+        "Arale Nakamachi",
+        "Arale Nakamachi",
+        "Arale Nakamachi"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/11/character_face_icon.png",
+      "favoriteFood": [
+        "メロンパンアイス、辛いもの",
+        "Melon bun ice cream, spicy foods",
+        "冰淇淋菠蘿麵包、辛辣的食物",
+        "冰淇淋菠萝包、辣味食物",
+        "멜론빵 아이스크림, 매운 음식"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "154cm",
+        "154cm",
+        "154cm",
+        "154cm",
+        "154cm"
+      ],
+      "hobby": [
+        "漫画\r\nアニメ",
+        "Manga\r\nAnime",
+        "漫畫\r\n動畫",
+        "漫画\r\n动画",
+        "만화\r\n애니메이션"
+      ],
+      "nickname": [
+        "あられ",
+        "Arale",
+        "阿拉蕾",
+        "阿拉蕾",
+        "아라레"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/11/character_thumbnail.png",
+      "school": [
+        "神田白八馬アカデミー",
+        "Kanda Shiroyama Academy",
+        "神田白八馬學院",
+        "神田白八马学院",
+        "칸다 시로야마 아카데미"
+      ],
+      "schoolClass": [
+        "1-B",
+        "1-B",
+        "1-B",
+        "1-B",
+        "1-B"
+      ],
+      "slug": "arale-nakamachi",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/11/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/11/character_thumbnail.png",
+      "voiceActor": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "12": {
+      "bandId": 3,
+      "bandPart": "Gt.",
+      "birthday": {
+        "day": 17,
+        "month": 4
+      },
+      "catchCopy": [
+        "「ののちゃんがお手当てするから大丈夫！」",
+        "It's okay! Nono-chan will patch you right up!",
+        "「小野乃會治好她的，別擔心！」",
+        "「小野乃会治好她的，所以没问题！」",
+        "「노노 짱이 치료해 줄 테니까, 괜찮아!」"
+      ],
+      "characterId": 12,
+      "characterKey": "012",
+      "characterName": [
+        "宮永 ののか",
+        "Nonoka Miyanaga",
+        "宮永野乃花",
+        "宫永野乃花",
+        "미야나가 노노카"
+      ],
+      "characterType": "unique",
+      "colorCode": "#FFBBCC",
+      "constellation": [
+        "牡羊座",
+        "Aries",
+        "牡羊座",
+        "白羊座",
+        "양자리"
+      ],
+      "description": [
+        "夢限大みゅーたいぷ天真爛漫ゆるふわギター担当。\r\n誰からも愛される自由でおもしろいムードメーカー。ステージに上がると自らが最も音楽を楽しむパフォーマンスで観客を巻き込んでいく。",
+        "Mugendai MewType's carefree and lighthearted guitarist.\r\nA free-spirited, and fun-loving mood-maker loved by everyone. On stage, she draws the audience in with performances that show just how much she enjoys the music.",
+        "夢限大MewType的天真爛漫軟萌吉他手。\r\n深受眾人喜愛、行事作風自由的團隊開心果。一旦站上舞台，便會用自己最享受音樂的演出風格，帶領觀眾慢慢進入她的世界。",
+        "梦限大MewType中天真烂漫、软乎乎的吉他手。\r\n深受大家喜爱、自由随性又有趣的气氛制造者。一旦站上舞台，她会用自己最享受音乐的方式表演，将观众也一起卷入欢乐之中。",
+        "무겐다이 뮤타입의 천진난만하고 말랑말랑한 기타 담당.\r\n모두에게 사랑받는 자유롭고 유쾌한 분위기 메이커다. 스테이지에 오르면 누구보다 음악을 즐기는 퍼포먼스로 관객을 끌어들인다."
+      ],
+      "displayOrder": 5,
+      "englishName": [
+        "Nonoka Miyanaga",
+        "宮永 ののか",
+        "Nonoka Miyanaga",
+        "Nonoka Miyanaga",
+        "Nonoka Miyanaga"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/12/character_face_icon.png",
+      "favoriteFood": [
+        "白いご飯、シチュー",
+        "White rice, stew",
+        "白米飯、燉菜",
+        "白米饭、炖菜",
+        "흰쌀밥, 스튜"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "161cm",
+        "161cm",
+        "161cm",
+        "161cm",
+        "161cm"
+      ],
+      "hobby": [
+        "ボードゲーム",
+        "Board games",
+        "桌遊",
+        "桌游",
+        "보드게임"
+      ],
+      "nickname": [
+        "ののか",
+        "Nonoka",
+        "野乃花",
+        "野乃花",
+        "노노카"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/12/character_thumbnail.png",
+      "school": [
+        "神田白八馬アカデミー",
+        "Kanda Shiroyama Academy",
+        "神田白八馬學院",
+        "神田白八马学院",
+        "칸다 시로야마 아카데미"
+      ],
+      "schoolClass": [
+        "2-A",
+        "2-A",
+        "2-A",
+        "2-A",
+        "2-A"
+      ],
+      "slug": "nonoka-miyanaga",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/12/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/12/character_thumbnail.png",
+      "voiceActor": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "13": {
+      "bandId": 3,
+      "bandPart": "Gt.",
+      "birthday": {
+        "day": 7,
+        "month": 2
+      },
+      "catchCopy": [
+        "「優等生って、どう思いますか？」",
+        "What do you think of honor students?",
+        "「妳會如何評價模範生？」",
+        "「你怎么看待好学生？」",
+        "「우등생은 어떻게 생각하세요?」"
+      ],
+      "characterId": 13,
+      "characterKey": "013",
+      "characterName": [
+        "峰月 律",
+        "Ritsu Minetsuki",
+        "峰月律",
+        "峰月律",
+        "미네츠키 리츠"
+      ],
+      "characterType": "unique",
+      "colorCode": "#4477CC",
+      "constellation": [
+        "水瓶座",
+        "Aquarius",
+        "水瓶座",
+        "水瓶座",
+        "물병자리"
+      ],
+      "description": [
+        "真面目な優等生。\r\n夢限大みゅーたいぷの音楽を冷静に支えるリズムギター担当。その真面目さ故なのか、みんなの予想を超えてくる行動もチラホラ。食欲は夢限大でメンバー随一。",
+        "A diligent, straight-A student.\r\nAs the rhythm guitarist of Mugendai MewType, she calmly supports the band's sound. Perhaps because of her earnest nature, she occasionally surprises everyone with unexpected actions. Her appetite is seemingly endless—by far the biggest in the group.",
+        "認真的模範生。\r\n擔任節奏吉他手，以冷靜的態度支撐著夢限大MewType的音樂。也許正是因為太認真，偶爾也會做出超出眾人預想的舉動。食量在夢限大所有成員中排名第一。",
+        "认真的优等生。\r\n作为节奏吉他手，始终冷静地支撑着梦限大MewType的音乐。或许也正是由于这份认真，她时不时也会做出超出大家预料的行为。食欲也是梦限大成员之中最旺盛的。",
+        "성실한 우등생.\r\n무겐다이 뮤타입의 음악을 차분히 잡아주는 리듬기타 담당. 그 성실함 때문인지, 가끔씩 모두의 예상을 뛰어넘는 행동을 하기도 한다. 식욕은 무한대로 멤버 중 최고의 대식가다."
+      ],
+      "displayOrder": 1,
+      "englishName": [
+        "Ritsu Minetsuki",
+        "峰月 律",
+        "Ritsu Minetsuki",
+        "Ritsu Minetsuki",
+        "Ritsu Minetsuki"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/13/character_face_icon.png",
+      "favoriteFood": [
+        "牛すき鍋、ラーメン",
+        "Sukiyaki, ramen",
+        "牛肉壽喜燒鍋、拉麵",
+        "牛肉寿喜锅、拉面",
+        "규스키나베, 라멘"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "157cm",
+        "157cm",
+        "157cm",
+        "157cm",
+        "157cm"
+      ],
+      "hobby": [
+        "映画鑑賞",
+        "Watching films",
+        "電影欣賞",
+        "电影鉴赏",
+        "영화 감상"
+      ],
+      "nickname": [
+        "律",
+        "Ritsu",
+        "律",
+        "律",
+        "리츠"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/13/character_thumbnail.png",
+      "school": [
+        "神田白八馬アカデミー",
+        "Kanda Shiroyama Academy",
+        "神田白八馬學院",
+        "神田白八马学院",
+        "칸다 시로야마 아카데미"
+      ],
+      "schoolClass": [
+        "1-B",
+        "1-B",
+        "1-B",
+        "1-B",
+        "1-B"
+      ],
+      "slug": "ritsu-minetsuki",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/13/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/13/character_thumbnail.png",
+      "voiceActor": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "14": {
+      "bandId": 3,
+      "bandPart": "Key.",
+      "birthday": {
+        "day": 19,
+        "month": 9
+      },
+      "catchCopy": [
+        "「藤都子、二足の草鞋を履いたからには、走り切る覚悟！」",
+        "Miyako Fuji has taken on two paths, and she's ready to see them both through!",
+        "「本人藤都子既然選擇兼顧兩條路，那就會做好走到最後的覺悟！」",
+        "「我藤都子，既然决定两者兼顾，就有坚持到底的决心！」",
+        "「후지 미야코, 두 가지 일을 겸하게 된 이상, 끝까지 해내겠어!」"
+      ],
+      "characterId": 14,
+      "characterKey": "014",
+      "characterName": [
+        "藤 都子",
+        "Miyako Fuji",
+        "藤都子",
+        "藤都子",
+        "후지 미야코"
+      ],
+      "characterType": "unique",
+      "colorCode": "#9977CC",
+      "constellation": [
+        "乙女座",
+        "Virgo",
+        "處女座",
+        "处女座",
+        "처녀자리"
+      ],
+      "description": [
+        "現役漫画家兼、夢限大みゅーたいぷのキーボード担当。\r\n一見おとなしそうに見えるが、確かな技術と何事にも手を抜かない情熱でバンドを支える。バンドと漫画家の両立、常人では考えられないタスク量をこなすストイック超人。",
+        "An active manga artist and the keyboardist of Mugendai MewType. Though she may appear quiet at first glance, she supports the band with solid skill and an unwavering passion that never cuts corners. Balancing both her band activities and her work as a manga artist, she handles an extraordinary workload with remarkable discipline.",
+        "現役漫畫家，同時兼任夢限大MewType的鍵盤手。\r\n乖巧的外表下，透過札實的技術與對任何事都全力以赴的熱情支撐著整個樂團。既能兼顧樂團與漫畫家的身分，還擁有超乎常人的工作產量，堪稱工作狂超人。",
+        "现役漫画家兼梦限大MewType的键盘手。\r\n外表看上去文静沉稳，却能以扎实的技术和全力以赴的热情支撑着乐队。是能同时兼顾乐队与漫画家工作的自律超人，能完成常人难以想象的任务量。",
+        "현역 만화가 겸 무겐다이 뮤타입의 키보드 담당.\r\n겉보기엔 얌전해 보이지만, 탄탄한 실력과 집요한 열정으로 밴드를 지탱한다. 밴드와 만화가 활동을 병행하며, 일반인이라면 상상도 못 할 작업량을 소화해 내는 철저한 자기 관리의 초인이다."
+      ],
+      "displayOrder": 4,
+      "englishName": [
+        "Miyako Fuji",
+        "藤 都子",
+        "Miyako Fuji",
+        "Miyako Fuji",
+        "Miyako Fuji"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/14/character_face_icon.png",
+      "favoriteFood": [
+        "ドーナツ、寿司",
+        "Donuts, sushi",
+        "甜甜圈、壽司",
+        "甜甜圈、寿司",
+        "도넛, 스시"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "155cm",
+        "155cm",
+        "155cm",
+        "155cm",
+        "155cm"
+      ],
+      "hobby": [
+        "いけばな",
+        "Ikebana",
+        "插花",
+        "插花",
+        "꽃꽂이"
+      ],
+      "nickname": [
+        "都子",
+        "Miyako",
+        "都子",
+        "都子",
+        "미야코"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/14/character_thumbnail.png",
+      "school": [
+        "神田白八馬アカデミー",
+        "Kanda Shiroyama Academy",
+        "神田白八馬學院",
+        "神田白八马学院",
+        "칸다 시로야마 아카데미"
+      ],
+      "schoolClass": [
+        "2-B",
+        "2-B",
+        "2-B",
+        "2-B",
+        "2-B"
+      ],
+      "slug": "miyako-fuji",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/14/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/14/character_thumbnail.png",
+      "voiceActor": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "15": {
+      "bandId": 3,
+      "bandPart": "DJ&Mp.",
+      "birthday": {
+        "day": 4,
+        "month": 11
+      },
+      "catchCopy": [
+        "「終わったことと、終わりたくないって気持ちは別でしょ」",
+        "Something being over and not wanting it to end are two different things, right?",
+        "「已經結束的事，和不想結束的心情是兩回事啊。」",
+        "「已经结束的事情，和不想结束的心情是两码事吧」",
+        "「끝난 거랑 끝내기 싫은 건 완전 다른 얘기잖아」"
+      ],
+      "characterId": 15,
+      "characterKey": "015",
+      "characterName": [
+        "千石 ユノ",
+        "Yuno Sengoku",
+        "千石由乃",
+        "千石由乃",
+        "센고쿠 유노"
+      ],
+      "characterType": "unique",
+      "colorCode": "#EE5577",
+      "constellation": [
+        "蠍座 ",
+        "Scorpio ",
+        "天蠍座 ",
+        "天蝎座 ",
+        "전갈자리 "
+      ],
+      "description": [
+        "夢限大みゅーたいぷの脱力系DJ&マニピュレーター。\r\nゆめみたの音楽の中心で、バンドの演奏をコントロールしている。あまり家の外に出ない引きこもりで、人と接するときはクールで淡々としているが、実は情に厚いところもある。",
+        "Mugendai MewType's laid-back DJ and manipulator.\r\nAt the core of YMMT's music, she controls and supports the band's overall performance. A homebody who rarely goes outside, she comes across as cool and detached when interacting with others, but she actually has a warm and caring side deep down.",
+        "夢限大MewType中的鬆弛系DJ兼Manipulator。\r\n作為夢限大音樂的中心，掌控著整個樂團的演奏。平時是個足不出戶的宅女，與人相處時總顯得冷酷且平淡，但其實也有重情重義的一面。",
+        "梦限大MewType中慵懒随性的DJ兼音控师。\r\n作为梦限大乐队音乐的核心，掌控着乐队整体的演奏节奏。平时宅在家里很少出门，和人接触时总是冷静淡然，但实际上内心也有重情谊的一面。",
+        "무겐다이 뮤타입의 나른한 DJ & 매니퓰레이터.\r\n유메미타 음악의 중심을 잡으며 밴드 사운드 전체를 조율한다. 집 밖으로 나가지 않는 히키코모리로, 사람을 대할 때에는 쿨하고 덤덤하지만 사실 정이 깊은 구석도 있다."
+      ],
+      "displayOrder": 2,
+      "englishName": [
+        "Yuno Sengoku",
+        "千石 ユノ",
+        "Yuno Sengoku",
+        "Yuno Sengoku",
+        "Yuno Sengoku"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/15/character_face_icon.png",
+      "favoriteFood": [
+        "ホワイトチョコ、エナジードリンク",
+        "White chocolate, energy drinks",
+        "白巧克力、能量飲料",
+        "白巧克力、能量饮料",
+        "화이트 초콜릿, 에너지 드링크"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "151cm",
+        "151cm",
+        "151cm",
+        "151cm",
+        "151cm"
+      ],
+      "hobby": [
+        "ゲーム",
+        "Video games",
+        "電玩",
+        "游戏",
+        "게임"
+      ],
+      "nickname": [
+        "ユノ",
+        "Yuno",
+        "由乃",
+        "由乃",
+        "유노"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/15/character_thumbnail.png",
+      "school": [
+        "神田白八馬アカデミー",
+        "Kanda Shiroyama Academy",
+        "神田白八馬學院",
+        "神田白八马学院",
+        "칸다 시로야마 아카데미"
+      ],
+      "schoolClass": [
+        "オンラインコース2年",
+        "Second Year, Online Course",
+        "雲端函授課程二年級",
+        "线上课程2年级",
+        "온라인 코스 2학년"
+      ],
+      "slug": "yuno-sengoku",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/15/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/15/character_thumbnail.png",
+      "voiceActor": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "16": {
+      "bandId": 4,
+      "bandPart": "Key.&Vo.",
+      "birthday": {
+        "day": 12,
+        "month": 3
+      },
+      "catchCopy": [
+        "「……わたしに何か、お手伝いできないでしょうか……！」",
+        "Is there anything... I can do to help...?",
+        "「……有什麼我能幫上忙的地方嗎……！」",
+        "「……有没有什么，是我能帮上忙的……！」",
+        "「......제가 뭐라도 도울 수 없을까요......!」"
+      ],
+      "characterId": 16,
+      "characterKey": "016",
+      "characterName": [
+        "汐見 蛍",
+        "Hotaru Shiomi",
+        "汐見螢",
+        "汐见萤",
+        "시오미 호타루"
+      ],
+      "characterType": "unique",
+      "colorCode": "#99FF99",
+      "constellation": [
+        "魚座",
+        "Pisces",
+        "雙魚座",
+        "双鱼座",
+        "물고기자리"
+      ],
+      "description": [
+        "心優しき音楽の天才。\r\n小さな頃からクラシックピアノのコンクールで優れた成績を収めており、『楽壇の天使』という異名がつけられている。ピュアで感受性豊かではあるが、世間知らずな一面も。",
+        "A kind-hearted musical prodigy.\r\nSince childhood, she has achieved outstanding results in classical piano competitions, earning her the nickname \"Angel of the Music World\". Pure and highly sensitive, she also has a somewhat naïve side.",
+        "心地善良的音樂天才。\r\n自幼便在各項古典鋼琴大賽中獲獎無數，被譽為是「樂壇的天使」。性格純真、情感豐富，但也有著不諳世事的一面。",
+        "心地善良的音乐天才。\r\n自幼便在古典钢琴比赛中屡获佳绩，被誉为『乐坛天使』。个性纯真而富有感性，但也有些不谙世事的一面。",
+        "마음씨가 따뜻한 음악 천재.\r\n어릴 때부터 클래식 피아노 콩쿠르에서 뛰어난 성적을 거두어 「악단의 천사」라는 별명을 얻었다. 순수하고 감수성이 풍부하지만, 세상 물정을 잘 모르는 면도 있다."
+      ],
+      "displayOrder": 3,
+      "englishName": [
+        "Hotaru Shiomi",
+        "汐見 蛍",
+        "Hotaru Shiomi",
+        "Hotaru Shiomi",
+        "Hotaru Shiomi"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/16/character_face_icon.png",
+      "favoriteFood": [
+        "たまごボーロ",
+        "Egg Boro Cookies",
+        "小饅頭餅乾",
+        "小馒头饼干",
+        "계란과자"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "152cm",
+        "152cm",
+        "152cm",
+        "152cm",
+        "152cm"
+      ],
+      "hobby": [
+        "ガーデニング",
+        "Gardening",
+        "園藝",
+        "园艺",
+        "가드닝"
+      ],
+      "nickname": [
+        "蛍",
+        "Hotaru",
+        "螢",
+        "萤",
+        "호타루"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/16/character_thumbnail.png",
+      "school": [
+        "芸術学院中学校",
+        "Geijutsu Middle School of Fine Arts",
+        "藝術學院中學",
+        "艺术学院初中",
+        "예술학원중학교"
+      ],
+      "schoolClass": [
+        "中等部 3-A",
+        "Middle School 3-A",
+        "國中部 3-A",
+        "初中部 3-A",
+        "중등부 3-A"
+      ],
+      "slug": "hotaru-shiomi",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/16/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/16/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 薬師寺 李有",
+        "CV. Ria Yakushiji",
+        "CV. 藥師寺李有",
+        "CV. 药师寺李有",
+        "CV. 야쿠시지 리아"
+      ]
+    },
+    "17": {
+      "bandId": 4,
+      "bandPart": "Gt.",
+      "birthday": {
+        "day": 30,
+        "month": 3
+      },
+      "catchCopy": [
+        "「あたし、まだ負けてないから！」",
+        "I'm not beaten yet!",
+        "「我可還沒輸！」",
+        "「我可还没输！」",
+        "「나, 아직 안 졌어!」"
+      ],
+      "characterId": 17,
+      "characterKey": "017",
+      "characterName": [
+        "伊沢 なつめ",
+        "Natsume Izawa",
+        "伊澤棗",
+        "伊泽枣",
+        "이자와 나츠메"
+      ],
+      "characterType": "unique",
+      "colorCode": "#FF4444",
+      "constellation": [
+        "牡羊座",
+        "Aries",
+        "牡羊座",
+        "白羊座",
+        "양자리"
+      ],
+      "description": [
+        "自信過剰な作曲担当。\r\n非常にプライドが高く、自分が認めていない相手に対しては好戦的かつすぐマウントを取ろうとする。しばしば学校の屋上を勝手に占拠しては、ギターをかき鳴らしている。",
+        "An overconfident composer.\r\nExtremely prideful, she tends to be confrontational and quick to assert dominance over anyone she doesn't deem worthy. She often commandeers the school rooftop, thrashing away on her guitar.",
+        "極度自信的作曲負責人。\r\n自尊心極強，對自己不認可的對象總是表現敵意，且處處渴望展現自己的優越感。經常霸占著學校頂樓，在那裡彈奏吉他。",
+        "自信爆棚的作曲负责人。\r\n自尊心极强，对不认可的人总是战意满满，动不动就想抢个上风。经常霸占学校楼顶弹奏吉他。",
+        "지나치게 자신감이 넘치는 작곡 담당.\r\n자존심이 매우 강해 자신이 인정하지 않는 상대에게는 공격적이며, 금세 우위를 점하려 한다. 종종 학교 옥상을 제멋대로 차지하고는 기타를 거칠게 연주하곤 한다."
+      ],
+      "displayOrder": 5,
+      "englishName": [
+        "Natsume Izawa",
+        "伊沢 なつめ",
+        "Natsume Izawa",
+        "Natsume Izawa",
+        "Natsume Izawa"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/17/character_face_icon.png",
+      "favoriteFood": [
+        "ホットスナック、硬水",
+        "Grab-and-go, hard water",
+        "熟食點心、硬水",
+        "熟食小吃、硬水",
+        "핫스낵, 센물"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "161cm",
+        "161cm",
+        "161cm",
+        "161cm",
+        "161cm"
+      ],
+      "hobby": [
+        "古着屋巡り",
+        "Vintage shop hopping",
+        "逛古著店",
+        "逛古着店",
+        "빈티지샵 투어"
+      ],
+      "nickname": [
+        "なつめ",
+        "Natsume",
+        "棗",
+        "枣",
+        "나츠메"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/17/character_thumbnail.png",
+      "school": [
+        "水瀬女子学園",
+        "Minase Girls' Academy",
+        "水瀨女子學園",
+        "水濑女子学园",
+        "미나세 여학원"
+      ],
+      "schoolClass": [
+        "高等部 2-B",
+        "High School 2-B",
+        "高中部 2-B",
+        "高中部 2-B",
+        "고등부 2-B"
+      ],
+      "slug": "natsume-izawa",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/17/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/17/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 千春",
+        "CV. Chiharu",
+        "CV. 千春",
+        "CV. 千春",
+        "CV. 치하루"
+      ]
+    },
+    "18": {
+      "bandId": 4,
+      "bandPart": "Gt.",
+      "birthday": {
+        "day": 10,
+        "month": 12
+      },
+      "catchCopy": [
+        "「まほろには、辛い思いはしてほしくない」",
+        "I don't want Mahoro to go through anything painful.",
+        "「我不想讓茉幌留下痛苦的回憶。」",
+        "「我不想让茉幌再苦下去」",
+        "「마호로가 힘들어하는 모습은 더 이상 보고 싶지 않아」"
+      ],
+      "characterId": 18,
+      "characterKey": "018",
+      "characterName": [
+        "琴平 凪",
+        "Nagi Kotohira",
+        "琴平凪",
+        "琴平凪",
+        "코토히라 나기"
+      ],
+      "characterType": "unique",
+      "colorCode": "#5555FF",
+      "constellation": [
+        "射手座",
+        "Sagittarius",
+        "射手座",
+        "射手座",
+        "궁수자리"
+      ],
+      "description": [
+        "落ち着いた雰囲気の少女。\r\nどこか余裕のある物腰や言葉遣いから、実年齢以上に大人びて見られることが多い。通っている女子校には密かにファンクラブがあるらしい。",
+        "A girl with a calm and composed presence.\r\nHer relaxed manner and refined way of speaking often make her seem more mature than her actual age. Apparently, there is a secret fan club of her at the all-girls school she attends.",
+        "氣質沉著穩重的少女。\r\n舉手投足間的從容，經常讓人感受到她比同齡人更顯成熟的魅力。據說她所就讀的女校裡，還有人悄悄為她成立了粉絲俱樂部。",
+        "散发着沉稳气场的少女。\r\n举止和说话总透着几分从容，常常给人比实际年龄更成熟的印象。据说在她就读的女子学校里，还有人悄悄为她成立了粉丝会。",
+        "차분한 분위기의 소녀.\r\n여유로운 태도와 말투 때문에 또래보다 훨씬 어른스럽게 보이는 편이다. 다니는 여학교에는 몰래 팬클럽까지 생겼다고 한다."
+      ],
+      "displayOrder": 1,
+      "englishName": [
+        "Nagi Kotohira",
+        "琴平 凪",
+        "Nagi Kotohira",
+        "Nagi Kotohira",
+        "Nagi Kotohira"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/18/character_face_icon.png",
+      "favoriteFood": [
+        "ペロキャン",
+        "Lollipop",
+        "棒棒糖",
+        "棒棒糖",
+        "롤리팝"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "163cm",
+        "163cm",
+        "163cm",
+        "163cm",
+        "163cm"
+      ],
+      "hobby": [
+        "読書\r\n映画鑑賞",
+        "Reading\r\nWatching films",
+        "閱讀\r\n電影欣賞",
+        "读书\r\n电影鉴赏",
+        "독서\r\n영화 감상"
+      ],
+      "nickname": [
+        "凪",
+        "Nagi",
+        "凪",
+        "凪",
+        "나기"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/18/character_thumbnail.png",
+      "school": [
+        "水瀬女子学園",
+        "Minase Girls' Academy",
+        "水瀨女子學園",
+        "水濑女子学园",
+        "미나세 여학원"
+      ],
+      "schoolClass": [
+        "高等部 1-B",
+        "High School 1-B",
+        "高中部 1-B",
+        "高中部 1-B",
+        "고등부 1-B"
+      ],
+      "slug": "nagi-kotohira",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/18/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/18/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 結川 あさき",
+        "CV. Asaki Yuikawa",
+        "CV. 結川麻希",
+        "CV. 结川麻希",
+        "CV. 유이카와 아사키"
+      ]
+    },
+    "19": {
+      "bandId": 4,
+      "bandPart": "Ba.",
+      "birthday": {
+        "day": 16,
+        "month": 7
+      },
+      "catchCopy": [
+        "「私、これでも凪ちゃんよりお姉さんだからね」",
+        "I may not look it, but I'm older than you, Nagi-chan.",
+        "「別看我這樣，我可是比小凪妳年長喔。」",
+        "「我好歹也是比小凪更年长的姐姐哦」",
+        "「나, 이래 봬도 나기 짱보다 언니라고」"
+      ],
+      "characterId": 19,
+      "characterKey": "019",
+      "characterName": [
+        "浜崎 まほろ",
+        "Mahoro Hamasaki",
+        "濱崎茉幌",
+        "滨崎茉幌",
+        "하마사키 마호로"
+      ],
+      "characterType": "unique",
+      "colorCode": "#77FFFF",
+      "constellation": [
+        "蟹座",
+        "Cancer",
+        "巨蟹座",
+        "巨蟹座",
+        "게자리"
+      ],
+      "description": [
+        "バンドのまとめ役。\r\n人懐っこく、誰にでも気さくに接するタイプ。自分たちで結成したバンドでの日々を誰よりも大切に思っている。ふたりの幼馴染がいる。",
+        "The one who keeps the band together.\r\nFriendly and easygoing, she has a natural way of getting along with everyone. She treasures the days spent with the band they formed together more than anyone else. She has two childhood friends.",
+        "樂團中擔任統籌角色。\r\n個性親切隨和，和誰都能相處融洽。比任何人都珍惜與大家一同組建樂團的這段時光。有兩位兒時玩伴。",
+        "乐队内的统筹者。\r\n容易亲近，与谁都很好相处。比任何人都珍视在自己的乐队中度过的每一天。有两位发小。",
+        "밴드의 구심점.\r\n붙임성이 좋아 누구에게나 스스럼없이 다가가는 타입이다. 직접 결성한 밴드에서 보내는 시간을 누구보다 소중히 여기고 있다. 소꿉친구가 두 명 있다."
+      ],
+      "displayOrder": 2,
+      "englishName": [
+        "Mahoro Hamasaki",
+        "浜崎 まほろ",
+        "Mahoro Hamasaki",
+        "Mahoro Hamasaki",
+        "Mahoro Hamasaki"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/19/character_face_icon.png",
+      "favoriteFood": [
+        "洋菓子、カレー",
+        "Pastries, curry",
+        "西點、咖哩",
+        "西点、咖喱",
+        "스위츠, 카레"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "158cm",
+        "158cm",
+        "158cm",
+        "158cm",
+        "158cm"
+      ],
+      "hobby": [
+        "カメラ",
+        "Photography",
+        "攝影",
+        "摄影",
+        "사진 촬영"
+      ],
+      "nickname": [
+        "まほろ",
+        "Mahoro",
+        "茉幌",
+        "茉幌",
+        "마호로"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/19/character_thumbnail.png",
+      "school": [
+        "水瀬女子学園",
+        "Minase Girls' Academy",
+        "水瀨女子學園",
+        "水濑女子学园",
+        "미나세 여학원"
+      ],
+      "schoolClass": [
+        "高等部 2-A",
+        "High School 2-A",
+        "高中部 2-A",
+        "高中部 2-A",
+        "고등부 2-A"
+      ],
+      "slug": "mahoro-hamasaki",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/19/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/19/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 伊駒 ゆりえ",
+        "CV. Yurie Igoma",
+        "CV. 伊駒祐里惠",
+        "CV. 伊驹祐里恵",
+        "CV. 이고마 유리에"
+      ]
+    },
+    "2": {
+      "bandId": 1,
+      "bandPart": "Gt.",
+      "birthday": {
+        "day": 8,
+        "month": 9
+      },
+      "catchCopy": [
+        "「……でも、またダメにならないようにがんばればよくない？」",
+        "But can't we just try harder so it doesn't fall apart again...?",
+        "「……不過，只要好好努力避免重蹈覆轍不就好了嗎？」",
+        "「……不过，只要好好努力，以免重蹈覆辙不就好了吗？」",
+        "「......하지만, 또 파투 나지 않도록 노력하면 되지 않을까?」"
+      ],
+      "characterId": 2,
+      "characterKey": "002",
+      "characterName": [
+        "千早 愛音",
+        "Anon Chihaya",
+        "千早愛音",
+        "千早爱音",
+        "치하야 아논"
+      ],
+      "characterType": "unique",
+      "colorCode": "#FF8899",
+      "constellation": [
+        "乙女座",
+        "Virgo",
+        "處女座",
+        "处女座",
+        "처녀자리"
+      ],
+      "description": [
+        "持ち前の明るい性格と社交性の高さで、人を惹きつける女の子。\r\n中学時代はクラスの人気者で、生徒会長を務めていた。留学するはずだったが、とある事情により、羽丘女子学園に遅れて入学することになった。その行動力で、バンドを動かすキーパーソン。",
+        "A girl who attracts people with her naturally bright personality and strong social skills.\r\nIn middle school, she was very popular in her class and served as student council president. She was originally supposed to study abroad, but due to certain circumstances, she transferred into Haneoka Girls' Academy instead. With her strong drive and initiative, she became the key person in moving the band forward.",
+        "性格開朗、擅長交際，是個討人喜歡的女孩子。\r\n國中時期就是班上的風雲人物，並擔任學生會長。原本計畫海外留學，最後卻因故較晚入學至羽丘女子學園。她憑藉著過人的行動力，成為了推動樂團前進的關鍵人物。",
+        "有着与生俱来的开朗性格与很强的社交能力，是个讨人喜欢的女孩子。\r\n初中时代在班上很受欢迎，担任学生会会长。原本计划去留学，但因为某些原因，最终作为插班生进入了羽丘女子学园。凭借积极的行动力，她成为了引领乐队前进的关键人物。",
+        "타고난 밝은 성격과 뛰어난 사교성으로 사람들을 끌어당기는 소녀.\r\n중학교 시절에는 반의 인기인이었으며 학생회장을 맡기도 했다. 유학을 갈 예정이었지만 어떤 사정으로 인해 하네오카 여학원으로 입학하게 되었다. 그 행동력으로 밴드를 이끄는 핵심 인물이다."
+      ],
+      "displayOrder": 1,
+      "englishName": [
+        "Anon Chihaya",
+        "千早 愛音",
+        "Anon Chihaya",
+        "Anon Chihaya",
+        "Anon Chihaya"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/2/character_face_icon.png",
+      "favoriteFood": [
+        "フルーツサンド、スモークサーモン",
+        "Fruit sandwich, smoked salmon",
+        "水果三明治、煙燻鮭魚",
+        "水果三明治、烟熏三文鱼",
+        "과일 샌드위치, 훈제 연어"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "160cm",
+        "160cm",
+        "160cm",
+        "160cm",
+        "160cm"
+      ],
+      "hobby": [
+        "美容系動画のチェック",
+        "Checking beauty-related videos",
+        "觀看美妝影片",
+        "看美妆视频",
+        "뷰티 관련 영상 보기"
+      ],
+      "nickname": [
+        "愛音",
+        "Anon",
+        "愛音",
+        "爱音",
+        "아논"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/2/character_thumbnail.png",
+      "school": [
+        "羽丘女子学園",
+        "Haneoka Girls' Academy",
+        "羽丘女子學園",
+        "羽丘女子学园",
+        "하네오카 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・A組(1-A)",
+        "First-Year Student, Class A (1-A)",
+        "高中一年級·A班（1-A）",
+        "高中1年级・A班(1-A)",
+        "고등학교 1학년·A반 (1-A)"
+      ],
+      "slug": "anon-chihaya",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/2/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/2/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 立石 凛",
+        "CV. Rin Tateishi",
+        "CV. 立石凜",
+        "CV. 立石凛",
+        "CV. 타테이시 린"
+      ]
+    },
+    "20": {
+      "bandId": 4,
+      "bandPart": "Dr.",
+      "birthday": {
+        "day": 24,
+        "month": 10
+      },
+      "catchCopy": [
+        "「――私、天才って大好きなんです♡」",
+        "I just adore geniuses♡",
+        "「──我最喜歡天才了♡」",
+        "「——我呀，最喜欢天才了♡」",
+        "「......저, 천재라면 정말 좋아하거든요♡」"
+      ],
+      "characterId": 20,
+      "characterKey": "020",
+      "characterName": [
+        "和泉 朋花",
+        "Houka Izumi",
+        "和泉朋花",
+        "和泉朋花",
+        "이즈미 호우카"
+      ],
+      "characterType": "unique",
+      "colorCode": "#EE99EE",
+      "constellation": [
+        "蠍座 ",
+        "Scorpio ",
+        "天蠍座 ",
+        "天蝎座 ",
+        "전갈자리 "
+      ],
+      "description": [
+        "可憐で品のある少女。\r\n社交的で常識もありつつ、ちょっぴりちゃめっ気もあるクラスの人気者。\r\n圧倒的な『才能』に強い興味を持っている。",
+        "A graceful and refined girl.\r\nSociable and well-mannered, she's a popular presence in her class, with just a hint of playful charm.\r\nShe has a strong fascination with overwhelming \"talent\".",
+        "氣質出眾、惹人憐愛的少女。\r\n懂分寸知進退、善於社交又有點調皮，是班上的風雲人物。\r\n對無可比擬的「才能」相當感興趣。",
+        "楚楚动人、气质高雅的少女。\r\n善于社交且懂分寸，同时也带着一点俏皮，是班上备受欢迎的人气角色。对压倒性的『才能』抱有浓厚兴趣。",
+        "사랑스럽고 품격 있는 소녀.\r\n사교적이고 예의도 바른 데다, 살짝 장난기도 있는 반의 인기스타다.\r\n압도적인 「재능」에 강한 흥미를 가지고 있다."
+      ],
+      "displayOrder": 4,
+      "englishName": [
+        "Houka Izumi",
+        "和泉 朋花",
+        "Houka Izumi",
+        "Houka Izumi",
+        "Houka Izumi"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/20/character_face_icon.png",
+      "favoriteFood": [
+        "和食、フレンチ",
+        "Japanese cuisine, French cuisine",
+        "和食、法式料理",
+        "日料、法餐",
+        "일식, 프렌치"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "157cm",
+        "157cm",
+        "157cm",
+        "157cm",
+        "157cm"
+      ],
+      "hobby": [
+        "美食",
+        "Gourmet",
+        "美食",
+        "美食",
+        "미식"
+      ],
+      "nickname": [
+        "朋花",
+        "Houka",
+        "朋花",
+        "朋花",
+        "호우카"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/20/character_thumbnail.png",
+      "school": [
+        "水瀬女子学園",
+        "Minase Girls' Academy",
+        "水瀨女子學園",
+        "水濑女子学园",
+        "미나세 여학원"
+      ],
+      "schoolClass": [
+        "高等部 1-B",
+        "High School 1-B",
+        "高中部 1-B",
+        "高中部 1-B",
+        "고등부 1-B"
+      ],
+      "slug": "houka-izumi",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/20/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/20/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 咲川 ひなの",
+        "CV. Hinano Sakikawa",
+        "CV. 咲川雛乃",
+        "CV. 咲川雏乃",
+        "CV. 사키카와 히나노"
+      ]
+    },
+    "21": {
+      "bandId": 5,
+      "bandPart": "Gt.&Vo.",
+      "birthday": {
+        "day": 28,
+        "month": 7
+      },
+      "catchCopy": [
+        "「今日から私たちは、『ファミリー』なんだから！」",
+        "Starting today, we're a \"family\"!",
+        "「因為從今天起，我們就是『Family』了！」",
+        "「因为从今天起，我们就是『Family』了！」",
+        "「오늘부터 우리는 「패밀리」니까!」"
+      ],
+      "characterId": 21,
+      "characterKey": "021",
+      "characterName": [
+        "須賀 蕾叶",
+        "Raika Suga",
+        "須賀蕾葉",
+        "须贺蕾叶",
+        "스가 라이카"
+      ],
+      "characterType": "unique",
+      "colorCode": "#FF7700",
+      "constellation": [
+        "獅子座",
+        "Leo",
+        "獅子座",
+        "狮子座",
+        "사자자리"
+      ],
+      "description": [
+        "明るく素直で元気だが、ちょっぴりがさつ。\r\n考えるより体が先に動くタイプ。基本的に他者を肯定し尊重するが、一度こうと決めたら意見を曲げない頑固な一面も。",
+        "Bright, honest, and energetic, though a bit rough around the edges.\r\nShe's the type to act before she thinks. While she generally respects and supports others, once she makes up her mind, she can be quite stubborn.",
+        "開朗直率、活力充沛，個性又有些大剌剌。\r\n典型的行動派，身體動得比頭腦還快。基本上對待他人保持尊重且正向，但也有著一旦決定便不會改變心意的固執一面。",
+        "开朗、坦率又充满活力，却也有一些大大咧咧。\r\n属于身体动得比脑子更快的类型。虽然基本上会尊重肯定他人，但也有着一旦决定便不会改变主意的固执一面。",
+        "밝고 솔직하며 활기차지만, 약간 덜렁거리기도 한다.\r\n생각보다 몸이 먼저 움직이는 타입이다. 기본적으로 타인을 존중하고 긍정하는 편이지만, 한 번 마음먹으면 의견을 굽히지 않는 고집스러운 면도 있다."
+      ],
+      "displayOrder": 3,
+      "englishName": [
+        "Raika Suga",
+        "須賀 蕾叶",
+        "Raika Suga",
+        "Raika Suga",
+        "Raika Suga"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/21/character_face_icon.png",
+      "favoriteFood": [
+        "炊き立てご飯、鍋\r\n焼肉やお好み焼きなどホットプレートでできるもの",
+        "Freshly cooked rice, hot pot,\r\nHot plate dishes, such as yakiniku and okonomiyaki",
+        "剛炊好的米飯、火鍋\r\n燒肉和什錦燒等能用鐵板製作的料理",
+        "刚煮好的米饭、火锅、\r\n烤肉和御好烧等可以用电热板制作的食物",
+        "갓 지은 밥, 전골\r\n구운 고기나 오코노미야키처럼 불판에 해 먹는 음식"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "162cm",
+        "162cm",
+        "162cm",
+        "162cm",
+        "162cm"
+      ],
+      "hobby": [
+        "野球観戦",
+        "Watching baseball",
+        "看棒球比賽",
+        "观看棒球比赛",
+        "야구 관람"
+      ],
+      "nickname": [
+        "蕾叶",
+        "Raika",
+        "蕾葉",
+        "蕾叶",
+        "라이카"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/21/character_thumbnail.png",
+      "school": [
+        "羽丘女子学園",
+        "Haneoka Girls' Academy",
+        "羽丘女子學園",
+        "羽丘女子学园",
+        "하네오카 여학원"
+      ],
+      "schoolClass": [
+        "高校 2-A",
+        "High School 2-A",
+        "高中 2-A",
+        "高中 2-A",
+        "고등학교 2-A"
+      ],
+      "slug": "raika-suga",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/21/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/21/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 橘 めい",
+        "CV. May Tachibana",
+        "CV. 橘芽衣",
+        "CV. 橘芽衣",
+        "CV. 타치바나 메이"
+      ]
+    },
+    "22": {
+      "bandId": 5,
+      "bandPart": "Gt.&Vo.",
+      "birthday": {
+        "day": 4,
+        "month": 10
+      },
+      "catchCopy": [
+        "「どんなことで喜ぶかは人それぞれじゃないかな〜？」",
+        "What makes someone happy is different for everyone, don't you think?",
+        "「每個人會因什麼事感到高興都不太一樣吧～？」",
+        "「高兴的点因人而异吧～？」",
+        "「어떤 일로 기뻐할지는 사람마다 다르지 않을까~?」"
+      ],
+      "characterId": 22,
+      "characterKey": "022",
+      "characterName": [
+        "馬橋 心玖",
+        "Miku Mahashi",
+        "馬橋心玖",
+        "马桥心玖",
+        "마하시 미쿠"
+      ],
+      "characterType": "unique",
+      "colorCode": "#22CCFF",
+      "constellation": [
+        "天秤座",
+        "Libra",
+        "天秤座",
+        "天秤座",
+        "천칭자리"
+      ],
+      "description": [
+        "人当たりが良く柔和な性格。\r\n芯があり物事を現実的に考えるタイプだが、心を許すまで本音は話さない。他人にはそこまで踏み込まないし、踏み込んでほしくないと思っている。",
+        "Gentle and easy to get along with.\r\nThough she has a strong core and a grounded, practical way of thinking, she doesn't reveal her true feelings until she fully trusts someone. She doesn't pry too deeply into others, and prefers they do the same.",
+        "待人親切，性格溫和。\r\n處事堅定，屬於務實派，但在完全信任對方前不會輕易吐露真心。不會過度干涉他人，也不希望別人來干涉自己。",
+        "待人亲切，性格温和。\r\n内心坚定，考虑问题时比较务实，但在完全信任对方前不会吐露真心。不会过多干涉他人，也不希望他人干涉自己。",
+        "붙임성이 좋고 온화한 성격이다.\r\n줏대가 있고 현실적으로 생각하는 타입이지만, 마음을 열기 전까지는 속마음을 잘 드러내지 않는다. 남한테 깊이 관여하지도 않고, 자신한테도 그만큼 선을 넘지 않길 바란다."
+      ],
+      "displayOrder": 5,
+      "englishName": [
+        "Miku Mahashi",
+        "馬橋 心玖",
+        "Miku Mahashi",
+        "Miku Mahashi",
+        "Miku Mahashi"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/22/character_face_icon.png",
+      "favoriteFood": [
+        "フルーツタルト",
+        "Fruit tarts",
+        "水果塔",
+        "水果挞",
+        "과일 타르트"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "162cm",
+        "162cm",
+        "162cm",
+        "162cm",
+        "162cm"
+      ],
+      "hobby": [
+        "作曲",
+        "Composing",
+        "作曲",
+        "作曲",
+        "작곡"
+      ],
+      "nickname": [
+        "心玖",
+        "Miku",
+        "心玖",
+        "心玖",
+        "미쿠"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/22/character_thumbnail.png",
+      "school": [
+        "花咲川女子学園",
+        "Hanasakigawa Girls' Academy",
+        "花咲川女子學園",
+        "花咲川女子学园",
+        "하나사키가와 여학원"
+      ],
+      "schoolClass": [
+        "高校 2-B",
+        "High School 2-B",
+        "高中 2-B",
+        "高中 2-B",
+        "고등학교 2-B"
+      ],
+      "slug": "miku-mahashi",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/22/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/22/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 涼泉 桜花",
+        "CV. Sakura Suzumi",
+        "CV. 涼泉櫻花",
+        "CV. 凉泉樱花",
+        "CV. 스즈미 사쿠라"
+      ]
+    },
+    "23": {
+      "bandId": 5,
+      "bandPart": "Ba.",
+      "birthday": {
+        "day": 6,
+        "month": 5
+      },
+      "catchCopy": [
+        "「よわよわの底辺人間にはハードルが高すぎます〜〜！！」",
+        "This is way too much for a weak, bottom-tier human like meee~~!!",
+        "「這對超弱的底層人類來說門檻實在太高了～～！！」",
+        "「对我这种软弱的底层人类来说门槛实在太高了～～！！」",
+        "「나약한 밑바닥 인간에겐 너무 어려워요~~!!」"
+      ],
+      "characterId": 23,
+      "characterKey": "023",
+      "characterName": [
+        "矢倉 蓬咲",
+        "Yomogi Yakura",
+        "矢倉蓬咲",
+        "矢仓蓬咲",
+        "야쿠라 요모기"
+      ],
+      "characterType": "unique",
+      "colorCode": "#448888",
+      "constellation": [
+        "牡牛座",
+        "Taurus",
+        "金牛座",
+        "金牛座",
+        "황소자리"
+      ],
+      "description": [
+        "あがり症で打たれ弱く、人と関わることに苦手意識がある。\r\n現在は寮に引きこもりで、大学は自主休学中。心の中では不良漫画のキャラクターに憧れており、イメトレだけは充分だが行動には反映されない。",
+        "Prone to stage fright and easily shaken, she struggles with interacting with others. She is currently withdrawn in her dorm and on a leave of absence from university.\r\nDeep down, she admires delinquent manga characters, and while she has plenty of \"imaginary rehearsals\", it never quite translates into real-life action.",
+        "容易怯場、抗壓性低，且不擅長與人交流。\r\n目前把自己關在宿舍裡，大學處於自主休學狀態。內心非常憧憬不良少年漫畫裡的角色，雖然在腦中演練過無數次，卻始終沒能付諸行動。",
+        "容易怯场，不太抗压，对与人交往感到不自在。\r\n目前正把自己关在宿舍里，大学学业也处于自主休学状态。在内心深处憧憬着不良少年漫画中的角色，虽然在脑海中反复演练，但始终无法付诸行动。",
+        "긴장을 많이 하고 쉽게 상처받는 성격으로, 사람과 어울리는 걸 어려워한다.\r\n현재는 기숙사에 틀어박혀 지내며, 대학은 자진 휴학 중이다. 속으로는 불량 만화 캐릭터를 동경하고 있어 이미지 트레이닝만큼은 충분히 했지만, 정작 행동으로 옮기지는 못한다."
+      ],
+      "displayOrder": 1,
+      "englishName": [
+        "Yomogi Yakura",
+        "矢倉 蓬咲",
+        "Yomogi Yakura",
+        "Yomogi Yakura",
+        "Yomogi Yakura"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/23/character_face_icon.png",
+      "favoriteFood": [
+        "ぬれ煎餅、羊羹\r\n激辛料理（好きになりたい）",
+        "Moist rice crackers, yōkan,\r\nSpicy foods (wants to learn to like it)",
+        "濕煎餅、羊羹\r\n激辛料理（想喜歡上這個味道）",
+        "湿仙贝、羊羹、\r\n超辣料理（希望能喜欢上）",
+        "촉촉한 전병, 양갱\r\n아주 매운 요리 (좋아하고 싶음)"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "168cm",
+        "168cm",
+        "168cm",
+        "168cm",
+        "168cm"
+      ],
+      "hobby": [
+        "とある不良漫画のオタク",
+        "An otaku of a certain delinquent manga",
+        "某不良少年漫畫的宅粉",
+        "某不良少年漫画的死忠粉",
+        "어느 불량 만화의 오타쿠"
+      ],
+      "nickname": [
+        "蓬咲",
+        "Yomogi",
+        "蓬咲",
+        "蓬咲",
+        "요모기"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/23/character_thumbnail.png",
+      "school": [
+        "新桜女子大学",
+        "Shinō Women's University",
+        "新櫻女子大學",
+        "新樱女子大学",
+        "신오 여자대학교"
+      ],
+      "schoolClass": [
+        "大学1年 情報デザイン学部 デジタルイノベーション学科",
+        "First-Year University Student, Faculty of Information Design, majoring in Digital Innovation",
+        "大學一年級 資訊設計學院 數位創新學科",
+        "大学1年级 信息设计学院 电子创新学科",
+        "대학교 1학년 정보디자인학부 디지털이노베이션학과"
+      ],
+      "slug": "yomogi-yakura",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/23/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/23/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 花宮 初奈",
+        "CV. Nina Hanamiya",
+        "CV. 花宮初奈",
+        "CV. 花宫初奈",
+        "CV. 하나미야 니나"
+      ]
+    },
+    "24": {
+      "bandId": 5,
+      "bandPart": "Dr.",
+      "birthday": {
+        "day": 2,
+        "month": 4
+      },
+      "catchCopy": [
+        "「大きな拍手で出迎えてもいいんですよ！」",
+        "You may welcome me with a big round of applause!",
+        "「可以用熱烈的掌聲來歡迎我喔！」",
+        "「你们可以用热烈的掌声来迎接千樱梨哦！」",
+        "「큰 박수로 맞이해 줘도 괜찮다고요!」"
+      ],
+      "characterId": 24,
+      "characterKey": "024",
+      "characterName": [
+        "梅里 ちえり",
+        "Chieri Umezato",
+        "梅里千櫻梨",
+        "梅里千樱梨",
+        "우메자토 치에리"
+      ],
+      "characterType": "unique",
+      "colorCode": "#FF55AA",
+      "constellation": [
+        "牡羊座",
+        "Aries",
+        "牡羊座",
+        "白羊座",
+        "양자리"
+      ],
+      "description": [
+        "ワガママだけど憎めない反抗期ガール。\r\n自己顕示欲が強いが、あまり頭が回らないので失敗ばかり。でもめげない。声がでかい。",
+        "A rebellious girl—willful, but somehow hard to hate.\r\nShe craves attention, but isn't exactly quick on the uptake, so she messes up a lot. Still, she never gets discouraged, and she's very loud. Like really loud.",
+        "任性卻讓人無法討厭的叛逆期少女。\r\n自我表現欲強，不過常因為應變能力不足而搞砸。但她從不因此氣餒。嗓門特別大。",
+        "任性却让人无法讨厌起来的叛逆期少女。\r\n爱出风头，但脑子不够机灵总是搞砸。不过她从不气馁。而且嗓门很大。",
+        "제멋대로지만 미워할 수 없는 반항기 소녀.\r\n자기 과시욕은 강한데 머리가 잘 안 돌아가서 늘 실수투성이다. 그래도 쉽게 기죽지 않는다. 목소리가 큰 편이다."
+      ],
+      "displayOrder": 2,
+      "englishName": [
+        "Chieri Umezato",
+        "梅里 ちえり",
+        "Chieri Umezato",
+        "Chieri Umezato",
+        "Chieri Umezato"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/24/character_face_icon.png",
+      "favoriteFood": [
+        "肉",
+        "Meat",
+        "肉",
+        "肉",
+        "고기"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "154cm",
+        "154cm",
+        "154cm",
+        "154cm",
+        "154cm"
+      ],
+      "hobby": [
+        "ちえり連合の部下集め",
+        "Recruiting underlings for the Chieri Union",
+        "打著千櫻梨聯盟旗號收部下",
+        "招募千樱梨联盟的部下",
+        "치에리 연합의 부하 모으기"
+      ],
+      "nickname": [
+        "ちえり",
+        "Chieri",
+        "千櫻梨",
+        "千樱梨",
+        "치에리"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/24/character_thumbnail.png",
+      "school": [
+        "羽丘女子学園",
+        "Haneoka Girls' Academy",
+        "羽丘女子學園",
+        "羽丘女子学园",
+        "하네오카 여학원"
+      ],
+      "schoolClass": [
+        "高校 1-A",
+        "High School 1-A",
+        "高中 1-A",
+        "高中 1-A",
+        "고등학교 1-A"
+      ],
+      "slug": "chieri-umezato",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/24/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/24/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 菱川 花菜",
+        "CV. Hana Hishikawa",
+        "CV. 菱川花菜",
+        "CV. 菱川花菜",
+        "CV. 히시카와 하나"
+      ]
+    },
+    "25": {
+      "bandId": 5,
+      "bandPart": "Key.",
+      "birthday": {
+        "day": 5,
+        "month": 3
+      },
+      "catchCopy": [
+        "「家族のことも、自分のことも私は考えたことがなかったのだな」",
+        "I suppose I had never truly thought about my family, or about myself.",
+        "「無論是家人還是自己的事，我都沒有好好想過呢。」",
+        "「看来，我从来没考虑过自己的家人，也没考虑过自己」",
+        "「가족에 대해서도 나 자신에 대해서도, 난 한 번도 깊이 생각해 본 적이 없었던 것 같아」"
+      ],
+      "characterId": 25,
+      "characterKey": "025",
+      "characterName": [
+        "四宮 寧月",
+        "Shizuku Shinomiya",
+        "四宮寧月",
+        "四宫宁月",
+        "시노미야 시즈쿠"
+      ],
+      "characterType": "unique",
+      "colorCode": "#9999FF",
+      "constellation": [
+        "魚座",
+        "Pisces",
+        "雙魚座",
+        "双鱼座",
+        "물고기자리"
+      ],
+      "description": [
+        "謎多き最年少。\r\n年齢の割に妙に落ち着いており、小難しい口調で話す。その価値観や考え方、異様に上手いピアノの技量からは、どこか浮世離れした雰囲気が漂っている。",
+        "The mysterious youngest member.\r\nDespite her age, she carries an unusually calm presence and speaks in a refined, almost old-fashioned manner. Her values, way of thinking, and exceptional piano skills all give off the impression that she was not raised in an ordinary household.",
+        "樂團中最年幼且充滿謎團的成員。\r\n散發著超齡的沉穩氣質，說起話來用詞略顯深晦。無論是她的價值觀、思考方式，還是那異常精湛的鋼琴技藝，都隱約透露出她超凡脫俗的氣質。",
+        "乐队最年幼的成员，充满谜团。\r\n尽管年纪尚小，却散发着一种不符合年龄的沉稳气质，会以略显深奥的口吻讲话。她的价值观、思维方式以及异常精湛的钢琴技艺，无不透露着她绝非出身于普通家庭。",
+        "수수께끼가 많은 막내.\r\n나이에 비해 묘하게 차분하며, 다소 어려운 말투로 이야기한다. 가치관과 사고방식, 그리고 유난히 뛰어난 피아노 실력까지 더해져, 어딘가 현실과 동떨어진 듯한 분위기를 풍긴다."
+      ],
+      "displayOrder": 4,
+      "englishName": [
+        "Shizuku Shinomiya",
+        "四宮 寧月",
+        "Shizuku Shinomiya",
+        "Shizuku Shinomiya",
+        "Shizuku Shinomiya"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/25/character_face_icon.png",
+      "favoriteFood": [
+        "ポッキンアイス",
+        "Pockin'ice",
+        "棒棒冰",
+        "棒棒冰",
+        "아이스바"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "143cm",
+        "143cm",
+        "143cm",
+        "143cm",
+        "143cm"
+      ],
+      "hobby": [
+        "なし",
+        "None",
+        "無",
+        "无",
+        "없음"
+      ],
+      "nickname": [
+        "寧月",
+        "Shizuku",
+        "寧月",
+        "宁月",
+        "시즈쿠"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/25/character_thumbnail.png",
+      "school": [
+        "月ノ森女子学園 中等部",
+        "Tsukinomori Girls' Academy, Middle School",
+        "月之森女子學園 國中部",
+        "月之森女子学园 初中部",
+        "츠키노모리 여학원 중등부"
+      ],
+      "schoolClass": [
+        "中学 2-C",
+        "Middle School 2-C",
+        "國中 2-C",
+        "初中 2-C",
+        "중학교 2-C"
+      ],
+      "slug": "shizuku-shinomiya",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/25/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/25/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 遠野 ひかる",
+        "CV. Hikaru Tono",
+        "CV. 遠野光",
+        "CV. 远野光",
+        "CV. 토오노 히카루"
+      ]
+    },
+    "3": {
+      "bandId": 1,
+      "bandPart": "Gt.",
+      "birthday": {
+        "day": 22,
+        "month": 2
+      },
+      "catchCopy": [
+        "「バンドやる」",
+        "I'll be in the band.",
+        "「來玩樂團。」",
+        "「要玩乐队」",
+        "「밴드 할래」"
+      ],
+      "characterId": 3,
+      "characterKey": "003",
+      "characterName": [
+        "要 楽奈",
+        "Rāna Kaname",
+        "要樂奈",
+        "要乐奈",
+        "카나메 라나"
+      ],
+      "characterType": "unique",
+      "colorCode": "#77DD77",
+      "constellation": [
+        "魚座",
+        "Pisces",
+        "雙魚座",
+        "双鱼座",
+        "물고기자리"
+      ],
+      "description": [
+        "本能のままに生きる自由気ままな性格。\r\n興味のあるものにはまっしぐらだが、興味のないものは視界に入らなかったり、好き嫌いの差が激しい。自分のエゴを強く持っている人が好き。音楽に囲まれて育ったので、演奏の腕前はプロにも引けを取らない。",
+        "A free-spirited girl who lives entirely by her instincts.\r\nShe goes straight for anything she's interested in, but completely ignores things she's not, showing very strong likes and dislikes. She is drawn to people with a strong sense of ego and individuality. Raised surrounded by music, her performance skills are on par with professionals.",
+        "個性自由隨性，行動全憑本能。\r\n碰到感興趣的事會全力投入其中，不感興趣的事則完全忽視，喜好分明。喜歡自我主張強烈的人。從小在音樂環境中成長，其演奏實力不輸職業樂手。",
+        "凭直觉行事，拥有自由随性的个性。\r\n对待喜爱和讨厌的事物反差很强烈，感兴趣的事会全情投入，不感兴趣的事则会完全忽视。喜欢自我主张强烈的人。因为从小在音乐环境中成长，所以演奏的技艺甚至不亚于职业乐手。",
+        "본능에 충실하게 살아가는 자유분방한 성격.\r\n흥미가 있는 것에는 한눈팔지 않고 몰두하지만, 관심 없는 것은 아예 눈에 들어오지 않을 정도로 호불호가 뚜렷하다. 자기 주관이 뚜렷한 사람을 좋아한다. 어릴 때부터 음악에 둘러싸여 자라 연주 실력은 프로에도 뒤지지 않는다."
+      ],
+      "displayOrder": 5,
+      "englishName": [
+        "Rāna Kaname",
+        "要 楽奈",
+        "Rāna Kaname",
+        "Rāna Kaname",
+        "Rāna Kaname"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/3/character_face_icon.png",
+      "favoriteFood": [
+        "抹茶、そば、ゆべし、軽羹（かるかん）",
+        "Matcha, soba noodles, yubeshi, karukan",
+        "抹茶、蕎麥麵、柚子餅、輕羹",
+        "抹茶、荞麦面、柚子饼、轻羹",
+        "말차, 소바, 유베시, 카루칸"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "150cm",
+        "150cm",
+        "150cm",
+        "150cm",
+        "150cm"
+      ],
+      "hobby": [
+        "ねこと遊ぶこと",
+        "Playing with cats",
+        "跟貓玩",
+        "和猫一起玩",
+        "고양이와 놀기"
+      ],
+      "nickname": [
+        "楽奈",
+        "Rāna",
+        "樂奈",
+        "乐奈",
+        "라나"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/3/character_thumbnail.png",
+      "school": [
+        "花咲川女子学園 中等部",
+        "Hanasakigawa Girls' Academy Mid School",
+        "花咲川女子學園 國中部",
+        "花咲川女子学园 初中部",
+        "하나사키가와 여학원 중등부"
+      ],
+      "schoolClass": [
+        "中学3年生・A組(3-A)",
+        "Third-Year Middle School Student, Class A (3-A)",
+        "國中三年級·A班（3-A）",
+        "初中3年级・A班(3-A)",
+        "중학교 3학년·A반 (3-A)"
+      ],
+      "slug": "r-na-kaname",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/3/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/3/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 青木 陽菜",
+        "CV. Hina Aoki",
+        "CV. 青木陽菜",
+        "CV. 青木阳菜",
+        "CV. 아오키 히나"
+      ]
+    },
+    "4": {
+      "bandId": 1,
+      "bandPart": "Ba.",
+      "birthday": {
+        "day": 27,
+        "month": 5
+      },
+      "catchCopy": [
+        "「……ねえ、私たち、もう１回やり直せないのかな？」",
+        "Hey, do you think we could start over one more time...?",
+        "「……欸，我們……沒辦法再重新開始嗎？」",
+        "「……我们能不能再重新开始呢？」",
+        "「......있잖아, 우리 다시 한번 해볼 수 없을까?」"
+      ],
+      "characterId": 4,
+      "characterKey": "004",
+      "characterName": [
+        "長崎 そよ",
+        "Soyo Nagasaki",
+        "長崎爽世",
+        "长崎爽世",
+        "나가사키 소요"
+      ],
+      "characterType": "unique",
+      "colorCode": "#FFDD88",
+      "constellation": [
+        "双子座",
+        "Gemini",
+        "雙子座",
+        "双子座",
+        "쌍둥이자리"
+      ],
+      "description": [
+        "おっとりした雰囲気のMyGO!!!!!のベーシスト。\r\n学校では、みんなの相談にのってあげたり、困った時には支えになってあげたりと、まわりの信頼を集めるママ的存在。ただ、バンドメンバーに対しては、学校では見せない一面を見せることも。",
+        "The bassist of MyGO!!!!!, who has a gentle and laid-back aura.\r\nAt school, she is a \"motherly\" figure who listens to everyone's problems and supports others when they are in trouble, earning the trust of those around her. However, she also shows a different side of herself to her band members that she does not reveal at school.",
+        "MyGO!!!!!的貝斯手，氣質沉穩。\r\n在校園內時常傾聽大家的煩惱，樂於助人，是深受周遭信賴、有如媽媽般的存在。然而在面對樂團團員時，她也會表現出在學校裡不為人知的另一面。",
+        "MyGO!!!!!的贝斯手，性格稳重。\r\n在学校里经常聆听大家的倾述，也会在别人遇到困难时提供帮助，是如同妈妈一般备受信赖的存在。但在和乐队成员们相处时，她有时也会展现出在学校里不会示人的一面。",
+        "차분하고 온화한 분위기의 MyGO!!!!! 베이시스트.\r\n학교에서는 친구들의 고민을 들어주거나, 어려울 때 힘이 되어 주는 등 주변의 신뢰를 받는 엄마 같은 존재다. 하지만 밴드 멤버들에게는 학교에서는 보여주지 않는 또 다른 모습을 보이기도 한다."
+      ],
+      "displayOrder": 2,
+      "englishName": [
+        "Soyo Nagasaki",
+        "長崎 そよ",
+        "Soyo Nagasaki",
+        "Soyo Nagasaki",
+        "Soyo Nagasaki"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/4/character_face_icon.png",
+      "favoriteFood": [
+        "紅茶、ミネストローネ",
+        "Black tea, minestrone soup",
+        "紅茶、義大利蔬菜湯",
+        "红茶、意式蔬菜浓汤",
+        "홍차, 미네스트로네"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "162cm",
+        "162cm",
+        "162cm",
+        "162cm",
+        "162cm"
+      ],
+      "hobby": [
+        "アロマ",
+        "Aromatherapy",
+        "香氛",
+        "香薰",
+        "아로마"
+      ],
+      "nickname": [
+        "そよ",
+        "Soyo",
+        "爽世",
+        "爽世",
+        "소요"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/4/character_thumbnail.png",
+      "school": [
+        "月ノ森女子学園",
+        "Tsukinomori Girls' Academy",
+        "月之森女子學園",
+        "月之森女子学园",
+        "츠키노모리 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・A組(1-A)",
+        "First-Year Student, Class A (1-A)",
+        "高中一年級·A班（1-A）",
+        "高中1年级・A班(1-A)",
+        "고등학교 1학년·A반 (1-A)"
+      ],
+      "slug": "soyo-nagasaki",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/4/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/4/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 小日向 美香",
+        "CV. Mika Kohinata",
+        "CV. 小日向美香",
+        "CV. 小日向美香",
+        "CV. 코히나타 미카"
+      ]
+    },
+    "5": {
+      "bandId": 1,
+      "bandPart": "Dr.",
+      "birthday": {
+        "day": 9,
+        "month": 8
+      },
+      "catchCopy": [
+        "「……誓う。燈とだったら一生でもいい」",
+        "I swear. If it's with Tomori, I don't care if it's for the rest of my life...",
+        "「……我發誓。和燈的話，一輩子也可以。」",
+        "「……我发誓。如果是和灯的话，一辈子我也愿意」",
+        "「......맹세할게. 토모리랑 함께라면 평생이라도 좋아」"
+      ],
+      "characterId": 5,
+      "characterKey": "005",
+      "characterName": [
+        "椎名 立希",
+        "Taki Shiina",
+        "椎名立希",
+        "椎名立希",
+        "시이나 타키"
+      ],
+      "characterType": "unique",
+      "colorCode": "#7777AA",
+      "constellation": [
+        "獅子座",
+        "Leo",
+        "獅子座",
+        "狮子座",
+        "사자자리"
+      ],
+      "description": [
+        "ひとりでいることが好きな一匹狼。\r\n気の強さと愛想のなさから、まわりとぶつかることが多いが、一度認めた相手にはとことんついていく一面も。ライブハウス『RiNG』のスタッフとしてアルバイトをしているが、やっぱり接客は苦手な模様。",
+        "A lone wolf who prefers being by herself.\r\nDue to her strong will and unfriendly demeanor, she often clashes with those around her, but once she acknowledges someone, she shows unwavering loyalty and sticks with them completely. She works part-time as a staff member at the live house \"RiNG\", but still seems to struggle with customer service.",
+        "性格孤傲，喜歡獨處的獨行俠。\r\n作風強勢且態度冷漠，經常與周遭的人發生摩擦，但只要是自己所認可的人，就會堅定地跟隨到底。儘管在Live House「RiNG」兼職服務生，但似乎還是不太擅長接待客人的樣子。",
+        "性格独立，喜欢独来独往。\r\n由于个性强烈且态度冷漠，经常和周围的人发生冲突，但也有着一旦认可对方，便会坚定地追随的一面。虽然目前在Live House『RiNG』打工，但似乎还是不太擅长接待客人。",
+        "혼자 있는 것을 좋아하는 외톨이 타입.\r\n강한 성격과 무뚝뚝한 태도로 주변 사람들과 자주 부딪히지만, 한 번 인정한 상대에게는 끝까지 따르는 면도 있다. 라이브하우스 「RiNG」에서 스태프로 아르바이트를 하고 있지만, 역시 접객은 서툰 편이다."
+      ],
+      "displayOrder": 4,
+      "englishName": [
+        "Taki Shiina",
+        "椎名 立希",
+        "Taki Shiina",
+        "Taki Shiina",
+        "Taki Shiina"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/5/character_face_icon.png",
+      "favoriteFood": [
+        "杏仁豆腐 ",
+        "Almond tofu ",
+        "杏仁豆腐 ",
+        "杏仁豆腐 ",
+        "행인두부 "
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "156cm",
+        "156cm",
+        "156cm",
+        "156cm",
+        "156cm"
+      ],
+      "hobby": [
+        "パンダグッズ集め\r\nひとりカラオケ",
+        "Collecting panda merchandise\r\nSinging karaoke alone",
+        "收集熊貓周邊\r\n一個人唱卡拉OK",
+        "收集熊猫周边\r\n一个人唱卡拉OK",
+        "판다 굿즈 수집\r\n혼자 노래방 가기"
+      ],
+      "nickname": [
+        "立希",
+        "Taki",
+        "立希",
+        "立希",
+        "타키"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/5/character_thumbnail.png",
+      "school": [
+        "花咲川女子学園",
+        "Hanasakigawa Girls' Academy",
+        "花咲川女子學園",
+        "花咲川女子学园",
+        "하나사키가와 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・B組(1-B)",
+        "First-Year Student, Class B (1-B)",
+        "高中一年級·B班（1-B）",
+        "高中1年级・B班(1-B)",
+        "고등학교 1학년·B반 (1-B)"
+      ],
+      "slug": "taki-shiina",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/5/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/5/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 林 鼓子",
+        "CV. Coco Hayashi",
+        "CV. 林鼓子",
+        "CV. 林鼓子",
+        "CV. 하야시 코코"
+      ]
+    },
+    "6": {
+      "bandId": 2,
+      "bandPart": "Gt.&Vo.",
+      "birthday": {
+        "day": 26,
+        "month": 6
+      },
+      "catchCopy": [
+        "「詩って伝わる気がするよね」",
+        "Poems feel like they can really reach people, don't they?",
+        "「用詩感覺就能傳達出去了。」",
+        "「感觉用歌就能传达出去呢」",
+        "「시는 마음이 전해지는 것 같아」"
+      ],
+      "characterId": 6,
+      "characterKey": "006",
+      "characterName": [
+        "ドロリス / 三角 初華",
+        "Doloris / Uika Misumi",
+        "Doloris / 三角初華",
+        "Doloris / 三角初华",
+        "돌로리스 / 미스미 우이카"
+      ],
+      "characterType": "unique",
+      "colorCode": "#bb9955",
+      "constellation": [
+        "蟹座",
+        "Cancer",
+        "巨蟹座",
+        "巨蟹座",
+        "게자리"
+      ],
+      "description": [
+        "花咲川女子学園の高校1年生。海鈴、立希とは同じクラス。アイドルユニット「sumimi」としても活動中。星を見ることが好き。祥子とは幼い頃からの知り合いで、バンドへの勧誘に二つ返事で応えた。Ave Mujicaでは作詞を担当している。",
+        "A 1st-year student at Hanasakigawa Girls' Academy. She is in the same class as Umiri and Taki. She also performs as part of the idol unit \"sumimi\". She enjoys stargazing. She has known Sakiko since childhood and readily agreed to join the band when invited. In Ave Mujica, she is responsible for lyric writing.",
+        "花咲川女子學園高一生。與海鈴、立希同班。同時以偶像團體「sumimi」成員的身分展開活動。喜歡看星星。與祥子自幼相識，因此面對祥子的組團邀約，毫不猶豫地一口答應。在Ave Mujica中負責作詞。",
+        "花咲川女子学园的高一学生。与海铃、立希同班。目前作为偶像组合「sumimi」的一员开展活动。喜欢看星星。与祥子自幼相识，被其邀请加入乐队时毫不犹豫地答应了。在Ave Mujica乐队中负责作词。",
+        "하나사키가와 여학원 고등학교 1학년. 우미리, 타키와는 같은 반이다. 아이돌 유닛 「sumimi」로도 활동 중이며, 별을 보는 것을 좋아한다. 사키코와는 어린 시절부터 알고 지낸 사이로, 밴드 권유에도 망설임 없이 응했다. Ave Mujica에서는 작사를 담당하고 있다."
+      ],
+      "displayOrder": 3,
+      "englishName": [
+        "Doloris / Uika Misumi",
+        "ドロリス / 三角 初華",
+        "Doloris / Uika Misumi",
+        "Doloris / Uika Misumi",
+        "Doloris / Uika Misumi"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/6/character_face_icon.png",
+      "favoriteFood": [
+        "オリーブのマリネ、魚、そうめん",
+        "Pickled olives, fish, somen",
+        "醃漬橄欖、魚、素麵",
+        "腌橄榄、鱼、素面",
+        "올리브 마리네이드, 생선, 소면"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "160cm",
+        "160cm",
+        "160cm",
+        "160cm",
+        "160cm"
+      ],
+      "hobby": [
+        "プラネタリウム鑑賞、映画鑑賞、読書",
+        "Planetarium appreciation, watching films, reading",
+        "去星象館、電影欣賞、閱讀",
+        "在星象馆观赏星象、电影鉴赏、读书",
+        "플라네타리움 가기, 영화 감상, 독서"
+      ],
+      "nickname": [
+        "初華",
+        "Uika",
+        "初華",
+        "初华",
+        "우이카"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/6/character_thumbnail.png",
+      "school": [
+        "花咲川女子学園",
+        "Hanasakigawa Girls' Academy",
+        "花咲川女子學園",
+        "花咲川女子学园",
+        "하나사키가와 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・B組(1-B)",
+        "First-Year Student, Class B (1-B)",
+        "高中一年級·B班（1-B）",
+        "高中1年级・B班(1-B)",
+        "고등학교 1학년·B반 (1-B)"
+      ],
+      "slug": "doloris-uika-misumi",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/6/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/6/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 佐々木 李子",
+        "CV. Rico Sasaki",
+        "CV. 佐佐木李子",
+        "CV. 佐佐木李子",
+        "CV. 사사키 리코"
+      ]
+    },
+    "7": {
+      "bandId": 2,
+      "bandPart": "Gt.",
+      "birthday": {
+        "day": 14,
+        "month": 1
+      },
+      "catchCopy": [
+        "「私は……バンド、楽しいって思ったこと一度もない」",
+        "I... I've never thought being in this band was fun, not even once.",
+        "「我……從來不覺得玩樂團開心過。」",
+        "「我……从没觉得玩乐队开心过」",
+        "「나는...... 밴드 하면서 단 한 번도 즐겁다고 생각한 적 없어」"
+      ],
+      "characterId": 7,
+      "characterKey": "007",
+      "characterName": [
+        "モーティス / 若葉 睦",
+        "Mortis / Mutsumi Wakaba",
+        "Mortis / 若葉睦",
+        "Mortis / 若叶睦",
+        "모르티스 / 와카바 무츠미"
+      ],
+      "characterType": "unique",
+      "colorCode": "#779977",
+      "constellation": [
+        "山羊座",
+        "Capricorn",
+        "魔羯座",
+        "摩羯座",
+        "염소자리"
+      ],
+      "description": [
+        "月ノ森女子学園の高校1年生。\r\nそよとは同じクラス。感情が表に出づらく、口下手だが、彼女なりに他人を気遣う一面も。父は人気お笑い芸人の若葉で、母は女優の森みなみ。また、祥子とは幼馴染である。幼少の頃からギターを弾いており、腕は確かである。",
+        "A 1st-year student at Tsukinomori Girls' Academy.\r\nShe is in the same class as Soyo. She has difficulty expressing her emotions and is poor at communication, but she does have a considerate side in her own way. Her father is Wakaba, a popular comedian, and her mother is actress Minami Mori. She has also been childhood friends with Sakiko. She has played guitar since early childhood and is highly skilled.",
+        "月之森女子學園高一生。\r\n與爽世同班。不擅長表達情感又寡言，但也有用自己的方式去關心他人的一面。父親是知名搞笑藝人若葉，母親是女演員森南。與祥子是兒時玩伴。從小就開始彈吉他，實力相當札實。",
+        "月之森女子学园的高一学生\r\n与爽世同班。她不善表达情感，也不太会说话，但也用她自己独特的方式去关心他人。父亲是人气搞笑艺人若叶，母亲是女演员森南。此外，她与祥子是发小。从小就弹奏吉他，技艺娴熟。",
+        "츠키노모리 여학원 고등학교 1학년.\r\n소요와는 같은 반이다. 감정을 겉으로 잘 드러내지 않고 말주변도 없는 편이지만, 나름대로 타인을 배려하는 면도 있다. 아버지는 인기 코미디언 와카바, 어머니는 배우 모리 미나미다. 또한 사키코와는 소꿉친구 사이다. 어릴 때부터 기타를 연주해 왔으며, 실력이 탄탄하다."
+      ],
+      "displayOrder": 5,
+      "englishName": [
+        "Mortis / Mutsumi Wakaba",
+        "モーティス / 若葉 睦",
+        "Mortis / Mutsumi Wakaba",
+        "Mortis / Mutsumi Wakaba",
+        "Mortis / Mutsumi Wakaba"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/7/character_face_icon.png",
+      "favoriteFood": [
+        "？？？",
+        "???",
+        "？？？",
+        "？？？",
+        "???"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "153cm",
+        "153cm",
+        "153cm",
+        "153cm",
+        "153cm"
+      ],
+      "hobby": [
+        "？？？",
+        "???",
+        "？？？",
+        "？？？",
+        "???"
+      ],
+      "nickname": [
+        "睦",
+        "Mutsumi",
+        "睦",
+        "睦",
+        "무츠미"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/7/character_thumbnail.png",
+      "school": [
+        "月ノ森女子学園",
+        "Tsukinomori Girls' Academy",
+        "月之森女子學園",
+        "月之森女子学园",
+        "츠키노모리 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・A組(1-A)",
+        "First-Year Student, Class A (1-A)",
+        "高中一年級·A班（1-A）",
+        "高中1年级・A班(1-A)",
+        "고등학교 1학년·A반 (1-A)"
+      ],
+      "slug": "mortis-mutsumi-wakaba",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/7/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/7/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 渡瀬 結月",
+        "CV. Yuzuki Watase",
+        "CV. 渡瀨結月",
+        "CV. 渡濑结月",
+        "CV. 와타세 유즈키"
+      ]
+    },
+    "8": {
+      "bandId": 2,
+      "bandPart": "Ba.",
+      "birthday": {
+        "day": 7,
+        "month": 4
+      },
+      "catchCopy": [
+        "「浮気ですか？　出るとこでますが」",
+        "Is this cheating? I could take this to court, you know.",
+        "「妳在搞外遇嗎？有問題我奉陪到底。」",
+        "「花心是吧？信不信我去告状」",
+        "「바람피우는 거예요? 제보각인데요」"
+      ],
+      "characterId": 8,
+      "characterKey": "008",
+      "characterName": [
+        "ティモリス / 八幡 海鈴",
+        "Timoris / Umiri Yahata",
+        "Timoris / 八幡海鈴",
+        "Timoris / 八幡海铃",
+        "티모리스 / 야하타 우미리"
+      ],
+      "characterType": "unique",
+      "colorCode": "#335566",
+      "constellation": [
+        "牡羊座",
+        "Aries",
+        "牡羊座",
+        "白羊座",
+        "양자리"
+      ],
+      "description": [
+        "花咲川女子学園の高校1年生。初華、立希とは同じクラス。ベースの腕前はプロと遜色がなく、かつてはサポートとして多数のバンドを掛け持っていた。Ave Mujicaではメンバーのスケジュール調整など、裏方の作業をきっちりこなしている。",
+        "A 1st-year student at Hanasakigawa Girls' Academy. She is in the same class as Uika and Taki. Her bass skills are on a professional level, and she once juggled multiple bands as a support musician. In Ave Mujica, she handles behind-the-scenes work such as coordinating members's schedules.",
+        "花咲川女子學園高一生。與初華、立希同班。擁有職業級的貝斯彈奏實力，曾以支援貝斯手身分同時活躍於多組樂團。在Ave Mujica中則是一絲不苟地負責管理團員行程等幕後工作。",
+        "花咲川女子学园的高一学生。与初华、立希同班。贝斯演奏水平堪比职业乐手，过去曾作为支援乐手同时参与多支乐队。在Ave Mujica乐队中，她负责成员的行程安排等工作，将幕后事务处理得井井有条。",
+        "하나사키가와 여학원 고등학교 1학년. 우이카, 타키와는 같은 반이다. 베이스 실력은 프로와 견주어도 손색이 없으며, 과거에는 서포트로 여러 밴드를 동시에 맡아 활동한 경험이 있다. Ave Mujica에서는 멤버들의 스케줄 조정 등 보이지 않는 업무를 빈틈없이 처리하고 있다."
+      ],
+      "displayOrder": 2,
+      "englishName": [
+        "Timoris / Umiri Yahata",
+        "ティモリス / 八幡 海鈴",
+        "Timoris / Umiri Yahata",
+        "Timoris / Umiri Yahata",
+        "Timoris / Umiri Yahata"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/8/character_face_icon.png",
+      "favoriteFood": [
+        "目玉焼きの乗った焼きそば",
+        "Fried noodles with a sunny-side-up egg",
+        "加了荷包蛋的炒麵",
+        "加了荷包蛋的炒面",
+        "달걀 프라이가 올라간 야키소바"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "158cm",
+        "158cm",
+        "158cm",
+        "158cm",
+        "158cm"
+      ],
+      "hobby": [
+        "音楽鑑賞、音響機器のカスタマイズ\r\nLP収集、シルバーアクセサリー収集",
+        "Music appreciation, customizing audio equipment\r\nCollecting vinyl records, collecting silver jewelry",
+        "音樂欣賞、自組音響器材\r\n收藏黑膠唱片、收集銀飾",
+        "音乐鉴赏、自己组配音响器材\r\n黑胶唱片收藏、银饰收藏",
+        "음악 감상, 음향기기 커스터마이징\r\nLP 수집, 실버 액세서리 수집"
+      ],
+      "nickname": [
+        "海鈴",
+        "Umiri",
+        "海鈴",
+        "海铃",
+        "우미리"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/8/character_thumbnail.png",
+      "school": [
+        "花咲川女子学園",
+        "Hanasakigawa Girls' Academy",
+        "花咲川女子學園",
+        "花咲川女子学园",
+        "하나사키가와 여학원"
+      ],
+      "schoolClass": [
+        "高校1年生・B組(1-B)",
+        "First-Year Student, Class B (1-B)",
+        "高中一年級·B班（1-B）",
+        "高中1年级・B班(1-B)",
+        "고등학교 1학년·B반 (1-B)"
+      ],
+      "slug": "timoris-umiri-yahata",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/8/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/8/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 岡田 夢以",
+        "CV. Mei Okada",
+        "CV. 岡田夢以",
+        "CV. 冈田梦以",
+        "CV. 오카다 메이"
+      ]
+    },
+    "9": {
+      "bandId": 2,
+      "bandPart": "Dr.",
+      "birthday": {
+        "day": 1,
+        "month": 6
+      },
+      "catchCopy": [
+        "「こんばんにゃむにゃむ〜♪」",
+        "Good evenyamu-nyamu~♪",
+        "「晚安喵姆喵姆～♪」",
+        "「晚上好NyamuNyamu～♪」",
+        "「안녕냐무냐무~♪」"
+      ],
+      "characterId": 9,
+      "characterKey": "009",
+      "characterName": [
+        "アモーリス / 祐天寺 にゃむ",
+        "Amoris / Nyamu Yūtenji",
+        "Amoris / 祐天寺若麥",
+        "Amoris / 祐天寺若麦",
+        "아모리스 / 유텐지 냐무"
+      ],
+      "characterType": "unique",
+      "colorCode": "#aa4477",
+      "constellation": [
+        "双子座",
+        "Gemini",
+        "雙子座",
+        "双子座",
+        "쌍둥이자리"
+      ],
+      "description": [
+        "「にゃむち」の愛称で活動中の動画投稿者。\r\nメイク動画などの美容系をメインに投稿しているが、仕事の幅を広げるべく様々なジャンルに挑戦している。両利きで、ドラムの叩き方に華がある。芸術学院高校に通っており、演技について勉強中。",
+        "A beauty video uploader gaining popularity under the nickname \"Nyamuchi.\"\r\nWhile makeup videos are her main focus, she also tries content in various genres, such as \"I Tried Playing the Drums\" and other challenge-style videos. Ambidextrous with a flashy and unique drumming style. Attends Geijutsu High School of Fine Arts, where she is currently studying acting.",
+        "以暱稱「Nyamuchi」活動的影片創作者。\r\n頻道主要內容為彩妝教學等美妝系影片，但為了拓展演藝之路，目前正在挑戰各種領域的內容。雙手皆為慣用手，鼓技相當華麗。就讀藝術學院高中，研修演技中。",
+        "以「Nyamuchi」为昵称活动的视频博主。\r\n主要发布化妆视频等美妆相关的内容，但为了拓宽工作领域，也在挑战各种不同类型的内容。左右手一样灵活，打鼓的样子非常华丽。目前就读于艺术学院高中，学习磨练着演技。",
+        "「냐무치」라는 애칭으로 활동 중인 영상 크리에이터.\r\n메이크업 영상 등 뷰티 콘텐츠를 메인으로 업로드하고 있지만, 활동 영역을 넓히기 위해 다양한 장르에도 도전하고 있다. 양손잡이로 드럼 연주가 매우 화려하다. 예술학원고교에 다니고 있으며, 연기에 대해 공부 중이다."
+      ],
+      "displayOrder": 4,
+      "englishName": [
+        "Amoris / Nyamu Yūtenji",
+        "アモーリス / 祐天寺 にゃむ",
+        "Amoris / Nyamu Yūtenji",
+        "Amoris / Nyamu Yūtenji",
+        "Amoris / Nyamu Yūtenji"
+      ],
+      "faceImage": "/assets/intl/Assets/AddressableResources/Character/Image/9/character_face_icon.png",
+      "favoriteFood": [
+        "辛いもの、スイカ、梨",
+        "Spicy foods, watermelon, asian pear",
+        "辛辣的食物、西瓜、水梨",
+        "辛辣的食物、西瓜、梨",
+        "매운 음식, 수박, 배"
+      ],
+      "hatedFood": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "height": [
+        "164cm",
+        "164cm",
+        "164cm",
+        "164cm",
+        "164cm"
+      ],
+      "hobby": [
+        "コスメショッピング\r\nプレゼントすること",
+        "Beauty shopping\r\npicking out gifts",
+        "美妝購物\r\n送禮物",
+        "美妆购物\r\n送别人礼物",
+        "화장품 쇼핑\r\n선물하기"
+      ],
+      "nickname": [
+        "にゃむ",
+        "Nyamu",
+        "若麥",
+        "若麦",
+        "냐무"
+      ],
+      "profileImage": "/assets/intl/Assets/AddressableResources/Character/Image/9/character_thumbnail.png",
+      "school": [
+        "芸術学院高校",
+        "Geijutsu High School of Fine Arts",
+        "藝術學院高中",
+        "艺术学院高中",
+        "예술학원고교"
+      ],
+      "schoolClass": [
+        "高校1年生・演劇表現科",
+        "First-Year Student, Theater Department",
+        "高中一年級·戲劇表演科",
+        "高中1年级・戏剧表演系",
+        "고등학교 1학년·연극표현과"
+      ],
+      "slug": "amoris-nyamu-y-tenji",
+      "spriteImage": "/assets/intl/Assets/AddressableResources/Character/Image/9/character_sprite.png",
+      "thumbnailImage": "/assets/intl/Assets/AddressableResources/Character/Image/9/character_thumbnail.png",
+      "voiceActor": [
+        "CV. 米澤 茜",
+        "CV. Akane Yonezawa",
+        "CV. 米澤茜",
+        "CV. 米泽茜",
+        "CV. 요네자와 아카네"
+      ]
+    }
+  },
+  "schema": "our-notes-master-table/1",
+  "table": "MasterCharacter"
+}

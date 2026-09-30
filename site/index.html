@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Notes Update Feed</title><link rel="alternate" type="application/atom+xml" href="feed.xml">
+<main><h1>Our Notes Update Feed</h1><p id="latest">Loading latest update…</p><p><a href="api/events/index.json">Machine-readable event index</a> · <a href="feed.xml">Atom feed</a></p><h2>Timeline</h2><ol id="timeline"></ol></main>
+<script>
+Promise.all([fetch('api/latest.json').then(r=>r.json()),fetch('api/events/index.json').then(r=>r.json())]).then(([x,index])=>{
+  const p=document.querySelector('#latest');
+  p.textContent=x.latest ? `Latest update: ${x.latest}` : 'No update events yet.';
+  if(x.url){const a=document.createElement('a');a.href=`api/${x.url}`;a.textContent=' Open event';p.append(a);}
+  const timeline=document.querySelector('#timeline');
+  for(const event of index.events){const li=document.createElement('li');const a=document.createElement('a');a.href=`events/${encodeURIComponent(event.id)}/`;a.textContent=`${event.detectedAt} · ${event.severity} · ${event.id}`;li.append(a);timeline.append(li);}
+}).catch(()=>{document.querySelector('#latest').textContent='Update feed is temporarily unavailable.'});
+</script></html>

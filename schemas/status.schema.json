@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://our-notes-update-monitor.invalid/schemas/status.schema.json",
+  "title": "Our Notes update monitor status",
+  "type": "object",
+  "required": [
+    "healthy",
+    "lastSuccessfulScan",
+    "currentSnapshot",
+    "latestEvent",
+    "catalogVersionSource",
+    "gameVersionAvailable",
+    "masterAuthority"
+  ],
+  "properties": {
+    "healthy": {"type": "boolean"},
+    "lastProbe": {"type": ["string", "null"], "format": "date-time"},
+    "lastSuccessfulScan": {"type": ["string", "null"], "format": "date-time"},
+    "currentSnapshot": {"type": ["string", "null"]},
+    "latestEvent": {"type": ["string", "null"]},
+    "catalogVersionSource": {"enum": ["config", "official-endpoint"]},
+    "gameVersionAvailable": {"type": "boolean"},
+    "masterAuthority": {"enum": ["official", "derived", "unavailable"]},
+    "source": {"type": "object"}
+  },
+  "additionalProperties": true
+}

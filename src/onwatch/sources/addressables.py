@@ -1,0 +1,247 @@
+# Provenance: copied from the sibling ``our-notes-chartdb/src/chartdb/addressables.py``
+# at the user's direction to reuse this stable parser. The parser is retained
+# as an independent module here so this repository can run by itself.
+
+"""Unity Addressables binary catalog reader.
+
+This file is distributed under the Mozilla Public License 2.0. Its parser
+structure and field offsets follow the verified reader in
+haneoka-gakuen/haneoka ``scripts/ingest/catalog.py`` (MPL-2.0), through the
+standalone implementation in ``our-notes-chartdb``. See the repository
+``LICENSE`` and ``THIRD_PARTY_NOTICES.md`` for attribution.
+
+No assumptions about bundle names or counts live here: the catalog is data.
+"""
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this file,
+# You can obtain one at https://mozilla.org/MPL/2.0/.
+# SPDX-License-Identifier: MPL-2.0
+
+from __future__ import annotations
+
+import struct
+from pathlib import Path
+from typing import Any
+from urllib.parse import quote, urlsplit, urlunsplit
+
+UINT32_MAX = 0xFFFFFFFF
+UNICODE_STRING_FLAG = 0x80000000
+DYNAMIC_STRING_FLAG = 0x40000000
+CLEAR_FLAGS_MASK = 0x3FFFFFFF
+REMOTE_ASSET_DIR_TOKEN = "Fwk.Resource.RemoteAssetDir}"
+
+
+def _has_type(type_name: str | None, tail: str) -> bool:
+    return bool(type_name and (tail in type_name.split(".") or type_name.endswith(tail)))
+
+
+def http_safe_url(url: str) -> str:
+    """Percent-encode non-ASCII bytes; Unity asset paths may contain them."""
+    parsed = urlsplit(url)
+    path = quote(parsed.path, safe="/%") if parsed.path else ""
+    query = quote(parsed.query, safe="=+&;/%") if parsed.query else ""
+    return urlunsplit((parsed.scheme, parsed.netloc, path, query, parsed.fragment))
+
+
+def remote_url(parts: list[str], remote_root: str = "", asset_dir: str = "") -> str:
+    if parts and urlsplit(parts[-1]).scheme.lower() in {"http", "https"}:
+        values = list(reversed(parts))
+        url = http_safe_url(f"{values[0]}/{'/'.join(values[1:])}")
+        parsed = urlsplit(url)
+        if parsed.hostname == "dummy.net" and remote_root:
+            segments = parsed.path.split("/", 3)
+            tail = segments[3] if len(segments) == 4 else parsed.path.lstrip("/")
+            return http_safe_url(f"{remote_root.rstrip('/')}/{tail}")
+        return url
+    if asset_dir and parts and REMOTE_ASSET_DIR_TOKEN in parts[-1]:
+        values = list(reversed(parts))
+        head = values[0]
+        tail = head[head.index("}") + 1 :]
+        remainder = "/".join([part for part in [tail, *values[1:]] if part])
+        return http_safe_url(f"{asset_dir.rstrip('/')}/{remainder}")
+    if remote_root:
+        root = remote_root.rstrip("/")
+        if root.endswith("/Android"):
+            root = root[: -len("/Android")]
+
+        def detokenize(part: str) -> str:
+            if "RuntimePath}" not in part:
+                return part
+            start = part.find("{")
+            if start < 0:
+                return part
+            return part[:start] + root + part[part.index("}", start) + 1 :]
+
+        detokenized = [detokenize(part) for part in parts]
+        if detokenized != parts:
+            return http_safe_url("/".join(reversed(detokenized)))
+    return http_safe_url("/".join(parts))
+
+
+def parse_catalog(data: bytes, remote_root: str = "", asset_dir: str = "") -> "CatalogReader":
+    return CatalogReader(data, remote_root, asset_dir)
+
+
+class CatalogReader:
+    def __init__(self, data: bytes, remote_root: str = "", asset_dir: str = ""):
+        self.data = data
+        self._remote_root = remote_root
+        self._asset_dir = asset_dir
+        self._keys: list[dict[str, Any]] | None = None
+
+    # -- primitive readers -------------------------------------------------
+    def require_range(self, offset: int, size: int) -> None:
+        if offset < 0 or size < 0 or offset + size > len(self.data):
+            raise ValueError(f"catalog range invalid: {offset}+{size} of {len(self.data)}")
+
+    def u32(self, offset: int) -> int:
+        self.require_range(offset, 4)
+        return struct.unpack_from("<I", self.data, offset)[0]
+
+    def i32(self, offset: int) -> int:
+        self.require_range(offset, 4)
+        return struct.unpack_from("<i", self.data, offset)[0]
+
+    def values(self, offset: int, size: int, read_item):
+        if offset == UINT32_MAX:
+            return []
+        if size < 1 or offset < 4:
+            raise ValueError("catalog table has an invalid offset or item size")
+        byte_count = self.u32(offset - 4)
+        if byte_count % size:
+            raise ValueError("catalog table has a misaligned byte count")
+        count = byte_count // size
+        self.require_range(offset, byte_count)
+        return [read_item(offset + index * size) for index in range(count)]
+
+    def auto_string(self, identifier: int) -> str | None:
+        if identifier == UINT32_MAX:
+            return None
+        encoding = "utf-16-le" if identifier & UNICODE_STRING_FLAG else "ascii"
+        offset = identifier & CLEAR_FLAGS_MASK if identifier & UNICODE_STRING_FLAG else identifier
+        if offset < 4:
+            raise ValueError("catalog string has an invalid offset")
+        size = self.u32(offset - 4)
+        self.require_range(offset, size)
+        return self.data[offset : offset + size].decode(encoding)
+
+    def string_parts(self, identifier: int) -> list[str]:
+        if identifier == UINT32_MAX:
+            return []
+        if not identifier & DYNAMIC_STRING_FLAG:
+            return [self.auto_string(identifier) or ""]
+        parts: list[str] = []
+        offset = identifier & CLEAR_FLAGS_MASK
+        seen: set[int] = set()
+        while True:
+            if offset in seen:
+                raise ValueError("catalog dynamic string contains a cycle")
+            seen.add(offset)
+            parts.append(self.auto_string(self.u32(offset)) or "")
+            next_id = self.u32(offset + 4)
+            if next_id == UINT32_MAX:
+                return parts
+            offset = next_id
+
+    def string(self, identifier: int, separator: str = "") -> str | None:
+        if identifier == UINT32_MAX:
+            return None
+        return separator.join(self.string_parts(identifier)) if separator else self.auto_string(identifier)
+
+    def type_name(self, offset: int) -> str | None:
+        return None if offset == UINT32_MAX else self.string(self.u32(offset + 4), ".")
+
+    def object_of_type(self, type_name: str | None, offset: int) -> Any:
+        if offset == UINT32_MAX:
+            return None
+        if _has_type(type_name, "String"):
+            separator = chr(struct.unpack_from("<H", self.data, offset + 4)[0])
+            return self.string(self.u32(offset), separator if separator != "\0" else "")
+        if _has_type(type_name, "Type"):
+            return self.type_name(offset)
+        if _has_type(type_name, "Int32"):
+            return self.i32(offset)
+        if _has_type(type_name, "Boolean"):
+            return self.data[offset] != 0
+        if _has_type(type_name, "Int64"):
+            return struct.unpack_from("<q", self.data, offset)[0]
+        if _has_type(type_name, "Hash128"):
+            return self.data[offset : offset + 16].hex()
+        if _has_type(type_name, "AssetBundleRequestOptions"):
+            common = self.u32(offset + 16)
+            return {
+                "hash": self.data[self.u32(offset) : self.u32(offset) + 16].hex(),
+                "bundleName": self.string(self.u32(offset + 4), "_"),
+                "crc": self.u32(offset + 8),
+                "bundleSize": self.u32(offset + 12),
+                "flags": self.i32(common + 4),
+            }
+        return {"type": type_name, "offset": offset}
+
+    def object(self, offset: int) -> Any:
+        if offset == UINT32_MAX:
+            return None
+        return self.object_of_type(self.object_of_type("Type", self.u32(offset)), self.u32(offset + 4))
+
+    def location(self, offset: int, dependencies: bool = True) -> dict[str, Any] | None:
+        if offset == UINT32_MAX:
+            return None
+        dependency_offset = self.u32(offset + 12)
+        internal_parts = self.string_parts(self.u32(offset + 4))
+        value = {
+            "offset": offset,
+            "primaryKey": self.string(self.u32(offset), "/"),
+            "primaryParts": self.string_parts(self.u32(offset)),
+            "internalId": self.string(self.u32(offset + 4), "/"),
+            "internalParts": internal_parts,
+            "remoteUrl": remote_url(internal_parts, self._remote_root, self._asset_dir),
+            "providerId": self.string(self.u32(offset + 8), "."),
+            "data": self.object(self.u32(offset + 20)) if self.u32(offset + 20) != UINT32_MAX else None,
+            "resourceType": self.type_name(self.u32(offset + 24)),
+        }
+        value["dependencies"] = (
+            self.values(dependency_offset, 4, lambda item: self.location(self.u32(item), False))
+            if dependencies and dependency_offset != UINT32_MAX
+            else []
+        )
+        return value
+
+    def keys(self) -> list[dict[str, Any]]:
+        if self._keys is None:
+            keys_offset = self.u32(8)
+            self._keys = self.values(
+                keys_offset,
+                8,
+                lambda offset: {"key": self.object(self.u32(offset)), "locations": self.u32(offset + 4)},
+            )
+        return self._keys
+
+    def locate(self, row: dict[str, Any]) -> list[dict[str, Any]]:
+        return self.values(row["locations"], 4, lambda offset: self.location(self.u32(offset), True))
+
+    def unique_locations(self) -> list[dict[str, Any]]:
+        found: dict[int, dict[str, Any]] = {}
+        for row in self.keys():
+            for location in self.locate(row):
+                for value in (location, *location.get("dependencies", [])):
+                    if value:
+                        found.setdefault(value["offset"], value)
+        return [found[key] for key in sorted(found)]
+
+    def downloadable(self) -> list[dict[str, Any]]:
+        """Locations that actually point at an https bundle."""
+        result = []
+        for value in self.unique_locations():
+            data = value.get("data")
+            if (
+                isinstance(data, dict)
+                and data.get("bundleName")
+                and urlsplit(str(value.get("remoteUrl", ""))).scheme.lower() == "https"
+            ):
+                result.append(value)
+        return result
+
+
+def read_catalog_file(path: Path, remote_root: str = "", asset_dir: str = "") -> CatalogReader:
+    return CatalogReader(path.read_bytes(), remote_root, asset_dir)

@@ -1,0 +1,15 @@
+{
+  "catalogVersionSource": "config",
+  "currentSnapshot": "intl-b42b242005c01bf4",
+  "gameVersionAvailable": false,
+  "healthy": true,
+  "lastProbe": "2026-09-30T07:40:47Z",
+  "lastSuccessfulScan": "2026-09-30T07:40:46Z",
+  "latestEvent": null,
+  "masterAuthority": "derived",
+  "source": {
+    "catalog": "ok",
+    "gameVersion": "unavailable",
+    "master": "ok"
+  }
+}

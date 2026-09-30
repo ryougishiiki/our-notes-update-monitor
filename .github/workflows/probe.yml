@@ -1,0 +1,96 @@
+name: Probe upstream data
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.probe.outputs.changed }}
+      failure_status: ${{ steps.probe.outputs.failure_status }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install monitor
+        run: python -m pip install -e .
+      - name: Check source fingerprints
+        id: probe
+        run: onwatch probe --server intl --github-output "$GITHUB_OUTPUT"
+
+  deep-scan:
+    needs: probe
+    if: needs.probe.outputs.changed == 'true'
+    uses: ./.github/workflows/deep-scan.yml
+    permissions:
+      contents: write
+    with:
+      server: intl
+
+  retry-pending-notifications:
+    needs: [probe, deep-scan]
+    if: always() && needs.probe.result == 'success'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: our-notes-update-monitor-intl
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install monitor
+        run: python -m pip install -e .
+      - name: Retry pending event notifications
+        env:
+          ONWATCH_GITHUB_TOKEN: ${{ secrets.CHARTDB_DISPATCH_TOKEN }}
+          ONWATCH_CHARTDB_REPOSITORY: ${{ vars.CHARTDB_REPOSITORY }}
+          ONWATCH_WEBHOOK_URL: ${{ secrets.ONWATCH_WEBHOOK_URL }}
+          ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
+          ONWATCH_PUBLIC_BASE_URL: ${{ vars.ONWATCH_PUBLIC_BASE_URL }}
+        run: onwatch notify --root . --json
+      - name: Persist notification receipts
+        if: always()
+        shell: bash
+        run: |
+          if [ -d state/notifications ]; then
+            git add state/notifications
+            if git diff --cached --quiet; then
+              echo "No notification receipts to commit."
+            else
+              git commit -m "ops: record notification acknowledgements"
+              git push
+            fi
+          fi
+
+  notify-probe-failure:
+    needs: [probe, deep-scan]
+    if: always() && needs.probe.result == 'failure'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install monitor
+        run: python -m pip install -e .
+      - name: Send source failure alert
+        if: always()
+        env:
+          ONWATCH_WEBHOOK_URL: ${{ secrets.ONWATCH_WEBHOOK_URL }}
+          ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
+          ONWATCH_FAILURE_STATUS: ${{ needs.probe.outputs.failure_status || 'SOURCE_UNAVAILABLE' }}
+        run: onwatch notify-failure --root . --status "$ONWATCH_FAILURE_STATUS" --json

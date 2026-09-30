@@ -1,0 +1,31 @@
+{
+  "default": "intl",
+  "servers": {
+    "intl": {
+      "id": "intl",
+      "displayTimezone": "Asia/Shanghai",
+      "requestTimeoutSeconds": 30,
+      "catalog": {
+        "version": "1.0.0.100",
+        "remoteRoot": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android",
+        "versionUrl": null,
+        "versionJsonPointer": "catalogVersion"
+      },
+      "gameVersion": {
+        "url": null,
+        "jsonPointer": "gameVersion"
+      },
+      "masterMirror": {
+        "baseUrl": "https://haneoka.org",
+        "apiPrefix": "/api/v1/servers/intl",
+        "authority": "derived",
+        "endpoints": {
+          "songs": "songs",
+          "events": "events",
+          "characters": "characters"
+        }
+      },
+      "allowEmptyTables": []
+    }
+  }
+}

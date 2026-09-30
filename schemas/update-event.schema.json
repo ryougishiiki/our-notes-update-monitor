@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://our-notes-update-monitor.invalid/schemas/update-event.schema.json",
+  "title": "Our Notes update event",
+  "type": "object",
+  "required": ["schema", "id", "server", "detectedAt", "severity", "source", "summary", "categories", "charts", "assets", "masterChanges", "snapshot"],
+  "properties": {
+    "schema": {"const": "our-notes-update-event/1"},
+    "id": {"type": "string", "minLength": 1},
+    "server": {"type": "string", "minLength": 1},
+    "detectedAt": {"type": "string", "format": "date-time"},
+    "severity": {"enum": ["INFO", "MINOR", "CONTENT", "CLIENT", "MAJOR"]},
+    "source": {
+      "type": "object",
+      "required": ["gameVersionBefore", "gameVersionAfter", "catalogVersionBefore", "catalogVersionAfter", "catalogBefore", "catalogAfter", "masterBefore", "masterAfter", "resourceManifestBefore", "resourceManifestAfter"],
+      "properties": {
+        "gameVersionBefore": {"type": ["string", "null"]},
+        "gameVersionAfter": {"type": ["string", "null"]},
+        "catalogVersionBefore": {"type": ["string", "null"]},
+        "catalogVersionAfter": {"type": ["string", "null"]},
+        "catalogBefore": {"type": ["string", "null"]},
+        "catalogAfter": {"type": ["string", "null"]},
+        "masterBefore": {"type": ["string", "null"]},
+        "masterAfter": {"type": ["string", "null"]},
+        "resourceManifestBefore": {"type": ["string", "null"]},
+        "resourceManifestAfter": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "summary": {
+      "type": "object",
+      "required": ["assetsAdded", "assetsChanged", "assetsRemoved", "masterAdded", "masterChanged", "masterRemoved", "chartsAdded", "chartsChanged", "chartsRemoved"],
+      "properties": {
+        "assetsAdded": {"type": "integer", "minimum": 0},
+        "assetsChanged": {"type": "integer", "minimum": 0},
+        "assetsRemoved": {"type": "integer", "minimum": 0},
+        "masterAdded": {"type": "integer", "minimum": 0},
+        "masterChanged": {"type": "integer", "minimum": 0},
+        "masterRemoved": {"type": "integer", "minimum": 0},
+        "chartsAdded": {"type": "integer", "minimum": 0},
+        "chartsChanged": {"type": "integer", "minimum": 0},
+        "chartsRemoved": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "categories": {"type": "object", "additionalProperties": {"$ref": "#/$defs/changeCounts"}},
+    "charts": {
+      "type": "object",
+      "required": ["added", "changed", "removed"],
+      "properties": {
+        "added": {"type": "array", "items": {"type": "string"}},
+        "changed": {"type": "array", "items": {"type": "string"}},
+        "removed": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": false
+    },
+    "assets": {"$ref": "#/$defs/assetDiff"},
+    "masterChanges": {"type": "array", "items": {"type": "object"}},
+    "snapshot": {
+      "type": "object",
+      "required": ["revision", "path"],
+      "properties": {"revision": {"type": "string"}, "path": {"type": "string"}},
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "changeCounts": {
+      "type": "object",
+      "required": ["added", "changed", "removed"],
+      "properties": {
+        "added": {"type": "integer", "minimum": 0},
+        "changed": {"type": "integer", "minimum": 0},
+        "removed": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "assetDiff": {
+      "type": "object",
+      "required": ["added", "changed", "removed"],
+      "properties": {
+        "added": {"type": "array", "items": {"type": "object", "required": ["key", "after"], "properties": {"key": {"type": "string"}, "after": {"type": "object"}}}},
+        "changed": {"type": "array", "items": {"type": "object", "required": ["key", "before", "after"], "properties": {"key": {"type": "string"}, "before": {"type": "object"}, "after": {"type": "object"}}}},
+        "removed": {"type": "array", "items": {"type": "object", "required": ["key", "before"], "properties": {"key": {"type": "string"}, "before": {"type": "object"}}}}
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

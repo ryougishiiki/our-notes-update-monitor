@@ -1,0 +1,104 @@
+name: Deep scan upstream data
+
+on:
+  workflow_call:
+    inputs:
+      server:
+        required: false
+        type: string
+        default: intl
+  workflow_dispatch:
+    inputs:
+      server:
+        description: Server configuration to scan
+        required: true
+        type: choice
+        options:
+          - intl
+
+permissions:
+  contents: read
+
+concurrency:
+  group: our-notes-update-monitor-${{ inputs.server || 'intl' }}
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install monitor
+        run: python -m pip install -e .
+      - name: Build snapshot and event
+        id: scan
+        run: onwatch scan --server "${{ inputs.server || 'intl' }}" --github-output "$GITHUB_OUTPUT" --json
+      - name: Alert on scan failure
+        if: always() && steps.scan.outcome == 'failure'
+        env:
+          ONWATCH_WEBHOOK_URL: ${{ secrets.ONWATCH_WEBHOOK_URL }}
+          ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
+          ONWATCH_FAILURE_STATUS: ${{ steps.scan.outputs.failure_status || 'SCAN_FAILED' }}
+        run: onwatch notify-failure --root . --status "$ONWATCH_FAILURE_STATUS" --json
+        continue-on-error: true
+      - name: Commit generated update data
+        id: commit
+        if: steps.scan.outputs.changed == 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snapshots state/current.json state/probe.json state/scanned.json state/status.json events reports feed feed.xml site
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            if [ -n "${{ steps.scan.outputs.event_id }}" ]; then
+              git commit -m "data: ${{ inputs.server || 'intl' }} update ${{ steps.scan.outputs.before }} -> ${{ steps.scan.outputs.after }}"
+            else
+              git commit -m "data: initialize ${{ inputs.server || 'intl' }} snapshot"
+            fi
+            git push
+          fi
+      - name: Alert on publish failure
+        if: always() && steps.commit.outcome == 'failure'
+        env:
+          ONWATCH_WEBHOOK_URL: ${{ secrets.ONWATCH_WEBHOOK_URL }}
+          ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
+        run: onwatch notify-failure --root . --status PUBLISH_FAILED --json
+        continue-on-error: true
+      - name: Send optional event integrations
+        env:
+          ONWATCH_GITHUB_TOKEN: ${{ secrets.CHARTDB_DISPATCH_TOKEN }}
+          ONWATCH_CHARTDB_REPOSITORY: ${{ vars.CHARTDB_REPOSITORY }}
+          ONWATCH_WEBHOOK_URL: ${{ secrets.ONWATCH_WEBHOOK_URL }}
+          ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
+          ONWATCH_PUBLIC_BASE_URL: ${{ vars.ONWATCH_PUBLIC_BASE_URL }}
+        run: onwatch notify --root . --json
+      - name: Persist notification receipts
+        id: persist
+        if: always()
+        shell: bash
+        run: |
+          if [ -d state/notifications ]; then
+            git add state/notifications
+            if git diff --cached --quiet; then
+              echo "No notification receipts to commit."
+            else
+              git commit -m "ops: record notification acknowledgements"
+              git push
+            fi
+          fi
+      - name: Alert on receipt persistence failure
+        if: always() && steps.persist.outcome == 'failure'
+        env:
+          ONWATCH_WEBHOOK_URL: ${{ secrets.ONWATCH_WEBHOOK_URL }}
+          ONWATCH_WEBHOOK_SECRET: ${{ secrets.ONWATCH_WEBHOOK_SECRET }}
+        run: onwatch notify-failure --root . --status PUBLISH_FAILED --json
+        continue-on-error: true

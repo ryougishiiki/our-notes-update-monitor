@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-30T06:00:00Z",
+  "catalogBytes": "catalog-a",
+  "sources": {
+    "gameVersion": "1.0.1",
+    "catalogVersion": "1.0.0.100",
+    "catalogHash": "catalog-hash-a",
+    "masterRevision": "master-index-a",
+    "masterIndexRevisions": {"songs": "songs-a", "events": "events-a", "characters": "characters-a"},
+    "resourceManifestRevision": "catalog-hash-a"
+  },
+  "assets": [
+    {"key": "live_assets_live_musicscore_0001_0001_03_a.bundle", "bundle": "score-a", "url": "https://cdn.invalid/score-a", "hash": "chart-a", "crc": 0, "size": 120, "resourceType": "AssetBundle", "internalId": "", "category": "music_score"},
+    {"key": "live_assets_ui_common_a.bundle", "bundle": "ui-a", "url": "https://cdn.invalid/ui-a", "hash": "ui-a", "crc": 0, "size": 30, "resourceType": "AssetBundle", "internalId": "", "category": "ui"}
+  ],
+  "tables": {
+    "MasterLiveMusic": {"schema": "our-notes-master-table/1", "table": "MasterLiveMusic", "primaryKey": "_id", "authority": "derived", "rows": {"100001": {"_id": 100001, "_titleTextID": "Music_Title_100001"}}},
+    "MasterLiveMusicScore": {"schema": "our-notes-master-table/1", "table": "MasterLiveMusicScore", "primaryKey": "_id", "authority": "mirror-derived", "rows": {"10000103": {"_id": 10000103, "_musicScoreTextFileName": "0001/0001_03", "_fullComboCount": 700}}},
+    "MasterEvent": {"schema": "our-notes-master-table/1", "table": "MasterEvent", "primaryKey": "mirrorKey", "authority": "derived", "rows": {}},
+    "MasterCharacter": {"schema": "our-notes-master-table/1", "table": "MasterCharacter", "primaryKey": "characterId", "authority": "derived", "rows": {"1": {"characterId": 1, "characterName": ["Tomori", "Tomori"]}}},
+    "MusicCatalog": {"schema": "our-notes-master-table/1", "table": "MusicCatalog", "primaryKey": "musicId", "authority": "derived", "rows": {"100001": {"musicId": 100001, "musicTitle": ["迷星叫", "Mayoiuta"]}}}
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://our-notes-update-monitor.invalid/schemas/snapshot.schema.json",
+  "title": "Our Notes normalized snapshot",
+  "type": "object",
+  "required": ["meta", "version", "catalog", "assets", "charts", "master"],
+  "properties": {
+    "meta": {"$ref": "#/$defs/meta"},
+    "version": {
+      "type": "object",
+      "required": ["gameVersion", "catalogVersion"],
+      "properties": {
+        "gameVersion": {"type": ["string", "null"]},
+        "catalogVersion": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "catalog": {
+      "type": "object",
+      "required": ["catalogHash", "catalogSha256", "resourceManifestRevision", "downloadableAssetCount", "source"],
+      "properties": {
+        "catalogHash": {"type": ["string", "null"]},
+        "catalogSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "resourceManifestRevision": {"type": ["string", "null"]},
+        "downloadableAssetCount": {"type": "integer", "minimum": 0},
+        "source": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "assets": {"type": "array", "items": {"$ref": "#/$defs/asset"}},
+    "charts": {"type": "array", "items": {"$ref": "#/$defs/asset"}},
+    "master": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/masterTable"}
+    }
+  },
+  "$defs": {
+    "meta": {
+      "type": "object",
+      "required": ["schema", "server", "revision", "contentSha256", "createdAt", "parent", "catalogHash", "catalogSha256", "masterRevision", "masterIndexRevision", "resourceManifestRevision", "source"],
+      "properties": {
+        "schema": {"const": "our-notes-snapshot/1"},
+        "server": {"type": "string"},
+        "revision": {"type": "string"},
+        "contentSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "createdAt": {"type": "string", "format": "date-time"},
+        "parent": {"type": ["string", "null"]},
+        "catalogHash": {"type": ["string", "null"]},
+        "catalogSha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "masterRevision": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "masterIndexRevision": {"type": ["string", "null"]},
+        "resourceManifestRevision": {"type": ["string", "null"]},
+        "source": {
+          "type": "object",
+          "required": ["catalog", "master", "masterAuthority"],
+          "properties": {
+            "catalog": {"type": "string"},
+            "master": {"type": "string"},
+            "masterAuthority": {"type": "string"}
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "asset": {
+      "type": "object",
+      "required": ["key", "bundle", "url", "hash", "crc", "size", "resourceType", "internalId", "category"],
+      "properties": {
+        "key": {"type": "string"},
+        "bundle": {"type": "string"},
+        "url": {"type": "string", "format": "uri"},
+        "hash": {"type": "string"},
+        "crc": {"type": "integer", "minimum": 0},
+        "size": {"type": "integer", "minimum": 0},
+        "resourceType": {"type": "string"},
+        "internalId": {"type": "string"},
+        "category": {"enum": ["music_score", "music_audio", "jacket", "character", "live2d", "voice", "scenario", "movie", "ui", "master", "event", "system", "unknown"]}
+      },
+      "additionalProperties": true
+    },
+    "masterTable": {
+      "type": "object",
+      "required": ["schema", "table", "primaryKey", "authority", "rows"],
+      "properties": {
+        "schema": {"const": "our-notes-master-table/1"},
+        "table": {"type": "string"},
+        "primaryKey": {"type": "string"},
+        "authority": {"type": "string"},
+        "rows": {"type": "object", "additionalProperties": true}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}
