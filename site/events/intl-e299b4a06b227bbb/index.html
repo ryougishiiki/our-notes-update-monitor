@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Notes update</title><main><p><a href="../../">All updates</a></p><h1 id="title">Loading update…</h1><p id="summary"></p><p><a href="../../api/events/intl-e299b4a06b227bbb.json">Event JSON</a> · <a href="../../reports/intl-e299b4a06b227bbb.md">Markdown report</a></p></main>
+<script>
+fetch('../../api/events/intl-e299b4a06b227bbb.json').then(r=>r.json()).then(e=>{
+  document.querySelector('#title').textContent=`${e.server} update · ${e.severity}`;
+  document.querySelector('#summary').textContent=`${e.detectedAt} · assets +${e.summary.assetsAdded} ~${e.summary.assetsChanged} -${e.summary.assetsRemoved} · charts +${e.summary.chartsAdded} ~${e.summary.chartsChanged} -${e.summary.chartsRemoved}`;
+}).catch(()=>{document.querySelector('#title').textContent='Update details are temporarily unavailable.'});
+</script></html>

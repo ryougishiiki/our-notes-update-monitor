@@ -1,5 +1,24 @@
 {
-  "count": 0,
-  "events": [],
+  "count": 1,
+  "events": [
+    {
+      "detectedAt": "2026-09-30T10:00:06Z",
+      "id": "intl-e299b4a06b227bbb",
+      "server": "intl",
+      "severity": "MINOR",
+      "summary": {
+        "assetsAdded": 259,
+        "assetsChanged": 0,
+        "assetsRemoved": 159,
+        "chartsAdded": 0,
+        "chartsChanged": 0,
+        "chartsRemoved": 0,
+        "masterAdded": 0,
+        "masterChanged": 0,
+        "masterRemoved": 0
+      },
+      "url": "events/intl-e299b4a06b227bbb.json"
+    }
+  ],
   "schema": "our-notes-event-index/1"
 }

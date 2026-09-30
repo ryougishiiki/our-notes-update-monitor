@@ -1,0 +1,7 @@
+{
+  "authority": "derived",
+  "primaryKey": "mirrorKey",
+  "rows": {},
+  "schema": "our-notes-master-table/1",
+  "table": "MasterEvent"
+}

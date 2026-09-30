@@ -1,0 +1,18 @@
+{
+  "catalogHash": "e73e4d75c61d3f66780daa6d2fc753c7",
+  "catalogSha256": "22fdfef4d3008053904f0cb3389a383b79f115c58413e2dc17e9a9e9808d879e",
+  "contentSha256": "690ad0a256198dc34e6fbacf97b72d2c2637eecb5088c0c5ed1f3d4663a18f18",
+  "createdAt": "2026-09-30T10:00:06Z",
+  "masterIndexRevision": "724a7be20d9ae09b6c1dee7564794fc6ceb64ef5987c7d416dbf988cc6209c99",
+  "masterRevision": "1f4fe36ca19164777695d67bce294c76fad762cbb1534822cf726105bdadd0fd",
+  "parent": "intl-b42b242005c01bf4",
+  "resourceManifestRevision": "e73e4d75c61d3f66780daa6d2fc753c7",
+  "revision": "intl-84fc3990a7118abf",
+  "schema": "our-notes-snapshot/1",
+  "server": "intl",
+  "source": {
+    "catalog": "official-cdn",
+    "master": "haneoka-public-mirror",
+    "masterAuthority": "derived"
+  }
+}
