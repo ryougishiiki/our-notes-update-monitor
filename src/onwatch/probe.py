@@ -5,9 +5,10 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from typing import Any
 
+from .catalog_version import resolve_catalog_version
 from .config import ServerConfig, endpoint_url
 from .hashing import sha256_bytes, sha256_json
-from .http import fetch_bytes
+from .http import fetch_bytes, probe_exists
 from .io import utc_now
 from .sources.master import collect_master_indexes, master_index_revisions
 
@@ -17,7 +18,7 @@ def fetch_probe(config: ServerConfig) -> dict[str, Any]:
         catalog_version_future = pool.submit(_fetch_catalog_version, config)
         version_future = pool.submit(_fetch_game_version, config)
         indexes_future = pool.submit(collect_master_indexes, config)
-        catalog_version = catalog_version_future.result()
+        catalog_version, catalog_version_source = catalog_version_future.result()
         game_version = version_future.result()
         indexes = indexes_future.result()
     catalog_hash = _fetch_catalog_hash(config, catalog_version)
@@ -39,6 +40,8 @@ def fetch_probe(config: ServerConfig) -> dict[str, Any]:
         "sources": {
             "gameVersion": game_version,
             "catalogVersion": catalog_version,
+            "catalogVersionResolved": catalog_version,
+            "catalogVersionConfiguredFloor": config.catalog_version,
             "catalogHash": catalog_hash,
             "masterRevision": master_revision,
             "masterIndexRevisions": revisions,
@@ -46,7 +49,7 @@ def fetch_probe(config: ServerConfig) -> dict[str, Any]:
         },
         "provenance": {
             "catalog": "official-cdn-hash",
-            "catalogVersionSource": "config" if not config.catalog_version_url else "official-endpoint",
+            "catalogVersionSource": catalog_version_source,
             "master": "public-mirror-index",
             "masterAuthority": config.master_authority,
             "gameVersion": "configured-endpoint" if config.game_version_url else "unavailable",
@@ -67,9 +70,16 @@ def _fetch_catalog_hash(config: ServerConfig, version: str) -> str:
     return value
 
 
-def _fetch_catalog_version(config: ServerConfig) -> str:
+def _fetch_catalog_version(config: ServerConfig) -> tuple[str, str]:
     if not config.catalog_version_url:
-        return config.catalog_version
+        resolution = resolve_catalog_version(
+            config.catalog_version,
+            lambda version: probe_exists(
+                config.catalog_hash_url_for(version),
+                timeout=config.request_timeout_seconds,
+            ),
+        )
+        return resolution.resolved, resolution.source
     raw = fetch_bytes(
         config.catalog_version_url, timeout=config.request_timeout_seconds
     )
@@ -81,7 +91,7 @@ def _fetch_catalog_version(config: ServerConfig) -> str:
         value = _pointer(document, config.catalog_version_pointer)
     if value is None or value == "":
         raise ValueError("configured catalog version endpoint returned no version")
-    return str(value)
+    return str(value), "official-endpoint"
 
 
 def _fetch_game_version(config: ServerConfig) -> str | None:

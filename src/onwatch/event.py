@@ -42,6 +42,8 @@ def build_event(
         "gameVersionAfter": _version(after_snapshot, "gameVersion"),
         "catalogVersionBefore": _version(before_snapshot, "catalogVersion"),
         "catalogVersionAfter": _version(after_snapshot, "catalogVersion"),
+        "catalogVersionSourceBefore": _version(before_snapshot, "catalogVersionSource"),
+        "catalogVersionSourceAfter": _version(after_snapshot, "catalogVersionSource"),
         "catalogBefore": old_meta.get("catalogHash"),
         "catalogAfter": new_meta.get("catalogHash"),
         "masterBefore": old_meta.get("masterRevision"),

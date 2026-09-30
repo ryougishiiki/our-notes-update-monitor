@@ -44,6 +44,34 @@ def fetch_bytes(url: str, *, timeout: float = 30.0, retries: int = 3) -> bytes:
     raise HttpError(f"failed to fetch {url}: {last_error}")
 
 
+def probe_exists(url: str, *, timeout: float = 30.0, retries: int = 3) -> bool:
+    """Check an object; only the CDN's 400/403/404 responses mean absent."""
+    last_error: Exception | None = None
+    for attempt in range(retries):
+        try:
+            request = urllib.request.Request(
+                url,
+                headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept": "*/*",
+                    "Cache-Control": "no-cache",
+                },
+            )
+            with urllib.request.urlopen(request, timeout=timeout):
+                return True
+        except urllib.error.HTTPError as error:
+            if error.code in (400, 403, 404):
+                return False
+            last_error = error
+            if error.code not in (408, 425, 429) and error.code < 500:
+                raise HttpError(f"HTTP {error.code} while probing {url}") from error
+        except (urllib.error.URLError, TimeoutError, ConnectionError) as error:
+            last_error = error
+        if attempt + 1 < retries:
+            time.sleep(min(4.0, 0.75 * (attempt + 1)) + random.uniform(0, 0.25))
+    raise HttpError(f"failed to probe {url}: {last_error}") from last_error
+
+
 def fetch_json(url: str, *, timeout: float = 30.0, retries: int = 3) -> Any:
     raw = fetch_bytes(url, timeout=timeout, retries=retries)
     try:

@@ -39,6 +39,7 @@ def repository_dispatch_payload(event: dict[str, Any]) -> dict[str, Any]:
         "client_payload": {
             "eventId": event["id"],
             "snapshot": event["snapshot"]["revision"],
+            "catalogVersion": event["source"].get("catalogVersionAfter"),
             "catalogHash": event["source"].get("catalogAfter"),
             "added": event["charts"]["added"],
             "changed": event["charts"]["changed"],
@@ -51,7 +52,14 @@ def dispatch_repository(
     event: dict[str, Any], *, repository: str | None, token: str | None, state_dir: Path
 ) -> dict[str, Any]:
     payload = repository_dispatch_payload(event)
-    if not any(payload["client_payload"][kind] for kind in ("added", "changed", "removed")):
+    has_chart_changes = any(
+        payload["client_payload"][kind] for kind in ("added", "changed", "removed")
+    )
+    has_version_change = (
+        event["source"].get("catalogVersionBefore")
+        != event["source"].get("catalogVersionAfter")
+    )
+    if not has_chart_changes and not has_version_change:
         return {"status": "skipped", "reason": "no chart changes"}
     if not repository:
         return {"status": "skipped", "reason": "repository is not configured"}

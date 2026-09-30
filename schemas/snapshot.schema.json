@@ -11,7 +11,10 @@
       "required": ["gameVersion", "catalogVersion"],
       "properties": {
         "gameVersion": {"type": ["string", "null"]},
-        "catalogVersion": {"type": ["string", "null"]}
+        "catalogVersion": {"type": ["string", "null"]},
+        "catalogVersionResolved": {"type": ["string", "null"]},
+        "catalogVersionConfiguredFloor": {"type": ["string", "null"]},
+        "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint"]}
       },
       "additionalProperties": true
     },

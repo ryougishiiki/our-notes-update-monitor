@@ -35,6 +35,9 @@ def make_snapshot(
     version = {
         "gameVersion": sources.get("gameVersion"),
         "catalogVersion": sources.get("catalogVersion"),
+        "catalogVersionResolved": sources.get("catalogVersionResolved", sources.get("catalogVersion")),
+        "catalogVersionConfiguredFloor": sources.get("catalogVersionConfiguredFloor"),
+        "catalogVersionSource": probe.get("provenance", {}).get("catalogVersionSource"),
     }
     catalog = {
         "catalogHash": sources.get("catalogHash"),

@@ -135,18 +135,20 @@ class NotifyTests(unittest.TestCase):
                 run_url=None,
             )
 
-    def test_repository_dispatch_payload_is_minimal_and_chart_gated(self) -> None:
+    def test_repository_dispatch_payload_is_minimal_and_version_aware(self) -> None:
         payload = repository_dispatch_payload(_event())
         self.assertEqual(payload["event_type"], CHARTDB_EVENT_TYPE)
         self.assertEqual(
             set(payload["client_payload"]),
-            {"eventId", "snapshot", "catalogHash", "added", "changed", "removed"},
+            {"eventId", "snapshot", "catalogVersion", "catalogHash", "added", "changed", "removed"},
         )
         self.assertEqual(payload["client_payload"]["eventId"], "intl-event-2")
+        self.assertEqual(payload["client_payload"]["catalogVersion"], "1.0.0.101")
         self.assertTrue(payload["client_payload"]["added"])
 
         no_chart_change = _event()
         no_chart_change["charts"] = {"added": [], "changed": [], "removed": []}
+        no_chart_change["source"]["catalogVersionAfter"] = "1.0.0.100"
         with TemporaryDirectory() as temp:
             result = dispatch_repository(
                 no_chart_change, repository="owner/chartdb", token="test-token", state_dir=Path(temp)
@@ -201,7 +203,12 @@ def _event() -> dict:
     return {
         "id": "intl-event-2",
         "severity": "CONTENT",
-        "source": {"catalogBefore": "a", "catalogAfter": "b"},
+        "source": {
+            "catalogBefore": "a",
+            "catalogAfter": "b",
+            "catalogVersionBefore": "1.0.0.100",
+            "catalogVersionAfter": "1.0.0.101",
+        },
         "summary": {"assetsAdded": 1, "masterAdded": 3, "chartsAdded": 1},
         "charts": {"added": ["100084/easy"], "changed": ["100084/hard"], "removed": []},
         "snapshot": {"revision": "intl-revision-2"},

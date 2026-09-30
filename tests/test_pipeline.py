@@ -63,7 +63,9 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
         self.assertTrue(status["healthy"])
         self.assertEqual(status["currentSnapshot"], baseline["snapshotRevision"])
         self.assertIsNone(status["latestEvent"])
-        self.assertEqual(status["catalogVersionSource"], "config")
+        self.assertEqual(status["catalogVersionSource"], "probe")
+        self.assertEqual(status["catalogVersionConfiguredFloor"], "1.0.0.100")
+        self.assertEqual(status["catalogVersionResolved"], "1.0.0.100")
         self.assertEqual(
             status["gameVersionAvailable"], self.active["sources"]["gameVersion"] is not None
         )
@@ -140,8 +142,50 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
         self.assertEqual(payload["client_payload"]["eventId"], event_two["eventId"])
         self.assertEqual(
             set(payload["client_payload"]),
-            {"eventId", "snapshot", "catalogHash", "added", "changed", "removed"},
+            {"eventId", "snapshot", "catalogVersion", "catalogHash", "added", "changed", "removed"},
         )
+
+    def test_catalog_version_only_change_emits_event_and_dispatch(self) -> None:
+        baseline = scan_module.run_scan(self.root, self.config)
+        self.assertTrue(baseline["baseline"])
+
+        self.active["sources"]["catalogVersion"] = "1.0.0.101"
+        self.active["sources"]["catalogVersionResolved"] = "1.0.0.101"
+        event_result = scan_module.run_scan(self.root, self.config)
+        self.assertTrue(event_result["changed"])
+        self.assertEqual(event_result["summary"]["chartsAdded"], 0)
+        event = json.loads(
+            (self.root / "events" / f"{event_result['eventId']}.json").read_text("utf-8")
+        )
+        self.assertEqual(event["source"]["catalogVersionBefore"], "1.0.0.100")
+        self.assertEqual(event["source"]["catalogVersionAfter"], "1.0.0.101")
+
+        version_file = self.root / "snapshots" / event_result["snapshotRevision"] / "version.json"
+        version = json.loads(version_file.read_text("utf-8"))
+        self.assertEqual(version["catalogVersionResolved"], "1.0.0.101")
+        self.assertEqual(version["catalogVersionSource"], "probe")
+        for state_name in ("probe.json", "scanned.json"):
+            persisted = json.loads((self.root / "state" / state_name).read_text("utf-8"))
+            self.assertEqual(persisted["sources"]["catalogVersionResolved"], "1.0.0.101")
+            self.assertEqual(persisted["provenance"]["catalogVersionSource"], "probe")
+        status = json.loads((self.root / "state" / "status.json").read_text("utf-8"))
+        self.assertEqual(status["catalogVersionResolved"], "1.0.0.101")
+
+        with patch.dict(
+            os.environ,
+            {
+                "ONWATCH_CHARTDB_REPOSITORY": "ryougishiiki/our-notes-chartdb",
+                "ONWATCH_GITHUB_TOKEN": "test-token",
+                "ONWATCH_WEBHOOK_URL": "",
+                "ONWATCH_WEBHOOK_SECRET": "",
+            },
+        ):
+            with patch("onwatch.notify.urllib.request.urlopen", return_value=FakeResponse()) as dispatch:
+                notification = notify_latest(self.root)
+        self.assertEqual(notification["repositoryDispatch"]["status"], "sent")
+        payload = json.loads(dispatch.call_args.args[0].data.decode("utf-8"))
+        self.assertEqual(payload["client_payload"]["catalogVersion"], "1.0.0.101")
+        self.assertEqual(payload["client_payload"]["added"], [])
 
     def test_empty_catalog_rejection_does_not_advance_current(self) -> None:
         scan_module.run_scan(self.root, self.config)
@@ -158,12 +202,15 @@ class OfflinePipelineAcceptanceTests(unittest.TestCase):
         return json.loads((FIXTURES / name).read_text("utf-8"))
 
     def _probe(self, _config):
+        sources = copy.deepcopy(self.active["sources"])
+        sources.setdefault("catalogVersionResolved", sources.get("catalogVersion"))
+        sources.setdefault("catalogVersionConfiguredFloor", "1.0.0.100")
         return {
             "schema": "our-notes-probe/1",
             "server": "intl",
             "checkedAt": self.active["checkedAt"],
-            "sources": copy.deepcopy(self.active["sources"]),
-            "provenance": {"masterAuthority": "derived"},
+            "sources": sources,
+            "provenance": {"masterAuthority": "derived", "catalogVersionSource": "probe"},
             "_masterIndexes": {},
         }
 

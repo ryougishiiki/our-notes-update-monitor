@@ -1,0 +1,19 @@
+{
+  "source": "haneoka-gakuen/haneoka/scripts/ingest/apks.py::_resolve_catalog_version",
+  "license": "MPL-2.0",
+  "maxConsecutiveMisses": 3,
+  "maxBuildAdvance": 128,
+  "maxLineAdvance": 128,
+  "maxProbeRequests": 4096,
+  "cases": [
+    {"name": "floor and next build", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.0.101"], "expected": "1.0.0.101"},
+    {"name": "floor only", "floor": "1.0.0.100", "existing": ["1.0.0.100"], "expected": "1.0.0.100"},
+    {"name": "one build gap", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.0.102"], "expected": "1.0.0.102"},
+    {"name": "two build gaps", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.0.103"], "expected": "1.0.0.103"},
+    {"name": "three misses stop build line", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.0.104"], "expected": "1.0.0.100"},
+    {"name": "higher patch line", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.1.0", "1.0.1.1"], "expected": "1.0.1.1"},
+    {"name": "higher minor line", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.1.0.0"], "expected": "1.1.0.0"},
+    {"name": "higher major line", "floor": "1.0.0.100", "existing": ["1.0.0.100", "2.0.0.0"], "expected": "2.0.0.0"},
+    {"name": "candidate gap stops at three", "floor": "1.0.0.100", "existing": ["1.0.0.100", "1.0.1.0", "1.0.1.4"], "expected": "1.0.1.0"}
+  ]
+}

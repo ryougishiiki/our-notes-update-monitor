@@ -88,6 +88,10 @@ def cmd_probe(args: argparse.Namespace) -> int:
             "currentSnapshot": current_pointer.get("current"),
             "latestEvent": status.get("latestEvent"),
             "catalogVersionSource": provenance.get("catalogVersionSource", "config"),
+            "catalogVersionConfiguredFloor": current["sources"].get("catalogVersionConfiguredFloor"),
+            "catalogVersionResolved": current["sources"].get(
+                "catalogVersionResolved", current["sources"].get("catalogVersion")
+            ),
             "gameVersionAvailable": current["sources"].get("gameVersion") is not None,
             "masterAuthority": provenance.get("masterAuthority", "unavailable"),
             "source": {

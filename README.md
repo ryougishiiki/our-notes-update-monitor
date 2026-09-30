@@ -16,7 +16,7 @@ onwatch probe --trigger-scan
 onwatch scan
 ```
 
-The configured server is `intl`. The catalog version and CDN root are in `config/intl.json`; set `catalog.versionUrl` if a catalog-version endpoint becomes available. The catalog hash is checked on every probe. The Master index uses the public Haneoka data mirror and is marked as derived. A game-version endpoint can be configured under `gameVersion`; it is unset by default.
+The configured server is `intl`. The catalog floor and CDN root are in `config/intl.json`. For four-part numeric floors, each probe checks official `catalog_<version>.hash` objects using the bounded Haneoka probing strategy; an explicit `catalog.versionUrl` remains supported. The resolved catalog hash is checked on every probe. The Master index uses the public Haneoka data mirror and is marked as derived. A game-version endpoint can be configured under `gameVersion`; it is unset by default.
 
 `probe --trigger-scan` waits for changed fingerprints only when `--settle-seconds` is provided. For a server timer, for example:
 
@@ -49,14 +49,15 @@ The probe tracks the official catalog hash and hashes of the configured mirror i
 ## Status API and integrations
 
 `site/api/status.json` reports health, the last successful scan, current
-snapshot, latest event, catalog-version source, game-version availability, and
-Master authority. The version source is `config` until an official discovery
-endpoint is configured; `gameVersion: null` is represented as unavailable.
+snapshot, latest event, configured catalog floor, resolved catalog version and
+its source (`probe`, `official-endpoint`, or `config`), game-version availability,
+and Master authority. `gameVersion: null` is represented as unavailable.
 
-`onwatch notify` sends a `repository_dispatch` event only when chart entries
-were added, changed, or removed. Its payload contains the event ID, snapshot
-revision, catalog hash, and chart-key lists; it does not include a full
-snapshot. Workflow failure alerts use a distinct `our-notes-update-failure`
+`onwatch notify` sends a `repository_dispatch` event when chart entries were
+added, changed, or removed, or when the resolved catalog version changes. Its
+payload contains the event ID, snapshot revision, resolved catalog version,
+catalog hash, and chart-key lists; it does not include a full snapshot. Workflow
+failure alerts use a distinct `our-notes-update-failure`
 event and do not send ordinary `NO_CHANGE` probes.
 
 Update webhooks include `X-OnWatch-Timestamp`, an HMAC-SHA256

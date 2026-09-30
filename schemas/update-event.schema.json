@@ -18,6 +18,8 @@
         "gameVersionAfter": {"type": ["string", "null"]},
         "catalogVersionBefore": {"type": ["string", "null"]},
         "catalogVersionAfter": {"type": ["string", "null"]},
+        "catalogVersionSourceBefore": {"type": ["string", "null"]},
+        "catalogVersionSourceAfter": {"type": ["string", "null"]},
         "catalogBefore": {"type": ["string", "null"]},
         "catalogAfter": {"type": ["string", "null"]},
         "masterBefore": {"type": ["string", "null"]},

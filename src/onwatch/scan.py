@@ -180,6 +180,8 @@ def _status(
         "currentSnapshot": current_snapshot,
         "latestEvent": latest_event,
         "catalogVersionSource": provenance.get("catalogVersionSource", "config"),
+        "catalogVersionConfiguredFloor": sources.get("catalogVersionConfiguredFloor"),
+        "catalogVersionResolved": sources.get("catalogVersionResolved", sources.get("catalogVersion")),
         "gameVersionAvailable": sources.get("gameVersion") is not None,
         "masterAuthority": provenance.get("masterAuthority", "unavailable"),
         "source": {
