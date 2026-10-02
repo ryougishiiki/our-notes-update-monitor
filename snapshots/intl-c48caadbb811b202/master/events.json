@@ -1,0 +1,31 @@
+{
+  "authority": "official",
+  "primaryKey": "_id",
+  "rows": {
+    "1": {
+      "_backgroundAsset": "01/Top/event_top_01_0001",
+      "_bannerAsset": "Banner_1",
+      "_carouselHelpId": 0,
+      "_challengeLiveEventPointGroup": 1,
+      "_challengeLiveEventRewardGroup": 2,
+      "_displayEndAt": "2026/10/10 20:59:59",
+      "_endAt": "2026/10/08 20:59:59",
+      "_eventItemId": 43,
+      "_eventType": 1,
+      "_id": 1,
+      "_imageAsset": "",
+      "_isMusicRankingDisabled": false,
+      "_isRankingDisabled": true,
+      "_isTotalMusicRankingDisabled": false,
+      "_liveEventPointGroup": 1,
+      "_liveEventRewardGroup": 2,
+      "_logoAsset": "01/Logo/event_logo_01_0001",
+      "_musicId": 100109,
+      "_nameTextId": "Event_Name_0001",
+      "_startAt": "2026/09/30 18:00:00",
+      "_storyChapterId": 6
+    }
+  },
+  "schema": "our-notes-master-table/1",
+  "table": "MasterEvent"
+}
