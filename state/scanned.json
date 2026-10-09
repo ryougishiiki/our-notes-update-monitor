@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-09T10:27:27Z",
+  "checkedAt": "2026-10-09T17:09:20Z",
   "provenance": {
     "catalog": "official-cdn-hash",
     "catalogVersionSource": "master-anchor+probe",
@@ -16,10 +16,10 @@
     "catalogVersionConfiguredFloor": "1.0.0.201",
     "catalogVersionResolved": "1.0.0.400",
     "gameVersion": null,
-    "masterManifestSha256": "b4788b090612a8dc8ff6480379a3bae26627727df7db7d19926a02429bbb3c80",
+    "masterManifestSha256": "47dd16a3f8fbee2e3b17a4ef0e360dfd7f39bef87bfef6a30df3ff886bee36db",
     "masterResourceVersion": "1.0.0.400",
-    "masterRevision": "487c94bff1ae0401092d8dd9f50e8705aec873c502d05c1102c452dacfea8d9c",
-    "masterVersion": "3cf4870f2c70d67432fe444b4dee743a",
+    "masterRevision": "50575761609f845df03949204b0e65f146c00e09be42520012fa38b0924582b7",
+    "masterVersion": "b64b05ec9d46e8fc36b061db7e843624",
     "resourceManifestRevision": "695fcd928e05450b9116f550fcaf6e78"
   }
 }
