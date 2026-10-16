@@ -18,7 +18,7 @@
     "lastSuccessfulScan": {"type": ["string", "null"], "format": "date-time"},
     "currentSnapshot": {"type": ["string", "null"]},
     "latestEvent": {"type": ["string", "null"]},
-    "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint", "master-anchor+probe"]},
+    "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint", "master-anchor", "master-anchor+probe"]},
     "catalogVersionConfiguredFloor": {"type": ["string", "null"]},
     "catalogVersionResolved": {"type": ["string", "null"]},
     "gameVersionAvailable": {"type": "boolean"},

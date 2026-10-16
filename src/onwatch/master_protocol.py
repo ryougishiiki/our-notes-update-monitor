@@ -23,8 +23,13 @@ class MasterVersion:
     resource_version: str
 
 
-_RESOURCE_VERSION = re.compile(r"^\d+(?:\.\d+){3}$")
+_RESOURCE_VERSION = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$")
 _VERSION_PATH = re.compile(r"^[A-Za-z0-9._-]+(?:/[A-Za-z0-9._-]+)*$")
+
+
+def is_safe_resource_version(value: object) -> bool:
+    """Return whether a resource version is safe as one CDN path segment."""
+    return isinstance(value, str) and bool(_RESOURCE_VERSION.fullmatch(value))
 
 
 def _varint(data: bytes, position: int) -> tuple[int, int]:
@@ -81,7 +86,7 @@ def decode_master_version_payload(data: bytes) -> MasterVersion:
         or not _VERSION_PATH.fullmatch(version)
         or any(segment in {".", ".."} for segment in version.split("/"))
         or not resource_version
-        or not _RESOURCE_VERSION.fullmatch(resource_version)
+        or not is_safe_resource_version(resource_version)
     ):
         raise ValueError("Master version response is incomplete or invalid")
     return MasterVersion(version=version, resource_version=resource_version)

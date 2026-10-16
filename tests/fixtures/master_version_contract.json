@@ -10,6 +10,13 @@
       "valid": true
     },
     {
+      "name": "resource-version-with-revision-suffix",
+      "frameHex": "00000000360a2030663932636461306362633231333535616534353437666262636262313963651212312e302e312e3630302e3763346539613262",
+      "masterVersion": "0f92cda0cbc21355ae4547fbbcbb19ce",
+      "resourceVersion": "1.0.1.600.7c4e9a2b",
+      "valid": true
+    },
+    {
       "name": "resource-version-fallback-to-leading-path-segment",
       "frameHex": "00000000120a10312e302e302e3230322f6d6173746572",
       "masterVersion": "1.0.0.202/master",

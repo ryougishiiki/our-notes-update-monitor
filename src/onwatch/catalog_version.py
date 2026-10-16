@@ -1,16 +1,18 @@
-"""Resolve versioned Addressables catalogs by probing official ``.hash`` files.
+"""Resolve the exact catalog generation reported by Master when available.
 
 The probe order and three-miss behavior are adapted from
 ``haneoka-gakuen/haneoka/scripts/ingest/apks.py::_resolve_catalog_version``
 (MPL-2.0): https://github.com/haneoka-gakuen/haneoka/blob/main/scripts/ingest/apks.py
-This file keeps that strategy while adding a hard request budget so a pathological
-sequence of hits cannot make CI probe indefinitely.
+Numeric probing remains as a fallback for sources without a Master anchor, with
+a hard request budget so a pathological sequence of hits cannot stall CI.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Callable
+
+from .master_protocol import is_safe_resource_version
 
 MAX_CONSECUTIVE_MISSES = 3
 MAX_BUILD_ADVANCE = 128
@@ -32,25 +34,37 @@ class CatalogProbeLimitError(RuntimeError):
     """Raised instead of returning a potentially stale answer at the probe cap."""
 
 
+class CatalogAnchorUnavailableError(RuntimeError):
+    """The official Master version points at a catalog that is not published."""
+
+
 def resolve_catalog_version(
     floor: str,
     exists: Callable[[str], bool],
     master_anchor: str | None = None,
 ) -> CatalogVersionResolution:
-    """Resolve the newest published four-part numeric version at or above floor.
+    """Use an official Master catalog version verbatim, or probe from ``floor``.
 
     ``exists`` must return true only when both official ``.hash`` and ``.bin``
-    objects exist. HTTP errors other than 400/403/404 must be raised by that
-    callback so outages are never interpreted as missing versions.
+    objects exist. An unavailable Master anchor is an error; falling back to an
+    older configured floor could publish stale data. HTTP errors other than
+    400/403/404 must be raised by the callback so outages are never misses.
     """
+    if master_anchor is not None:
+        if not is_safe_resource_version(master_anchor):
+            raise ValueError("official Master resourceVersion is not a safe catalog path segment")
+        if not exists(master_anchor):
+            raise CatalogAnchorUnavailableError(
+                f"official Master catalog version is not published: {master_anchor}"
+            )
+        return CatalogVersionResolution(floor, master_anchor, "master-anchor", 1, master_anchor, True)
+
     parts = floor.split(".")
     if len(parts) != 4 or not all(part.isascii() and part.isdecimal() for part in parts):
-        return CatalogVersionResolution(floor, floor, "config", 0, master_anchor, False)
+        return CatalogVersionResolution(floor, floor, "config", 0, None, False)
 
     base = tuple(int(part) for part in parts)
     probes = 0
-    confirmed_published: set[tuple[int, int, int, int]] = set()
-
     def published(version: tuple[int, int, int, int]) -> bool:
         nonlocal probes
         if probes >= MAX_PROBE_REQUESTS:
@@ -58,10 +72,7 @@ def resolve_catalog_version(
                 f"catalog version probing exceeded {MAX_PROBE_REQUESTS} hash requests"
             )
         probes += 1
-        found = exists(".".join(str(component) for component in version))
-        if found:
-            confirmed_published.add(version)
-        return found
+        return exists(".".join(str(component) for component in version))
 
     def line_max(
         major: int,
@@ -90,21 +101,6 @@ def resolve_catalog_version(
     if current_build is not None:
         best = (base[0], base[1], base[2], current_build)
 
-    anchor_parts = (master_anchor or "").split(".")
-    anchor_tuple: tuple[int, int, int, int] | None = None
-    anchor_available = False
-    if len(anchor_parts) == 4 and all(part.isascii() and part.isdecimal() for part in anchor_parts):
-        candidate = tuple(int(part) for part in anchor_parts)
-        if candidate >= best:
-            anchor_tuple = candidate  # type: ignore[assignment]
-        if candidate > best:
-            if published(candidate):
-                anchor_available = True
-                best = candidate
-                anchored_build = line_max(*candidate[:3], candidate[3], start_known_published=True)
-                if anchored_build is not None:
-                    best = (*candidate[:3], anchored_build)
-
     # Haneoka checks higher patch, minor, then major lines, each at build 0,
     # and searches that line's build counter after a hit.
     for dimension in (2, 1, 0):
@@ -130,14 +126,12 @@ def resolve_catalog_version(
                 f"catalog version line search exceeded {MAX_LINE_ADVANCE} higher lines"
             )
 
-    if anchor_tuple is not None and anchor_tuple in confirmed_published:
-        anchor_available = True
     resolved = ".".join(str(component) for component in best)
     return CatalogVersionResolution(
         floor,
         resolved,
-        "master-anchor+probe" if anchor_available else "probe",
+        "probe",
         probes,
-        master_anchor,
-        anchor_available,
+        None,
+        False,
     )

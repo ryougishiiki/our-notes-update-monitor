@@ -14,7 +14,7 @@
         "catalogVersion": {"type": ["string", "null"]},
         "catalogVersionResolved": {"type": ["string", "null"]},
         "catalogVersionConfiguredFloor": {"type": ["string", "null"]},
-        "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint", "master-anchor+probe"]},
+        "catalogVersionSource": {"enum": ["config", "probe", "official-endpoint", "master-anchor", "master-anchor+probe"]},
         "masterVersion": {"type": ["string", "null"]},
         "masterResourceVersion": {"type": ["string", "null"]},
         "masterManifestSha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}

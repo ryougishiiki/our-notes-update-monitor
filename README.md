@@ -68,7 +68,7 @@ new song while keeping `chartsAdded` at zero.
 
 `site/api/status.json` reports health, the last successful scan, current
 snapshot, latest event, configured catalog floor, resolved catalog version and
-its source (`master-anchor+probe`, `probe`, `official-endpoint`, or `config`),
+its source (`master-anchor`, `probe`, `official-endpoint`, or `config`),
 official Master version/resourceVersion/manifest hash, game-version availability,
 and Master authority. `gameVersion: null` is represented as unavailable.
 

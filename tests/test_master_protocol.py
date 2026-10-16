@@ -9,6 +9,7 @@ from onwatch.master_protocol import (
     MasterVersionError,
     decode_master_version_frame,
     discover_master_version,
+    is_safe_resource_version,
 )
 
 
@@ -34,6 +35,14 @@ class MasterVersionProtocolTests(unittest.TestCase):
         frame = bytes.fromhex("00000000120a10312e302e302e3230322f6d6173746572")
         result = decode_master_version_frame(frame)
         self.assertEqual(result.resource_version, "1.0.0.202")
+
+    def test_resource_version_is_one_safe_path_segment(self) -> None:
+        for value in ("1.0.1.600.7c4e9a2b", "release_600", "v2-beta"):
+            with self.subTest(value=value):
+                self.assertTrue(is_safe_resource_version(value))
+        for value in ("", "../1.0.1", "v1/next", ".", "..", "/v1", "a?b"):
+            with self.subTest(value=value):
+                self.assertFalse(is_safe_resource_version(value))
 
     def test_invalid_protobuf_fails_closed_without_retry(self) -> None:
         request = Mock(return_value=b"\xff")

@@ -28,6 +28,26 @@ class CatalogVersionResolverTests(unittest.TestCase):
                 )
                 self.assertEqual(result.resolved, case["expected"])
                 self.assertEqual(result.source, case.get("expectedSource", "probe"))
+                if "expectedProbes" in case:
+                    self.assertEqual(result.probes, case["expectedProbes"])
+
+    def test_unpublished_master_anchor_fails_without_falling_back_to_old_floor(self) -> None:
+        checked: list[str] = []
+        with self.assertRaisesRegex(catalog_version.CatalogAnchorUnavailableError, "not published"):
+            catalog_version.resolve_catalog_version(
+                "1.0.0.201",
+                lambda version: checked.append(version) and False,
+                "1.0.1.600.7c4e9a2b",
+            )
+        self.assertEqual(checked, ["1.0.1.600.7c4e9a2b"])
+
+    def test_unsafe_master_anchor_is_rejected_before_network_probe(self) -> None:
+        checked: list[str] = []
+        with self.assertRaisesRegex(ValueError, "safe catalog path segment"):
+            catalog_version.resolve_catalog_version(
+                "1.0.0.201", checked.append, "../1.0.1.600.7c4e9a2b"
+            )
+        self.assertEqual(checked, [])
 
     def test_nonstandard_version_is_returned_without_network_probes(self) -> None:
         called: list[str] = []
