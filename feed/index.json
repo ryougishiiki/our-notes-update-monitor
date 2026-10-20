@@ -1,6 +1,27 @@
 {
-  "count": 8,
+  "count": 9,
   "events": [
+    {
+      "detectedAt": "2026-10-20T17:22:23Z",
+      "id": "intl-29ad0e148ecc37ef",
+      "server": "intl",
+      "severity": "MINOR",
+      "summary": {
+        "assetsAdded": 25,
+        "assetsChanged": 0,
+        "assetsRemoved": 25,
+        "chartsAdded": 0,
+        "chartsChanged": 0,
+        "chartsRemoved": 0,
+        "masterAdded": 0,
+        "masterChanged": 0,
+        "masterRemoved": 0,
+        "songsAdded": 0,
+        "songsChanged": 0,
+        "songsRemoved": 0
+      },
+      "url": "events/intl-29ad0e148ecc37ef.json"
+    },
     {
       "detectedAt": "2026-10-19T06:44:24Z",
       "id": "intl-23ec93d07e339412",

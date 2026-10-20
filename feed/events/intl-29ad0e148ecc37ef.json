@@ -1,0 +1,867 @@
+{
+  "assets": {
+    "added": [
+      {
+        "after": {
+          "bundle": "c65264120014_84d2c67f51b5d04df0d96d5a9023b2e6",
+          "category": "live2d",
+          "crc": 2209130363,
+          "hash": "d538036400ee0e85fc99ad57deec1f4d",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_d538036400ee0e85fc99ad57deec1f4d.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_d538036400ee0e85fc99ad57deec1f4d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 3283637,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_d538036400ee0e85fc99ad57deec1f4d.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_d538036400ee0e85fc99ad57deec1f4d.bundle"
+      },
+      {
+        "after": {
+          "bundle": "4c73362be1f4_45d0ecff12d3812521a30fa30a59ebe9",
+          "category": "live2d",
+          "crc": 1180308498,
+          "hash": "0527fc19add318262807f82d8555d103",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_0527fc19add318262807f82d8555d103.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_0527fc19add318262807f82d8555d103.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 5020736,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_0527fc19add318262807f82d8555d103.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_0527fc19add318262807f82d8555d103.bundle"
+      },
+      {
+        "after": {
+          "bundle": "21845e4e8cd6_f7f2c9a96b5746e49000e63a1afc3af5",
+          "category": "live2d",
+          "crc": 3859898806,
+          "hash": "cfa57c804d9498d7169bcee87e1459c0",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_cfa57c804d9498d7169bcee87e1459c0.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_cfa57c804d9498d7169bcee87e1459c0.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 3288555,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_cfa57c804d9498d7169bcee87e1459c0.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_cfa57c804d9498d7169bcee87e1459c0.bundle"
+      },
+      {
+        "after": {
+          "bundle": "908bd961552d_2d2581d1bec344d35c939136dd601349",
+          "category": "live2d",
+          "crc": 212080485,
+          "hash": "3f3575fe40ac51ccacc335c1e1a67a15",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_3f3575fe40ac51ccacc335c1e1a67a15.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_3f3575fe40ac51ccacc335c1e1a67a15.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 19874311,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_3f3575fe40ac51ccacc335c1e1a67a15.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_3f3575fe40ac51ccacc335c1e1a67a15.bundle"
+      },
+      {
+        "after": {
+          "bundle": "9370392b73f3_5848a593b759fc87f261c7288f11849c",
+          "category": "live2d",
+          "crc": 3320508126,
+          "hash": "7a20cb43395c9d9530c3cf3c3b04b32b",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_7a20cb43395c9d9530c3cf3c3b04b32b.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_7a20cb43395c9d9530c3cf3c3b04b32b.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 4936741,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_7a20cb43395c9d9530c3cf3c3b04b32b.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_7a20cb43395c9d9530c3cf3c3b04b32b.bundle"
+      },
+      {
+        "after": {
+          "bundle": "e2b54dde8e282561b911b05b3f9349f3",
+          "category": "unknown",
+          "crc": 0,
+          "hash": "d33f6dc169b9a593c2eef09f909bcfd0",
+          "internalId": "embbuildtempanchor_assets_all.bundle/{UnityEngine.AddressableAssets.Addressables.RuntimePath}/Android",
+          "key": "embbuildtempanchor_assets_all_d33f6dc169b9a593c2eef09f909bcfd0.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 83300,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/embbuildtempanchor_assets_all.bundle"
+        },
+        "key": "embbuildtempanchor_assets_all_d33f6dc169b9a593c2eef09f909bcfd0.bundle"
+      },
+      {
+        "after": {
+          "bundle": "afff52f34d0f77964b4563b18ff56190",
+          "category": "unknown",
+          "crc": 0,
+          "hash": "416b57feaf5b313c28587246606495ba",
+          "internalId": "embfont_assets_font-fzlth_gb18030l2_r_fb.bundle/{UnityEngine.AddressableAssets.Addressables.RuntimePath}/Android",
+          "key": "embfont_assets_font-fzlth_gb18030l2_r_fb_416b57feaf5b313c28587246606495ba.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 12895,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/embfont_assets_font-fzlth_gb18030l2_r_fb.bundle"
+        },
+        "key": "embfont_assets_font-fzlth_gb18030l2_r_fb_416b57feaf5b313c28587246606495ba.bundle"
+      },
+      {
+        "after": {
+          "bundle": "501e7d599070_7cb9284c27b525ccf089305a5004f6a4",
+          "category": "event",
+          "crc": 2860678117,
+          "hash": "cc0e17eac6729cb111dbe9745da49ced",
+          "internalId": "gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_cc0e17eac6729cb111dbe9745da49ced.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_cc0e17eac6729cb111dbe9745da49ced.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 27983,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_cc0e17eac6729cb111dbe9745da49ced.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_cc0e17eac6729cb111dbe9745da49ced.bundle"
+      },
+      {
+        "after": {
+          "bundle": "4252b5876b6b_b12937b748b30b4c4dfd4858edd11b10",
+          "category": "event",
+          "crc": 3785680150,
+          "hash": "a274405af11df2d3599ec4f3de6c83cf",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_a274405af11df2d3599ec4f3de6c83cf.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_a274405af11df2d3599ec4f3de6c83cf.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 61182,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_a274405af11df2d3599ec4f3de6c83cf.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_a274405af11df2d3599ec4f3de6c83cf.bundle"
+      },
+      {
+        "after": {
+          "bundle": "cee161ee62e8_e144a5e510a6189a87bfbf6581f62cc8",
+          "category": "event",
+          "crc": 4048969170,
+          "hash": "6facd85da86b202458e56c55027c042f",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_6facd85da86b202458e56c55027c042f.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_6facd85da86b202458e56c55027c042f.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 39249,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_6facd85da86b202458e56c55027c042f.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_6facd85da86b202458e56c55027c042f.bundle"
+      },
+      {
+        "after": {
+          "bundle": "1e0cf9e04bf0_6cd86089d7064462f1cd0f5f4ff1b57a",
+          "category": "event",
+          "crc": 3143370458,
+          "hash": "7a3ae6f5f8722d135b46784db188f2f8",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_7a3ae6f5f8722d135b46784db188f2f8.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_7a3ae6f5f8722d135b46784db188f2f8.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 110834,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_7a3ae6f5f8722d135b46784db188f2f8.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_7a3ae6f5f8722d135b46784db188f2f8.bundle"
+      },
+      {
+        "after": {
+          "bundle": "b8122fcfd9fd_df6e8aeb49c3882a9ccb9938d829aae4",
+          "category": "event",
+          "crc": 687932587,
+          "hash": "2407c172a621d28a8acc73f54232aac6",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_2407c172a621d28a8acc73f54232aac6.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_2407c172a621d28a8acc73f54232aac6.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 40085,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_2407c172a621d28a8acc73f54232aac6.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_2407c172a621d28a8acc73f54232aac6.bundle"
+      },
+      {
+        "after": {
+          "bundle": "2d3ecacb091c_76d18b280d65e1e59b105dfcef3f6166",
+          "category": "event",
+          "crc": 3809821871,
+          "hash": "fa39e59b4e335f5699656efd856adf6d",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_fa39e59b4e335f5699656efd856adf6d.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_fa39e59b4e335f5699656efd856adf6d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 97413,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_fa39e59b4e335f5699656efd856adf6d.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_fa39e59b4e335f5699656efd856adf6d.bundle"
+      },
+      {
+        "after": {
+          "bundle": "cfc67bee62b6_27dba6ca5bf98e3180f2cc1db79a1cc8",
+          "category": "event",
+          "crc": 2550632130,
+          "hash": "651886bfced6388b49a1c3d0647a854e",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_651886bfced6388b49a1c3d0647a854e.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_651886bfced6388b49a1c3d0647a854e.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 98370,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_651886bfced6388b49a1c3d0647a854e.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_651886bfced6388b49a1c3d0647a854e.bundle"
+      },
+      {
+        "after": {
+          "bundle": "a18259a76711_78b3e31ba2444cf6561b86019ee71adf",
+          "category": "event",
+          "crc": 1664468422,
+          "hash": "0db5338228e4e7f27faf9c42414e8441",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_0db5338228e4e7f27faf9c42414e8441.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_0db5338228e4e7f27faf9c42414e8441.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 39048,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_0db5338228e4e7f27faf9c42414e8441.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_0db5338228e4e7f27faf9c42414e8441.bundle"
+      },
+      {
+        "after": {
+          "bundle": "5aecd61b3f0f_73499ca9bc9cdffae28ad2fc1d44332f",
+          "category": "event",
+          "crc": 1629617844,
+          "hash": "e81a88e381f4f4858bdf53fe17836995",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_e81a88e381f4f4858bdf53fe17836995.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_e81a88e381f4f4858bdf53fe17836995.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 38753,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_e81a88e381f4f4858bdf53fe17836995.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_e81a88e381f4f4858bdf53fe17836995.bundle"
+      },
+      {
+        "after": {
+          "bundle": "df99ad9a1a6d_77ee56aeedbbecf20a90a256ef1d79ab",
+          "category": "event",
+          "crc": 1591552079,
+          "hash": "2bbbd9fd8f5fa9459e5885fb54b9ab0d",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_2bbbd9fd8f5fa9459e5885fb54b9ab0d.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_2bbbd9fd8f5fa9459e5885fb54b9ab0d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 60503,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_2bbbd9fd8f5fa9459e5885fb54b9ab0d.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_2bbbd9fd8f5fa9459e5885fb54b9ab0d.bundle"
+      },
+      {
+        "after": {
+          "bundle": "0d5376a50a73_18ca61c63fa19047d90839d21e606506",
+          "category": "event",
+          "crc": 2793766864,
+          "hash": "f8c477d9e0a479ea6ea08b5f81245258",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_f8c477d9e0a479ea6ea08b5f81245258.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_f8c477d9e0a479ea6ea08b5f81245258.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 9685,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_f8c477d9e0a479ea6ea08b5f81245258.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_f8c477d9e0a479ea6ea08b5f81245258.bundle"
+      },
+      {
+        "after": {
+          "bundle": "106533db980e_49baa9acfff66d622fc24299e44a424d",
+          "category": "voice",
+          "crc": 3020608624,
+          "hash": "78a26940a5e5a15288534d563f869aa5",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_78a26940a5e5a15288534d563f869aa5.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_78a26940a5e5a15288534d563f869aa5.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 36257,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_78a26940a5e5a15288534d563f869aa5.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_78a26940a5e5a15288534d563f869aa5.bundle"
+      },
+      {
+        "after": {
+          "bundle": "51edfd8dda47_76f4d5f3494eb5509a8bec25dd82f3e5",
+          "category": "voice",
+          "crc": 795337902,
+          "hash": "9c8928f15875e5ddc9bdfd3bc7a95344",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_9c8928f15875e5ddc9bdfd3bc7a95344.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_9c8928f15875e5ddc9bdfd3bc7a95344.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 35733,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_9c8928f15875e5ddc9bdfd3bc7a95344.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_9c8928f15875e5ddc9bdfd3bc7a95344.bundle"
+      },
+      {
+        "after": {
+          "bundle": "ac9ceba1f363_d301800040681767c4d7c67ed04e441e",
+          "category": "event",
+          "crc": 623771413,
+          "hash": "7d10261c53d8e6f6e741fa192239d80a",
+          "internalId": "gachaanimation_assets_gachaanimation_scene_camerasandui_7d10261c53d8e6f6e741fa192239d80a.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_scene_camerasandui_7d10261c53d8e6f6e741fa192239d80a.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 34750,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_scene_camerasandui_7d10261c53d8e6f6e741fa192239d80a.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_scene_camerasandui_7d10261c53d8e6f6e741fa192239d80a.bundle"
+      },
+      {
+        "after": {
+          "bundle": "105e050a1e71_4903010425e684632ed5ba3d1f011493",
+          "category": "event",
+          "crc": 1728566443,
+          "hash": "47affee320133dadf58f81188ce7f042",
+          "internalId": "gachaanimation_assets_gachaanimation_temp_productnamearea_47affee320133dadf58f81188ce7f042.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_temp_productnamearea_47affee320133dadf58f81188ce7f042.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 6919,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_temp_productnamearea_47affee320133dadf58f81188ce7f042.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_temp_productnamearea_47affee320133dadf58f81188ce7f042.bundle"
+      },
+      {
+        "after": {
+          "bundle": "27984b9d1262_27618a437010eef32e3b42a9fc11e4b0",
+          "category": "event",
+          "crc": 1263178954,
+          "hash": "de8b6183b279b1283f6612dad32c426f",
+          "internalId": "gachaanimation_scenes_gachaanimation_scene_gachaanimation_de8b6183b279b1283f6612dad32c426f.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_scenes_gachaanimation_scene_gachaanimation_de8b6183b279b1283f6612dad32c426f.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 123845,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_scenes_gachaanimation_scene_gachaanimation_de8b6183b279b1283f6612dad32c426f.bundle"
+        },
+        "key": "gachaanimation_scenes_gachaanimation_scene_gachaanimation_de8b6183b279b1283f6612dad32c426f.bundle"
+      },
+      {
+        "after": {
+          "bundle": "55929479e52d_51ea772c6a062f5e5e991896765b181f",
+          "category": "unknown",
+          "crc": 2548339446,
+          "hash": "0761dedb62fb89fac40378233f46cd47",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_0761dedb62fb89fac40378233f46cd47.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_0761dedb62fb89fac40378233f46cd47.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 523944,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00004_0761dedb62fb89fac40378233f46cd47.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_0761dedb62fb89fac40378233f46cd47.bundle"
+      },
+      {
+        "after": {
+          "bundle": "70df4d06048d_64e87c4d81e04a0b93da0825dc644d73",
+          "category": "unknown",
+          "crc": 3473532528,
+          "hash": "4d461543b069803f9ee39157dc16b8a7",
+          "internalId": "patch_assets_patch_app.runtime.patch-1.0.6_4d461543b069803f9ee39157dc16b8a7.bundle/asset/Android/dummy.net/https:/",
+          "key": "patch_assets_patch_app.runtime.patch-1.0.6_4d461543b069803f9ee39157dc16b8a7.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 4800,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/patch_assets_patch_app.runtime.patch-1.0.6_4d461543b069803f9ee39157dc16b8a7.bundle"
+        },
+        "key": "patch_assets_patch_app.runtime.patch-1.0.6_4d461543b069803f9ee39157dc16b8a7.bundle"
+      }
+    ],
+    "changed": [],
+    "removed": [
+      {
+        "before": {
+          "bundle": "b8dcb63a10fe_84d2c67f51b5d04df0d96d5a9023b2e6",
+          "category": "live2d",
+          "crc": 3458202534,
+          "hash": "787c9fb4cfbf4ddd2bd6408d4a387e4c",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_787c9fb4cfbf4ddd2bd6408d4a387e4c.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_787c9fb4cfbf4ddd2bd6408d4a387e4c.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 3286171,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_787c9fb4cfbf4ddd2bd6408d4a387e4c.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_arbeit_livehouse_01everythinginitialdownload_787c9fb4cfbf4ddd2bd6408d4a387e4c.bundle"
+      },
+      {
+        "before": {
+          "bundle": "af57c13f1122_45d0ecff12d3812521a30fa30a59ebe9",
+          "category": "live2d",
+          "crc": 2770768851,
+          "hash": "10de4d0590e285fcb31c0815763a2dd5",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_10de4d0590e285fcb31c0815763a2dd5.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_10de4d0590e285fcb31c0815763a2dd5.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 5023546,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_10de4d0590e285fcb31c0815763a2dd5.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_casual_spring_01everythinginitialdownload_10de4d0590e285fcb31c0815763a2dd5.bundle"
+      },
+      {
+        "before": {
+          "bundle": "9d1be54ccba8_f7f2c9a96b5746e49000e63a1afc3af5",
+          "category": "live2d",
+          "crc": 466502618,
+          "hash": "a095a94d9a3700d7914704213c391d36",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_a095a94d9a3700d7914704213c391d36.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_a095a94d9a3700d7914704213c391d36.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 3291992,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_a095a94d9a3700d7914704213c391d36.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_live_01everythinginitialdownload_a095a94d9a3700d7914704213c391d36.bundle"
+      },
+      {
+        "before": {
+          "bundle": "f4100889c71b_2d2581d1bec344d35c939136dd601349",
+          "category": "live2d",
+          "crc": 690869142,
+          "hash": "ab28d6ca69d2a4caabc7db555e82ff54",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_ab28d6ca69d2a4caabc7db555e82ff54.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_ab28d6ca69d2a4caabc7db555e82ff54.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 19877013,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_ab28d6ca69d2a4caabc7db555e82ff54.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_roomwear_01everythinginitialdownload_ab28d6ca69d2a4caabc7db555e82ff54.bundle"
+      },
+      {
+        "before": {
+          "bundle": "519f2b1b4bb9_5848a593b759fc87f261c7288f11849c",
+          "category": "live2d",
+          "crc": 258558898,
+          "hash": "f3b8a6df97bce45b5ce08efa22abaad1",
+          "internalId": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_f3b8a6df97bce45b5ce08efa22abaad1.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_f3b8a6df97bce45b5ce08efa22abaad1.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 4939652,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_f3b8a6df97bce45b5ce08efa22abaad1.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-021_adv-adv_live2d_raika_021_school_winter_hs_2ndeverythinginitialdownload_f3b8a6df97bce45b5ce08efa22abaad1.bundle"
+      },
+      {
+        "before": {
+          "bundle": "3578c92b5e522a8ac2d3136bed1f69e9",
+          "category": "unknown",
+          "crc": 0,
+          "hash": "b36706dabb86aad2872c9f8976ccb437",
+          "internalId": "embbuildtempanchor_assets_all.bundle/{UnityEngine.AddressableAssets.Addressables.RuntimePath}/Android",
+          "key": "embbuildtempanchor_assets_all_b36706dabb86aad2872c9f8976ccb437.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 83299,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/embbuildtempanchor_assets_all.bundle"
+        },
+        "key": "embbuildtempanchor_assets_all_b36706dabb86aad2872c9f8976ccb437.bundle"
+      },
+      {
+        "before": {
+          "bundle": "afff52f34d0f77964b4563b18ff56190",
+          "category": "unknown",
+          "crc": 0,
+          "hash": "886d02f245baa45461d212c3821533ad",
+          "internalId": "embfont_assets_font-fzlth_gb18030l2_r_fb.bundle/{UnityEngine.AddressableAssets.Addressables.RuntimePath}/Android",
+          "key": "embfont_assets_font-fzlth_gb18030l2_r_fb_886d02f245baa45461d212c3821533ad.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 10823,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/embfont_assets_font-fzlth_gb18030l2_r_fb.bundle"
+        },
+        "key": "embfont_assets_font-fzlth_gb18030l2_r_fb_886d02f245baa45461d212c3821533ad.bundle"
+      },
+      {
+        "before": {
+          "bundle": "5a4cd961d504_7cb9284c27b525ccf089305a5004f6a4",
+          "category": "event",
+          "crc": 2890086870,
+          "hash": "e88b85e7ac8c38a492706d75823d2e61",
+          "internalId": "gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_e88b85e7ac8c38a492706d75823d2e61.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_e88b85e7ac8c38a492706d75823d2e61.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 27982,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_e88b85e7ac8c38a492706d75823d2e61.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_1_intro__prefab_gachaphone_e88b85e7ac8c38a492706d75823d2e61.bundle"
+      },
+      {
+        "before": {
+          "bundle": "d01f8bc07a3a_b12937b748b30b4c4dfd4858edd11b10",
+          "category": "event",
+          "crc": 1048985209,
+          "hash": "5e568dc44a3195a80ae22cbc73df1a52",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_5e568dc44a3195a80ae22cbc73df1a52.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_5e568dc44a3195a80ae22cbc73df1a52.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 61159,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_5e568dc44a3195a80ae22cbc73df1a52.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_bd_5e568dc44a3195a80ae22cbc73df1a52.bundle"
+      },
+      {
+        "before": {
+          "bundle": "7b24a9d9290e_e144a5e510a6189a87bfbf6581f62cc8",
+          "category": "event",
+          "crc": 2630431703,
+          "hash": "0ddbb8e843f773c6d2395be5e04c9783",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_0ddbb8e843f773c6d2395be5e04c9783.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_0ddbb8e843f773c6d2395be5e04c9783.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 39249,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_0ddbb8e843f773c6d2395be5e04c9783.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_r_0ddbb8e843f773c6d2395be5e04c9783.bundle"
+      },
+      {
+        "before": {
+          "bundle": "d86f71294301_6cd86089d7064462f1cd0f5f4ff1b57a",
+          "category": "event",
+          "crc": 1912054321,
+          "hash": "d29f9ad05abb5d6ad404923da5c33811",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_d29f9ad05abb5d6ad404923da5c33811.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_d29f9ad05abb5d6ad404923da5c33811.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 110839,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_d29f9ad05abb5d6ad404923da5c33811.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_rtossr_d29f9ad05abb5d6ad404923da5c33811.bundle"
+      },
+      {
+        "before": {
+          "bundle": "efe0b7439f05_df6e8aeb49c3882a9ccb9938d829aae4",
+          "category": "event",
+          "crc": 2709884624,
+          "hash": "c225d119bf21edd55b0a6f6a1025efb7",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_c225d119bf21edd55b0a6f6a1025efb7.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_c225d119bf21edd55b0a6f6a1025efb7.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 40085,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_c225d119bf21edd55b0a6f6a1025efb7.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_sr_c225d119bf21edd55b0a6f6a1025efb7.bundle"
+      },
+      {
+        "before": {
+          "bundle": "b3293b18001f_76d18b280d65e1e59b105dfcef3f6166",
+          "category": "event",
+          "crc": 3988053598,
+          "hash": "758bfcc969f619839c924c75de5c514d",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_758bfcc969f619839c924c75de5c514d.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_758bfcc969f619839c924c75de5c514d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 97416,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_758bfcc969f619839c924c75de5c514d.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_758bfcc969f619839c924c75de5c514d.bundle"
+      },
+      {
+        "before": {
+          "bundle": "f4488f256c3a_27dba6ca5bf98e3180f2cc1db79a1cc8",
+          "category": "event",
+          "crc": 1425433640,
+          "hash": "21810cb6e7ea828d385edfcc43bfcf62",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_21810cb6e7ea828d385edfcc43bfcf62.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_21810cb6e7ea828d385edfcc43bfcf62.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 98386,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_21810cb6e7ea828d385edfcc43bfcf62.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_member_ssr_root_21810cb6e7ea828d385edfcc43bfcf62.bundle"
+      },
+      {
+        "before": {
+          "bundle": "183c4e46bf26_78b3e31ba2444cf6561b86019ee71adf",
+          "category": "event",
+          "crc": 1436277053,
+          "hash": "624f614eb7ef4929706688b2c2a8ab94",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_624f614eb7ef4929706688b2c2a8ab94.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_624f614eb7ef4929706688b2c2a8ab94.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 39048,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_624f614eb7ef4929706688b2c2a8ab94.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_r_624f614eb7ef4929706688b2c2a8ab94.bundle"
+      },
+      {
+        "before": {
+          "bundle": "53876be9e70f_73499ca9bc9cdffae28ad2fc1d44332f",
+          "category": "event",
+          "crc": 4028961572,
+          "hash": "1ded3dbaee5a6e78daa7ff615517faef",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_1ded3dbaee5a6e78daa7ff615517faef.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_1ded3dbaee5a6e78daa7ff615517faef.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 38753,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_1ded3dbaee5a6e78daa7ff615517faef.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_sr_1ded3dbaee5a6e78daa7ff615517faef.bundle"
+      },
+      {
+        "before": {
+          "bundle": "a47618414fd4_77ee56aeedbbecf20a90a256ef1d79ab",
+          "category": "event",
+          "crc": 1350217288,
+          "hash": "50df296fadad9abe14acb530e0f75cad",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_50df296fadad9abe14acb530e0f75cad.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_50df296fadad9abe14acb530e0f75cad.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 60491,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_50df296fadad9abe14acb530e0f75cad.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimation_support_ssr_50df296fadad9abe14acb530e0f75cad.bundle"
+      },
+      {
+        "before": {
+          "bundle": "fff256af9b04_18ca61c63fa19047d90839d21e606506",
+          "category": "event",
+          "crc": 1918475564,
+          "hash": "9658676df1247906cb6ccbbd6ff738c8",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_9658676df1247906cb6ccbbd6ff738c8.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_9658676df1247906cb6ccbbd6ff738c8.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 9685,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_9658676df1247906cb6ccbbd6ff738c8.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachaanimationuicanvas_9658676df1247906cb6ccbbd6ff738c8.bundle"
+      },
+      {
+        "before": {
+          "bundle": "e8404d2c8dcc_49baa9acfff66d622fc24299e44a424d",
+          "category": "voice",
+          "crc": 1646066984,
+          "hash": "34f7ce25447b203a3a912f8b25b5b422",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_34f7ce25447b203a3a912f8b25b5b422.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_34f7ce25447b203a3a912f8b25b5b422.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 36257,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_34f7ce25447b203a3a912f8b25b5b422.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoiceanimation_34f7ce25447b203a3a912f8b25b5b422.bundle"
+      },
+      {
+        "before": {
+          "bundle": "96ba6ba5a492_76f4d5f3494eb5509a8bec25dd82f3e5",
+          "category": "voice",
+          "crc": 1345471398,
+          "hash": "76c89c48dda3d54bde1f49056d415c80",
+          "internalId": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_76c89c48dda3d54bde1f49056d415c80.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_76c89c48dda3d54bde1f49056d415c80.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 35732,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_76c89c48dda3d54bde1f49056d415c80.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_2_screen_prefab_gachavoicedirector_76c89c48dda3d54bde1f49056d415c80.bundle"
+      },
+      {
+        "before": {
+          "bundle": "861b200fc2af_d301800040681767c4d7c67ed04e441e",
+          "category": "event",
+          "crc": 1367813253,
+          "hash": "c154d29998136be6836e080fbfc6f148",
+          "internalId": "gachaanimation_assets_gachaanimation_scene_camerasandui_c154d29998136be6836e080fbfc6f148.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_scene_camerasandui_c154d29998136be6836e080fbfc6f148.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 34748,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_scene_camerasandui_c154d29998136be6836e080fbfc6f148.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_scene_camerasandui_c154d29998136be6836e080fbfc6f148.bundle"
+      },
+      {
+        "before": {
+          "bundle": "eeaf60ce8d81_4903010425e684632ed5ba3d1f011493",
+          "category": "event",
+          "crc": 1312395331,
+          "hash": "81d85ac5d88d381f6108b518ce70f564",
+          "internalId": "gachaanimation_assets_gachaanimation_temp_productnamearea_81d85ac5d88d381f6108b518ce70f564.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_assets_gachaanimation_temp_productnamearea_81d85ac5d88d381f6108b518ce70f564.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 6919,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_assets_gachaanimation_temp_productnamearea_81d85ac5d88d381f6108b518ce70f564.bundle"
+        },
+        "key": "gachaanimation_assets_gachaanimation_temp_productnamearea_81d85ac5d88d381f6108b518ce70f564.bundle"
+      },
+      {
+        "before": {
+          "bundle": "8137650fb23d_27618a437010eef32e3b42a9fc11e4b0",
+          "category": "event",
+          "crc": 841916882,
+          "hash": "bb85545f36cdab3ff8c1872285b7a750",
+          "internalId": "gachaanimation_scenes_gachaanimation_scene_gachaanimation_bb85545f36cdab3ff8c1872285b7a750.bundle/asset/Android/dummy.net/https:/",
+          "key": "gachaanimation_scenes_gachaanimation_scene_gachaanimation_bb85545f36cdab3ff8c1872285b7a750.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 123848,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/gachaanimation_scenes_gachaanimation_scene_gachaanimation_bb85545f36cdab3ff8c1872285b7a750.bundle"
+        },
+        "key": "gachaanimation_scenes_gachaanimation_scene_gachaanimation_bb85545f36cdab3ff8c1872285b7a750.bundle"
+      },
+      {
+        "before": {
+          "bundle": "435d4fffa816_51ea772c6a062f5e5e991896765b181f",
+          "category": "unknown",
+          "crc": 1493797270,
+          "hash": "6cd7ab006282f4fcb127710f4eb3553a",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_6cd7ab006282f4fcb127710f4eb3553a.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_6cd7ab006282f4fcb127710f4eb3553a.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 523944,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00004_6cd7ab006282f4fcb127710f4eb3553a.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_6cd7ab006282f4fcb127710f4eb3553a.bundle"
+      },
+      {
+        "before": {
+          "bundle": "39dcbb4549ad_64e87c4d81e04a0b93da0825dc644d73",
+          "category": "unknown",
+          "crc": 2351240110,
+          "hash": "67126758ddd6bacc1bce75130d3e0ce1",
+          "internalId": "patch_assets_patch_app.runtime.patch-1.0.6_67126758ddd6bacc1bce75130d3e0ce1.bundle/asset/Android/dummy.net/https:/",
+          "key": "patch_assets_patch_app.runtime.patch-1.0.6_67126758ddd6bacc1bce75130d3e0ce1.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 4159,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/patch_assets_patch_app.runtime.patch-1.0.6_67126758ddd6bacc1bce75130d3e0ce1.bundle"
+        },
+        "key": "patch_assets_patch_app.runtime.patch-1.0.6_67126758ddd6bacc1bce75130d3e0ce1.bundle"
+      }
+    ]
+  },
+  "categories": {
+    "event": {
+      "added": 14,
+      "changed": 0,
+      "removed": 14
+    },
+    "live2d": {
+      "added": 5,
+      "changed": 0,
+      "removed": 5
+    },
+    "unknown": {
+      "added": 4,
+      "changed": 0,
+      "removed": 4
+    },
+    "voice": {
+      "added": 2,
+      "changed": 0,
+      "removed": 2
+    }
+  },
+  "charts": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "detectedAt": "2026-10-20T17:22:23Z",
+  "id": "intl-29ad0e148ecc37ef",
+  "masterChanges": [],
+  "schema": "our-notes-update-event/1",
+  "server": "intl",
+  "severity": "MINOR",
+  "snapshot": {
+    "path": "snapshots/intl-13556a4937f82427",
+    "revision": "intl-13556a4937f82427"
+  },
+  "songs": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "source": {
+    "catalogAfter": "f9f47bf363635120c304c88038c5bc57",
+    "catalogBefore": "7e15f75e73d050ad2b200de69657747c",
+    "catalogMasterAlignment": {
+      "catalogNamedChartCount": 428,
+      "catalogNamedWithoutMaster": [
+        "live_assets_live_musicscore_dev_gekisou_music_32d602978010b945e4e87610f7bbd330.bundle",
+        "live_assets_live_musicscore_dev_score_1step_default_formation_music_501cf83dd417cfcb012b8ad70ab484d6.bundle",
+        "live_assets_live_musicscore_dev_trace_guide_music_fb8fc80534a020126702f9d127ede949.bundle",
+        "live_assets_live_musicscore_option_main_preview_e1ab96d2d0693f67e2d1a169c39e7298.bundle",
+        "live_assets_live_musicscore_performance_music_expert_7c5c1da77be9346c06091a5826764926.bundle",
+        "live_assets_live_musicscore_short_music_9425d6268f1d486b6c94d2982a44910a.bundle",
+        "live_assets_live_musicscore_short_music_expert_b4876b17b8891cede6a0df7fd5d83981.bundle",
+        "live_assets_live_musicscore_short_music_hard_ee30e1c05cf3ab276bdf395d078ecd4a.bundle",
+        "live_assets_live_musicscore_short_music_normal_bcc8ccc0b8eeb6998f3f35a95deb3c40.bundle",
+        "live_assets_live_musicscore_timing_adjust_0d4f51e4e2c9447bb9927b4b205660c2.bundle",
+        "live_assets_live_musicscore_tut_flick2_50f374124f3208269363516d9acc43fd.bundle",
+        "live_assets_live_musicscore_tut_flick_f88c90bd3619be6413710cd49a8f75f2.bundle",
+        "live_assets_live_musicscore_tut_slide2_cc3ec2b549c9de2024b53da594d1320a.bundle",
+        "live_assets_live_musicscore_tut_slide_2d57962bbb93fc4055150692c9e5a8f8.bundle",
+        "live_assets_live_musicscore_tut_tap2_d883422305ca77864f26d70566161639.bundle",
+        "live_assets_live_musicscore_tut_tap_1d0b4e8131264fabe9a6a37f66d002ab.bundle",
+        "live_assets_live_musicscore_tutorial_flick_f254e058b1066ced2589447aa16cc58e.bundle",
+        "live_assets_live_musicscore_tutorial_gekisou_3b6901de447d8a61dce410522a9d75aa.bundle",
+        "live_assets_live_musicscore_tutorial_slide_15a0b492784fe5985b6dfc1ce3e94f63.bundle",
+        "live_assets_live_musicscore_tutorial_tap_d00c568a90ea0be38d28216d6c02373a.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_0_cb99f6d97cb2c0725f8aad7994bf1ac5.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_1_297c293eabfbb8d2194ee37b526ab5b7.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_2_437bb22b3eb114dc64c5968339694057.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_3_cc916316bc2330fe22f3263a7b229a5e.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_4_882e0ffc4ecca28b85943f7c71dca254.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_5_38c5f298f822c0f8a509b199640626f4.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_6_cbebb36335e95190f95ae6a858ae1acc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_7_e33652b3ea2e939e9ae69a60f0d33173.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_8_a01022496415a2342b92b4efa5d2ac0b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_9_66aff9559ac75a2e855b3e09750eb7cc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_cross_a0c3a5f81773f393e51cb03b4c2c23a2.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_percent_9022865ccd0a5e996027c7a21f145012.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_0_8e76c3302b738a5cf27a1ff9793665dc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_1_8e7812d815f9b840e8ac7ee9c088ea20.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_2_f79ca1071350597b3fd7224ec583b45e.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_3_ed721720911b973d39365a1dd707e83e.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_4_67f0058d720b420c98b4db2a5b93a86a.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_5_cffb9857a1adf2aaf7425ba0b7851ef7.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_6_1a6af10061f7aff0336476ed55d4add9.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_7_285d55f57080af4fcb33d7eb011b5e1f.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_8_0147eeb890b39f896e624de4141748ea.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_9_d6a6c3b8a1707b787771dad638801097.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_cross_185bf0b51217edf19dbdf6d4cee8a00d.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_percent_16707d10591708e902f6267346ce7938.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_0_5dd7208d66b1cec142a1b1dfc00ecf39.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_1_a88f15efca099cf9894bdc2de446ec1b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_2_ad2df2447b24d635697e92e772220da4.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_3_4b79cd248561106a98d5b433a79e0a6a.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_4_043568bed51283ea8bb2f250b7eb192b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_5_d57241e2c405a5ef665b71f691550132.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_6_7c4aac016caccb81334e54ee09c674a2.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_7_217ee83f420ecd71ae84bbdc2fede5cb.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_8_bdbb6f59304bd3b41c3e434965b1d369.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_9_335030b37371edabf695bb749821a8bc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_cross_992695431f5fad8b8c164a7cbef926c9.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_percent_d2e45f4b5f2da7e7d7d72ce839919e8f.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_0_5640bb0f7acbe5153d5d627535481ab2.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_1_2e974fb279f6b1dc9b3c2f9094a5d92d.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_2_709185247c63461b39ae2eac92831e5b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_3_29ca7d174d68df07ed72c13a660656b1.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_4_7eff9cba2150759bf683148afc3f0dfb.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_5_8c9ca27eee5fde28cdfd19f4a872badf.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_6_b5785f261f9521fbfc7342ca968e7e31.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_7_20430ed84fefc0d40462effdbad2f0a4.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_8_3288393c0755840f70226251a2c3bb91.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_9_211bb09688f86b49f046d009d4cf9e56.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_cross_d7818f38aaddbc5582fde02ce343744b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_percent_d3fe1b335f36e0fcf4e2549e2ddbb239.bundle"
+      ],
+      "masterReferencedChartCount": 360,
+      "masterReferencesWithoutCatalog": [],
+      "status": "CATALOG_PRELOADED_CHARTS"
+    },
+    "catalogVersionAfter": "1.0.6.701.300eb568",
+    "catalogVersionBefore": "1.0.6.700.f1d8e3a6",
+    "catalogVersionSourceAfter": "master-anchor",
+    "catalogVersionSourceBefore": "master-anchor",
+    "gameVersionAfter": null,
+    "gameVersionBefore": null,
+    "masterAfter": "5a5544efe8d38af907eeae798ad10e4d91db47e894191f9d854916915409e450",
+    "masterAuthority": "official",
+    "masterBefore": "5a5544efe8d38af907eeae798ad10e4d91db47e894191f9d854916915409e450",
+    "masterIndexAfter": "24fd9b680380b003a2963b1ee80f064ebe04b1fc2ed346b4514ddf7f28db4717",
+    "masterIndexBefore": "0dc2600bdd4987adc77e3fd1d1a2fac1d4be3e2f0229011a15fba2dcbe1b203a",
+    "masterManifestSha256After": "e3f6e349a701d049e8c6e0c27c30b37e0d24a2639ac21e2dfb968f1f149a5222",
+    "masterManifestSha256Before": "e3f6e349a701d049e8c6e0c27c30b37e0d24a2639ac21e2dfb968f1f149a5222",
+    "masterResourceVersionAfter": "1.0.6.701.300eb568",
+    "masterResourceVersionBefore": "1.0.6.700.f1d8e3a6",
+    "masterSource": "official-master-cdn",
+    "masterVersionAfter": "0303e2c3c892c2f3ff99fca10bcce661",
+    "masterVersionBefore": "0303e2c3c892c2f3ff99fca10bcce661",
+    "mirrorRevision": "b578b8a61a43c57bc084f05c5ccbdfa701bef511da3a949c276001751fca0397",
+    "mirrorStatus": "MIRROR_CURRENT",
+    "resourceManifestAfter": "f9f47bf363635120c304c88038c5bc57",
+    "resourceManifestBefore": "7e15f75e73d050ad2b200de69657747c"
+  },
+  "summary": {
+    "assetsAdded": 25,
+    "assetsChanged": 0,
+    "assetsRemoved": 25,
+    "chartsAdded": 0,
+    "chartsChanged": 0,
+    "chartsRemoved": 0,
+    "masterAdded": 0,
+    "masterChanged": 0,
+    "masterRemoved": 0,
+    "songsAdded": 0,
+    "songsChanged": 0,
+    "songsRemoved": 0
+  }
+}
