@@ -2,7 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>urn:our-notes-update-feed</id>
   <title>Our Notes Update Feed</title>
-  <updated>2026-10-30T16:26:08Z</updated>
+  <updated>2026-11-02T05:13:28Z</updated>
+  <entry>
+    <id>urn:our-notes-update:intl-6df71096293e2d91</id>
+    <title>Our Notes data update · intl · MINOR</title>
+    <updated>2026-11-02T05:13:28Z</updated>
+    <summary>Assets +50 ~0 -11; Master +5 ~0 -0; charts +4 ~0 -0</summary>
+    <link rel="alternate" href="api/events/intl-6df71096293e2d91.json" />
+  </entry>
   <entry>
     <id>urn:our-notes-update:intl-0b8877bd2e22c8cc</id>
     <title>Our Notes data update · intl · MINOR</title>

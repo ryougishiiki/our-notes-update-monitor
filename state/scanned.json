@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-30T16:26:08Z",
+  "checkedAt": "2026-11-02T05:13:28Z",
   "provenance": {
     "catalog": "official-cdn-hash",
     "catalogVersionSource": "master-anchor",
@@ -11,15 +11,15 @@
   "schema": "our-notes-probe/1",
   "server": "intl",
   "sources": {
-    "catalogHash": "eefd67b619eac831d9382ebcdc628a6a",
-    "catalogVersion": "1.1.0.104.a8170ed6",
+    "catalogHash": "6b61dc2ddecdb001c08ddc57c7126222",
+    "catalogVersion": "1.1.0.200.77261b1a",
     "catalogVersionConfiguredFloor": "1.0.0.201",
-    "catalogVersionResolved": "1.1.0.104.a8170ed6",
+    "catalogVersionResolved": "1.1.0.200.77261b1a",
     "gameVersion": null,
-    "masterManifestSha256": "a1e7422171941219167354da3e9624fde3cebaad444575d4ef31e4dc48329209",
-    "masterResourceVersion": "1.1.0.104.a8170ed6",
-    "masterRevision": "9b69c2bc60412a786444402319c89f301c93580834e84bbf9ca84a6d4a97c4f3",
-    "masterVersion": "5925e3ce04144698a82201224d954a11",
-    "resourceManifestRevision": "eefd67b619eac831d9382ebcdc628a6a"
+    "masterManifestSha256": "664c0e9a774ecc9218d5c5a7ad87d71e9c2230e0e962f05be0d663c3a8c60a21",
+    "masterResourceVersion": "1.1.0.200.77261b1a",
+    "masterRevision": "9da5b28b07dbdcaadfa7fb832b59e4997ab12550f19c7ca02c07246d4a25abd8",
+    "masterVersion": "c045774b66a6c9d107739ba5ca121e6a",
+    "resourceManifestRevision": "6b61dc2ddecdb001c08ddc57c7126222"
   }
 }
