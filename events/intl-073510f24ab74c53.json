@@ -1,0 +1,1046 @@
+{
+  "assets": {
+    "added": [
+      {
+        "after": {
+          "bundle": "5cc5c21e2c02_6e67992cb79097a6f390db96970e58f2",
+          "category": "scenario",
+          "crc": 275375263,
+          "hash": "cc554d19d0baf1171e61ab915f875933",
+          "internalId": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_cc554d19d0baf1171e61ab915f875933.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_cc554d19d0baf1171e61ab915f875933.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 19349,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_cc554d19d0baf1171e61ab915f875933.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_cc554d19d0baf1171e61ab915f875933.bundle"
+      },
+      {
+        "after": {
+          "bundle": "ecc7367e804e_d06a7f7239fe1e4cba0558dde7b77dff",
+          "category": "scenario",
+          "crc": 522675895,
+          "hash": "c27da7c841a3169c95ac16a7f0f2a730",
+          "internalId": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_c27da7c841a3169c95ac16a7f0f2a730.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_c27da7c841a3169c95ac16a7f0f2a730.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 32500,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_c27da7c841a3169c95ac16a7f0f2a730.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_c27da7c841a3169c95ac16a7f0f2a730.bundle"
+      },
+      {
+        "after": {
+          "bundle": "48c997b304e0_29c821066b3a60966c4507b561c9129c",
+          "category": "scenario",
+          "crc": 3685851327,
+          "hash": "93a473354232b22855f7fd3bfe638f82",
+          "internalId": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_93a473354232b22855f7fd3bfe638f82.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_93a473354232b22855f7fd3bfe638f82.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 12969,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_93a473354232b22855f7fd3bfe638f82.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_93a473354232b22855f7fd3bfe638f82.bundle"
+      },
+      {
+        "after": {
+          "bundle": "cc0604740e83_3473d6e38b733f1e88460f238bb64d6b",
+          "category": "scenario",
+          "crc": 2533457840,
+          "hash": "dc1653bf2c740fc3f134959e430ad0fc",
+          "internalId": "adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_dc1653bf2c740fc3f134959e430ad0fc.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_dc1653bf2c740fc3f134959e430ad0fc.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 16684,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_dc1653bf2c740fc3f134959e430ad0fc.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_dc1653bf2c740fc3f134959e430ad0fc.bundle"
+      },
+      {
+        "after": {
+          "bundle": "22ad326c2111_9a5bf804c9bd77003556d61999d436d8",
+          "category": "live2d",
+          "crc": 733870200,
+          "hash": "37bcef618481e944950219e68cc15b58",
+          "internalId": "character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_37bcef618481e944950219e68cc15b58.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_37bcef618481e944950219e68cc15b58.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 6237060,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_37bcef618481e944950219e68cc15b58.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_37bcef618481e944950219e68cc15b58.bundle"
+      },
+      {
+        "after": {
+          "bundle": "fa4428a1c022_efff5ca94ecb0bf5892f12f067bff2d5",
+          "category": "music_audio",
+          "crc": 3739234942,
+          "hash": "d7eb089e8124441ccb2a486d59c95175",
+          "internalId": "cri_assets_cri_sound_m_sepia_d7eb089e8124441ccb2a486d59c95175.bundle/asset/Android/dummy.net/https:/",
+          "key": "cri_assets_cri_sound_m_sepia_d7eb089e8124441ccb2a486d59c95175.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2841905,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri_sound_m_sepia_d7eb089e8124441ccb2a486d59c95175.bundle"
+        },
+        "key": "cri_assets_cri_sound_m_sepia_d7eb089e8124441ccb2a486d59c95175.bundle"
+      },
+      {
+        "after": {
+          "bundle": "0ecdf6208761_c2123cb3d1a10b595830f1b13785f96e",
+          "category": "music_audio",
+          "crc": 591034717,
+          "hash": "2bc0a5ea8ca16622efcddda39902f720",
+          "internalId": "cri_assets_cri_sound_m_sepia_short_2bc0a5ea8ca16622efcddda39902f720.bundle/asset/Android/dummy.net/https:/",
+          "key": "cri_assets_cri_sound_m_sepia_short_2bc0a5ea8ca16622efcddda39902f720.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2231,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri_sound_m_sepia_short_2bc0a5ea8ca16622efcddda39902f720.bundle"
+        },
+        "key": "cri_assets_cri_sound_m_sepia_short_2bc0a5ea8ca16622efcddda39902f720.bundle"
+      },
+      {
+        "after": {
+          "bundle": "1323ac121c0b_d1e2772fca18a42a16bb01423c89c509",
+          "category": "music_audio",
+          "crc": 3102835382,
+          "hash": "7fefbd5d6b93174b197593fa2b7113de",
+          "internalId": "cri_assets_cri_sound_voicereallive_01_7fefbd5d6b93174b197593fa2b7113de.bundle/asset/Android/dummy.net/https:/",
+          "key": "cri_assets_cri_sound_voicereallive_01_7fefbd5d6b93174b197593fa2b7113de.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2233,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri_sound_voicereallive_01_7fefbd5d6b93174b197593fa2b7113de.bundle"
+        },
+        "key": "cri_assets_cri_sound_voicereallive_01_7fefbd5d6b93174b197593fa2b7113de.bundle"
+      },
+      {
+        "after": {
+          "bundle": "bb5684e6f337_6d6c171fa3b571321676650850babf78",
+          "category": "music_audio",
+          "crc": 4277224529,
+          "hash": "fd0f9300c60637adbfbb7dee0712dd2f",
+          "internalId": "cri_assets_cri_sound_voicereallive_02_fd0f9300c60637adbfbb7dee0712dd2f.bundle/asset/Android/dummy.net/https:/",
+          "key": "cri_assets_cri_sound_voicereallive_02_fd0f9300c60637adbfbb7dee0712dd2f.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2232,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri_sound_voicereallive_02_fd0f9300c60637adbfbb7dee0712dd2f.bundle"
+        },
+        "key": "cri_assets_cri_sound_voicereallive_02_fd0f9300c60637adbfbb7dee0712dd2f.bundle"
+      },
+      {
+        "after": {
+          "bundle": "83269841b67a_020003a432e0d4200fa18affc5b02f79",
+          "category": "music_audio",
+          "crc": 1044774221,
+          "hash": "30022edd2bb9986f4446fa45a99b2e2d",
+          "internalId": "cri_assets_cri_sound_voicereallive_03_30022edd2bb9986f4446fa45a99b2e2d.bundle/asset/Android/dummy.net/https:/",
+          "key": "cri_assets_cri_sound_voicereallive_03_30022edd2bb9986f4446fa45a99b2e2d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2222,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri_sound_voicereallive_03_30022edd2bb9986f4446fa45a99b2e2d.bundle"
+        },
+        "key": "cri_assets_cri_sound_voicereallive_03_30022edd2bb9986f4446fa45a99b2e2d.bundle"
+      },
+      {
+        "after": {
+          "bundle": "50a05c1aa55f_37a8f5e1ae6f7170cdc9b4503b303a91",
+          "category": "music_audio",
+          "crc": 3632933742,
+          "hash": "0ccea15a8238c9fddb8b765e5031a6f4",
+          "internalId": "cri_assets_cri_sound_voicereallive_04_0ccea15a8238c9fddb8b765e5031a6f4.bundle/asset/Android/dummy.net/https:/",
+          "key": "cri_assets_cri_sound_voicereallive_04_0ccea15a8238c9fddb8b765e5031a6f4.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2226,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri_sound_voicereallive_04_0ccea15a8238c9fddb8b765e5031a6f4.bundle"
+        },
+        "key": "cri_assets_cri_sound_voicereallive_04_0ccea15a8238c9fddb8b765e5031a6f4.bundle"
+      },
+      {
+        "after": {
+          "bundle": "3da06221959e_6513084c298d8e16d561d8449eb4d916",
+          "category": "music_audio",
+          "crc": 2476495665,
+          "hash": "7f6dc9c026d12675ff475ad47753f66d",
+          "internalId": "cri_assets_cri_sound_voicereallive_05_7f6dc9c026d12675ff475ad47753f66d.bundle/asset/Android/dummy.net/https:/",
+          "key": "cri_assets_cri_sound_voicereallive_05_7f6dc9c026d12675ff475ad47753f66d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2233,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri_sound_voicereallive_05_7f6dc9c026d12675ff475ad47753f66d.bundle"
+        },
+        "key": "cri_assets_cri_sound_voicereallive_05_7f6dc9c026d12675ff475ad47753f66d.bundle"
+      },
+      {
+        "after": {
+          "bundle": "a914f184aab340e95cc738b3e7a78de5",
+          "category": "unknown",
+          "crc": 0,
+          "hash": "2933bdc14f7e489aa74a6d5132a1d172",
+          "internalId": "embbuildtempanchor_assets_all.bundle/{UnityEngine.AddressableAssets.Addressables.RuntimePath}/Android",
+          "key": "embbuildtempanchor_assets_all_2933bdc14f7e489aa74a6d5132a1d172.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 83568,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/embbuildtempanchor_assets_all.bundle"
+        },
+        "key": "embbuildtempanchor_assets_all_2933bdc14f7e489aa74a6d5132a1d172.bundle"
+      },
+      {
+        "after": {
+          "bundle": "c1826ac70432_66513b88079bd2683c7d2fad9d250e52",
+          "category": "unknown",
+          "crc": 239693998,
+          "hash": "b95e621f3bed1a0cf07e03254dc90b44",
+          "internalId": "image_assets_image_degree_media_mygo_degree_9th_live_02_01_b95e621f3bed1a0cf07e03254dc90b44.bundle/asset/Android/dummy.net/https:/",
+          "key": "image_assets_image_degree_media_mygo_degree_9th_live_02_01_b95e621f3bed1a0cf07e03254dc90b44.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 63933,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/image_assets_image_degree_media_mygo_degree_9th_live_02_01_b95e621f3bed1a0cf07e03254dc90b44.bundle"
+        },
+        "key": "image_assets_image_degree_media_mygo_degree_9th_live_02_01_b95e621f3bed1a0cf07e03254dc90b44.bundle"
+      },
+      {
+        "after": {
+          "bundle": "47293fb95657_a3cd2c60169ebc1755be2e81a61949d6",
+          "category": "unknown",
+          "crc": 2773330898,
+          "hash": "1b78952ff8322c7dbbd3c62bb5376f8c",
+          "internalId": "image_assets_image_degree_media_mygo_degree_9th_live_02_02_1b78952ff8322c7dbbd3c62bb5376f8c.bundle/asset/Android/dummy.net/https:/",
+          "key": "image_assets_image_degree_media_mygo_degree_9th_live_02_02_1b78952ff8322c7dbbd3c62bb5376f8c.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 76695,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/image_assets_image_degree_media_mygo_degree_9th_live_02_02_1b78952ff8322c7dbbd3c62bb5376f8c.bundle"
+        },
+        "key": "image_assets_image_degree_media_mygo_degree_9th_live_02_02_1b78952ff8322c7dbbd3c62bb5376f8c.bundle"
+      },
+      {
+        "after": {
+          "bundle": "72232a52d67c_4f6b521e99ea2f6056d6b13deade2466",
+          "category": "jacket",
+          "crc": 3324224325,
+          "hash": "d37913cb3101eb390043eed796a843bf",
+          "internalId": "image_assets_image_jacket_jkt_001_100201_d37913cb3101eb390043eed796a843bf.bundle/asset/Android/dummy.net/https:/",
+          "key": "image_assets_image_jacket_jkt_001_100201_d37913cb3101eb390043eed796a843bf.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 112978,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/image_assets_image_jacket_jkt_001_100201_d37913cb3101eb390043eed796a843bf.bundle"
+        },
+        "key": "image_assets_image_jacket_jkt_001_100201_d37913cb3101eb390043eed796a843bf.bundle"
+      },
+      {
+        "after": {
+          "bundle": "8ab1eaf77397_96b62c9731ba451b15ad489304f1c2b3",
+          "category": "jacket",
+          "crc": 1352557012,
+          "hash": "79eebc59279ed98c094a6b54f37a2247",
+          "internalId": "image_assets_image_jacket_small_jkt_001_100201_79eebc59279ed98c094a6b54f37a2247.bundle/asset/Android/dummy.net/https:/",
+          "key": "image_assets_image_jacket_small_jkt_001_100201_79eebc59279ed98c094a6b54f37a2247.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 11557,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/image_assets_image_jacket_small_jkt_001_100201_79eebc59279ed98c094a6b54f37a2247.bundle"
+        },
+        "key": "image_assets_image_jacket_small_jkt_001_100201_79eebc59279ed98c094a6b54f37a2247.bundle"
+      },
+      {
+        "after": {
+          "bundle": "05e95194fe4a_5d4e593c990567ef0d78501943494ef6",
+          "category": "music_score",
+          "crc": 3829972664,
+          "hash": "cb7e2a477c72ea444cc8ab250df0028e",
+          "internalId": "live_assets_live_musicscore_0201_0201_00_cb7e2a477c72ea444cc8ab250df0028e.bundle/asset/Android/dummy.net/https:/",
+          "key": "live_assets_live_musicscore_0201_0201_00_cb7e2a477c72ea444cc8ab250df0028e.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2004,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/live_assets_live_musicscore_0201_0201_00_cb7e2a477c72ea444cc8ab250df0028e.bundle"
+        },
+        "key": "live_assets_live_musicscore_0201_0201_00_cb7e2a477c72ea444cc8ab250df0028e.bundle"
+      },
+      {
+        "after": {
+          "bundle": "caee1206c835_bad66f350edcc26010c46053d5d8350d",
+          "category": "music_score",
+          "crc": 858594416,
+          "hash": "e352cd11a6aad0d97d4e862c823b385b",
+          "internalId": "live_assets_live_musicscore_0201_0201_01_e352cd11a6aad0d97d4e862c823b385b.bundle/asset/Android/dummy.net/https:/",
+          "key": "live_assets_live_musicscore_0201_0201_01_e352cd11a6aad0d97d4e862c823b385b.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 2615,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/live_assets_live_musicscore_0201_0201_01_e352cd11a6aad0d97d4e862c823b385b.bundle"
+        },
+        "key": "live_assets_live_musicscore_0201_0201_01_e352cd11a6aad0d97d4e862c823b385b.bundle"
+      },
+      {
+        "after": {
+          "bundle": "0bd8dbcb04a5_962d368cd7687a869f6b9ab0b056a0ab",
+          "category": "music_score",
+          "crc": 1831164406,
+          "hash": "b6556298200f1b1b9643e46164ae1166",
+          "internalId": "live_assets_live_musicscore_0201_0201_02_b6556298200f1b1b9643e46164ae1166.bundle/asset/Android/dummy.net/https:/",
+          "key": "live_assets_live_musicscore_0201_0201_02_b6556298200f1b1b9643e46164ae1166.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 3645,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/live_assets_live_musicscore_0201_0201_02_b6556298200f1b1b9643e46164ae1166.bundle"
+        },
+        "key": "live_assets_live_musicscore_0201_0201_02_b6556298200f1b1b9643e46164ae1166.bundle"
+      },
+      {
+        "after": {
+          "bundle": "784fcc2b0bc5_c2cab62a92605d1f943e498f1e1936b7",
+          "category": "music_score",
+          "crc": 1614431940,
+          "hash": "19363ae656d4f28fea8049cb6684d3eb",
+          "internalId": "live_assets_live_musicscore_0201_0201_03_19363ae656d4f28fea8049cb6684d3eb.bundle/asset/Android/dummy.net/https:/",
+          "key": "live_assets_live_musicscore_0201_0201_03_19363ae656d4f28fea8049cb6684d3eb.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 4233,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/live_assets_live_musicscore_0201_0201_03_19363ae656d4f28fea8049cb6684d3eb.bundle"
+        },
+        "key": "live_assets_live_musicscore_0201_0201_03_19363ae656d4f28fea8049cb6684d3eb.bundle"
+      },
+      {
+        "after": {
+          "bundle": "321dd32c4d1e_51ea772c6a062f5e5e991896765b181f",
+          "category": "unknown",
+          "crc": 3112128215,
+          "hash": "19e8a94cdaa913e3a15a84a9e0910712",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_19e8a94cdaa913e3a15a84a9e0910712.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_19e8a94cdaa913e3a15a84a9e0910712.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 523944,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00004_19e8a94cdaa913e3a15a84a9e0910712.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_19e8a94cdaa913e3a15a84a9e0910712.bundle"
+      },
+      {
+        "after": {
+          "bundle": "74cc5f2d80cd_2bf06e6fcffc029dd0f48fae5b2cc5d1",
+          "category": "unknown",
+          "crc": 1890638288,
+          "hash": "5ab5a03ccac8aafdbe54988d60fd470a",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00011_5ab5a03ccac8aafdbe54988d60fd470a.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00011_5ab5a03ccac8aafdbe54988d60fd470a.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 379327,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00011_5ab5a03ccac8aafdbe54988d60fd470a.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00011_5ab5a03ccac8aafdbe54988d60fd470a.bundle"
+      },
+      {
+        "after": {
+          "bundle": "40802ea17d9c_d14ebc19068be53b215c6c73dfe148d5",
+          "category": "unknown",
+          "crc": 1800866464,
+          "hash": "4a12394540a2470b4e3aeea89655a28d",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00011_sprite_meta_data_4a12394540a2470b4e3aeea89655a28d.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00011_sprite_meta_data_4a12394540a2470b4e3aeea89655a28d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 1770,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00011_sprite_meta_data_4a12394540a2470b4e3aeea89655a28d.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00011_sprite_meta_data_4a12394540a2470b4e3aeea89655a28d.bundle"
+      },
+      {
+        "after": {
+          "bundle": "1da608e12f75_2696e40209035e466c98d2def355f985",
+          "category": "unknown",
+          "crc": 157565569,
+          "hash": "484719e5d631f703640b927399b4ecd1",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00012_484719e5d631f703640b927399b4ecd1.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00012_484719e5d631f703640b927399b4ecd1.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 494933,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00012_484719e5d631f703640b927399b4ecd1.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00012_484719e5d631f703640b927399b4ecd1.bundle"
+      },
+      {
+        "after": {
+          "bundle": "710ed43993e8_ba4b69a3aa00803222c593a0e211fc33",
+          "category": "unknown",
+          "crc": 2442559767,
+          "hash": "edb264cb792f7b57fd641676d429eccd",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00012_sprite_meta_data_edb264cb792f7b57fd641676d429eccd.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00012_sprite_meta_data_edb264cb792f7b57fd641676d429eccd.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 1791,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00012_sprite_meta_data_edb264cb792f7b57fd641676d429eccd.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00012_sprite_meta_data_edb264cb792f7b57fd641676d429eccd.bundle"
+      },
+      {
+        "after": {
+          "bundle": "b9a10a450b58cc61bf64700dda0c6586",
+          "category": "unknown",
+          "crc": 0,
+          "hash": "094874fbcd3cc2c78f6c174139f3f5ac",
+          "internalId": "m_sepia_short_094874fbcd3cc2c78f6c174139f3f5ac/cri_assets_cri/sound/asset/Android/dummy.net/https:/",
+          "key": "m_sepia_short_094874fbcd3cc2c78f6c174139f3f5ac/cri_assets_cri/sound",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 925728,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri/sound/m_sepia_short_094874fbcd3cc2c78f6c174139f3f5ac"
+        },
+        "key": "m_sepia_short_094874fbcd3cc2c78f6c174139f3f5ac/cri_assets_cri/sound"
+      },
+      {
+        "after": {
+          "bundle": "d0a6ca60b04e_dbc7f49aa32d0a2639857b6503a59b29",
+          "category": "unknown",
+          "crc": 1159823706,
+          "hash": "819225d4fb26df259fb6498404ca6dfa",
+          "internalId": "patch_assets_patch_app.runtime.patch-1.1.0_819225d4fb26df259fb6498404ca6dfa.bundle/asset/Android/dummy.net/https:/",
+          "key": "patch_assets_patch_app.runtime.patch-1.1.0_819225d4fb26df259fb6498404ca6dfa.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 25289,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/patch_assets_patch_app.runtime.patch-1.1.0_819225d4fb26df259fb6498404ca6dfa.bundle"
+        },
+        "key": "patch_assets_patch_app.runtime.patch-1.1.0_819225d4fb26df259fb6498404ca6dfa.bundle"
+      },
+      {
+        "after": {
+          "bundle": "a7c64792b5eb_df254d3333025f1689ec68e99eb3a6e2",
+          "category": "unknown",
+          "crc": 2764542073,
+          "hash": "7ab41151582445d193144f4ebed97b75",
+          "internalId": "patch_assets_patch_mingle.runtime.patch-1.1.0_7ab41151582445d193144f4ebed97b75.bundle/asset/Android/dummy.net/https:/",
+          "key": "patch_assets_patch_mingle.runtime.patch-1.1.0_7ab41151582445d193144f4ebed97b75.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 3407,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/patch_assets_patch_mingle.runtime.patch-1.1.0_7ab41151582445d193144f4ebed97b75.bundle"
+        },
+        "key": "patch_assets_patch_mingle.runtime.patch-1.1.0_7ab41151582445d193144f4ebed97b75.bundle"
+      },
+      {
+        "after": {
+          "bundle": "470e84a8b0d2_d27b1ae17d8cb4f8a83aa3d981d7f5fe",
+          "category": "unknown",
+          "crc": 2997195647,
+          "hash": "4471ff52fde2182fcf39327bff2200c7",
+          "internalId": "seasonpass_assets_seasonpass_banner_banner_seasonpass_00010_4471ff52fde2182fcf39327bff2200c7.bundle/asset/Android/dummy.net/https:/",
+          "key": "seasonpass_assets_seasonpass_banner_banner_seasonpass_00010_4471ff52fde2182fcf39327bff2200c7.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 36748,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/seasonpass_assets_seasonpass_banner_banner_seasonpass_00010_4471ff52fde2182fcf39327bff2200c7.bundle"
+        },
+        "key": "seasonpass_assets_seasonpass_banner_banner_seasonpass_00010_4471ff52fde2182fcf39327bff2200c7.bundle"
+      },
+      {
+        "after": {
+          "bundle": "36acc943cc90_2a53af63ae7589f252b1d7f1d7f0c2ff",
+          "category": "unknown",
+          "crc": 1780427826,
+          "hash": "1b58526f8921e797d7d341c332d127ea",
+          "internalId": "shop_assets_shop_itemthumbnail_shop_thumb_live_01_00003_1b58526f8921e797d7d341c332d127ea.bundle/asset/Android/dummy.net/https:/",
+          "key": "shop_assets_shop_itemthumbnail_shop_thumb_live_01_00003_1b58526f8921e797d7d341c332d127ea.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 249324,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/shop_assets_shop_itemthumbnail_shop_thumb_live_01_00003_1b58526f8921e797d7d341c332d127ea.bundle"
+        },
+        "key": "shop_assets_shop_itemthumbnail_shop_thumb_live_01_00003_1b58526f8921e797d7d341c332d127ea.bundle"
+      },
+      {
+        "after": {
+          "bundle": "a5369a2fa674_251f34cc09dbbfc8134b42af4cb03252",
+          "category": "unknown",
+          "crc": 989461338,
+          "hash": "16fce2c4d38b7ab3977e2880c9520975",
+          "internalId": "shop_assets_shop_tab_bannertab_seasonpass_0010_16fce2c4d38b7ab3977e2880c9520975.bundle/asset/Android/dummy.net/https:/",
+          "key": "shop_assets_shop_tab_bannertab_seasonpass_0010_16fce2c4d38b7ab3977e2880c9520975.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 36722,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/shop_assets_shop_tab_bannertab_seasonpass_0010_16fce2c4d38b7ab3977e2880c9520975.bundle"
+        },
+        "key": "shop_assets_shop_tab_bannertab_seasonpass_0010_16fce2c4d38b7ab3977e2880c9520975.bundle"
+      },
+      {
+        "after": {
+          "bundle": "ca8a99e3b2c0_e5bea3589b8ccf1f714e8235b207845b",
+          "category": "scenario",
+          "crc": 2928366645,
+          "hash": "91796c099dd34e55fec8d3ee68645ada",
+          "internalId": "story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_91796c099dd34e55fec8d3ee68645ada.bundle/asset/Android/dummy.net/https:/",
+          "key": "story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_91796c099dd34e55fec8d3ee68645ada.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 37492,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_91796c099dd34e55fec8d3ee68645ada.bundle"
+        },
+        "key": "story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_91796c099dd34e55fec8d3ee68645ada.bundle"
+      },
+      {
+        "after": {
+          "bundle": "9cc00a4f8183_04f5339bbff9c04b125ad15a9ce83cb5",
+          "category": "scenario",
+          "crc": 743491252,
+          "hash": "e14a314280d17a0517edb2f6ee811f1b",
+          "internalId": "story_assets_story_image_episode_ui_image_chapter_5_episode_16_e14a314280d17a0517edb2f6ee811f1b.bundle/asset/Android/dummy.net/https:/",
+          "key": "story_assets_story_image_episode_ui_image_chapter_5_episode_16_e14a314280d17a0517edb2f6ee811f1b.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 275457,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/story_assets_story_image_episode_ui_image_chapter_5_episode_16_e14a314280d17a0517edb2f6ee811f1b.bundle"
+        },
+        "key": "story_assets_story_image_episode_ui_image_chapter_5_episode_16_e14a314280d17a0517edb2f6ee811f1b.bundle"
+      },
+      {
+        "after": {
+          "bundle": "3adf7c04b03b_5b9ddd3940b18e4c6db43101e18fcd0e",
+          "category": "unknown",
+          "crc": 505154212,
+          "hash": "383fa6bbe9329cdf9ac2048365e7a166",
+          "internalId": "supportcard_assets_supportcard_81_skill_sprite_383fa6bbe9329cdf9ac2048365e7a166.bundle/asset/Android/dummy.net/https:/",
+          "key": "supportcard_assets_supportcard_81_skill_sprite_383fa6bbe9329cdf9ac2048365e7a166.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 6762,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/supportcard_assets_supportcard_81_skill_sprite_383fa6bbe9329cdf9ac2048365e7a166.bundle"
+        },
+        "key": "supportcard_assets_supportcard_81_skill_sprite_383fa6bbe9329cdf9ac2048365e7a166.bundle"
+      },
+      {
+        "after": {
+          "bundle": "f6ee48583928_94935bbacf9fc96920332fbbefe8716e",
+          "category": "unknown",
+          "crc": 683386950,
+          "hash": "2419c2793958e72b8b438b07bdd722c4",
+          "internalId": "supportcard_assets_supportcard_81_snap_full_2419c2793958e72b8b438b07bdd722c4.bundle/asset/Android/dummy.net/https:/",
+          "key": "supportcard_assets_supportcard_81_snap_full_2419c2793958e72b8b438b07bdd722c4.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 908755,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/supportcard_assets_supportcard_81_snap_full_2419c2793958e72b8b438b07bdd722c4.bundle"
+        },
+        "key": "supportcard_assets_supportcard_81_snap_full_2419c2793958e72b8b438b07bdd722c4.bundle"
+      },
+      {
+        "after": {
+          "bundle": "c4335f637d18_660e187d43c6eff7bf532230fde84aee",
+          "category": "unknown",
+          "crc": 3919715111,
+          "hash": "e545dd8dabb50b4da3efa098b79cda2e",
+          "internalId": "supportcard_assets_supportcard_81_snap_thumbnail_e545dd8dabb50b4da3efa098b79cda2e.bundle/asset/Android/dummy.net/https:/",
+          "key": "supportcard_assets_supportcard_81_snap_thumbnail_e545dd8dabb50b4da3efa098b79cda2e.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 69963,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/supportcard_assets_supportcard_81_snap_thumbnail_e545dd8dabb50b4da3efa098b79cda2e.bundle"
+        },
+        "key": "supportcard_assets_supportcard_81_snap_thumbnail_e545dd8dabb50b4da3efa098b79cda2e.bundle"
+      },
+      {
+        "after": {
+          "bundle": "c43e0cead5c558009709dcdee1ded59c",
+          "category": "voice",
+          "crc": 0,
+          "hash": "e3b91e85c165c003944b7e87d85d56ae",
+          "internalId": "voicereallive_01_e3b91e85c165c003944b7e87d85d56ae/cri_assets_cri/sound/asset/Android/dummy.net/https:/",
+          "key": "voicereallive_01_e3b91e85c165c003944b7e87d85d56ae/cri_assets_cri/sound",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 226912,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri/sound/voicereallive_01_e3b91e85c165c003944b7e87d85d56ae"
+        },
+        "key": "voicereallive_01_e3b91e85c165c003944b7e87d85d56ae/cri_assets_cri/sound"
+      },
+      {
+        "after": {
+          "bundle": "272b2f89dff44ed0bf1aff228e20672c",
+          "category": "voice",
+          "crc": 0,
+          "hash": "2de3bdd4397baa781d95b993b601b4a3",
+          "internalId": "voicereallive_02_2de3bdd4397baa781d95b993b601b4a3/cri_assets_cri/sound/asset/Android/dummy.net/https:/",
+          "key": "voicereallive_02_2de3bdd4397baa781d95b993b601b4a3/cri_assets_cri/sound",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 159744,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri/sound/voicereallive_02_2de3bdd4397baa781d95b993b601b4a3"
+        },
+        "key": "voicereallive_02_2de3bdd4397baa781d95b993b601b4a3/cri_assets_cri/sound"
+      },
+      {
+        "after": {
+          "bundle": "0a3d269883325bb3f0d87b6f3c438c96",
+          "category": "voice",
+          "crc": 0,
+          "hash": "b5587f45d9e69aaaf55ddcd13b2bb5c0",
+          "internalId": "voicereallive_03_b5587f45d9e69aaaf55ddcd13b2bb5c0/cri_assets_cri/sound/asset/Android/dummy.net/https:/",
+          "key": "voicereallive_03_b5587f45d9e69aaaf55ddcd13b2bb5c0/cri_assets_cri/sound",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 87104,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri/sound/voicereallive_03_b5587f45d9e69aaaf55ddcd13b2bb5c0"
+        },
+        "key": "voicereallive_03_b5587f45d9e69aaaf55ddcd13b2bb5c0/cri_assets_cri/sound"
+      },
+      {
+        "after": {
+          "bundle": "05421e1cd50c5e4cdd52f8e9c2fe9263",
+          "category": "voice",
+          "crc": 0,
+          "hash": "17257bd8042af4b5ec1cb308fd2d4342",
+          "internalId": "voicereallive_04_17257bd8042af4b5ec1cb308fd2d4342/cri_assets_cri/sound/asset/Android/dummy.net/https:/",
+          "key": "voicereallive_04_17257bd8042af4b5ec1cb308fd2d4342/cri_assets_cri/sound",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 180896,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri/sound/voicereallive_04_17257bd8042af4b5ec1cb308fd2d4342"
+        },
+        "key": "voicereallive_04_17257bd8042af4b5ec1cb308fd2d4342/cri_assets_cri/sound"
+      },
+      {
+        "after": {
+          "bundle": "1b5364853ea49404f7d66d4d6a63562f",
+          "category": "voice",
+          "crc": 0,
+          "hash": "4d13917bf0f113c44af1cfb459d519a2",
+          "internalId": "voicereallive_05_4d13917bf0f113c44af1cfb459d519a2/cri_assets_cri/sound/asset/Android/dummy.net/https:/",
+          "key": "voicereallive_05_4d13917bf0f113c44af1cfb459d519a2/cri_assets_cri/sound",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 146816,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/cri_assets_cri/sound/voicereallive_05_4d13917bf0f113c44af1cfb459d519a2"
+        },
+        "key": "voicereallive_05_4d13917bf0f113c44af1cfb459d519a2/cri_assets_cri/sound"
+      }
+    ],
+    "changed": [],
+    "removed": [
+      {
+        "before": {
+          "bundle": "68d0ec4842f8_6e67992cb79097a6f390db96970e58f2",
+          "category": "scenario",
+          "crc": 3807793767,
+          "hash": "2bfe0ddc78bdf6fdbfc43f1c852ee49c",
+          "internalId": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_2bfe0ddc78bdf6fdbfc43f1c852ee49c.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_2bfe0ddc78bdf6fdbfc43f1c852ee49c.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 19349,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_2bfe0ddc78bdf6fdbfc43f1c852ee49c.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-episode_2bfe0ddc78bdf6fdbfc43f1c852ee49c.bundle"
+      },
+      {
+        "before": {
+          "bundle": "0d04eab08fd5_d06a7f7239fe1e4cba0558dde7b77dff",
+          "category": "scenario",
+          "crc": 734169084,
+          "hash": "7b86a48b8911a68f7b9ca87ad1dffaac",
+          "internalId": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_7b86a48b8911a68f7b9ca87ad1dffaac.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_7b86a48b8911a68f7b9ca87ad1dffaac.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 32461,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_7b86a48b8911a68f7b9ca87ad1dffaac.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20-text_7b86a48b8911a68f7b9ca87ad1dffaac.bundle"
+      },
+      {
+        "before": {
+          "bundle": "7b958c54b619_29c821066b3a60966c4507b561c9129c",
+          "category": "scenario",
+          "crc": 2928614273,
+          "hash": "d09ad621846b0d083187a3269a9887bd",
+          "internalId": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_d09ad621846b0d083187a3269a9887bd.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_d09ad621846b0d083187a3269a9887bd.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 12967,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_d09ad621846b0d083187a3269a9887bd.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_kadan_005_1_20_adv_script_kadan_005_1_20_d09ad621846b0d083187a3269a9887bd.bundle"
+      },
+      {
+        "before": {
+          "bundle": "8bb654e9daee_3473d6e38b733f1e88460f238bb64d6b",
+          "category": "scenario",
+          "crc": 4206156680,
+          "hash": "1790e66e305c3e5909401bd64589ba04",
+          "internalId": "adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_1790e66e305c3e5909401bd64589ba04.bundle/asset/Android/dummy.net/https:/",
+          "key": "adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_1790e66e305c3e5909401bd64589ba04.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 16680,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_1790e66e305c3e5909401bd64589ba04.bundle"
+        },
+        "key": "adv_assets_adv_episode_adv_script_mujica_002_1_17_adv_script_mujica_002_1_17-text_1790e66e305c3e5909401bd64589ba04.bundle"
+      },
+      {
+        "before": {
+          "bundle": "5f49c8280968_9a5bf804c9bd77003556d61999d436d8",
+          "category": "live2d",
+          "crc": 4204719238,
+          "hash": "7b74645a50615b82d4ab31863d390775",
+          "internalId": "character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_7b74645a50615b82d4ab31863d390775.bundle/asset/Android/dummy.net/https:/",
+          "key": "character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_7b74645a50615b82d4ab31863d390775.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 6281830,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_7b74645a50615b82d4ab31863d390775.bundle"
+        },
+        "key": "character-live2d_assets_character-live2d-025_adv-adv_live2d_shizuku_025_school_winter_jhseverythinginitialdownload_7b74645a50615b82d4ab31863d390775.bundle"
+      },
+      {
+        "before": {
+          "bundle": "dbfaa79b381c0df2ad5ede351bab99f6",
+          "category": "unknown",
+          "crc": 0,
+          "hash": "9055807fae270de73ef0de53ccde467b",
+          "internalId": "embbuildtempanchor_assets_all.bundle/{UnityEngine.AddressableAssets.Addressables.RuntimePath}/Android",
+          "key": "embbuildtempanchor_assets_all_9055807fae270de73ef0de53ccde467b.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 83569,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/embbuildtempanchor_assets_all.bundle"
+        },
+        "key": "embbuildtempanchor_assets_all_9055807fae270de73ef0de53ccde467b.bundle"
+      },
+      {
+        "before": {
+          "bundle": "6babd63e5e32_51ea772c6a062f5e5e991896765b181f",
+          "category": "unknown",
+          "crc": 1421432144,
+          "hash": "e2b7651da63038f070a31c370f37b904",
+          "internalId": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_e2b7651da63038f070a31c370f37b904.bundle/asset/Android/dummy.net/https:/",
+          "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_e2b7651da63038f070a31c370f37b904.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 523944,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/loginbonus_assets_loginbonus_sprite_loginbonus_00004_e2b7651da63038f070a31c370f37b904.bundle"
+        },
+        "key": "loginbonus_assets_loginbonus_sprite_loginbonus_00004_e2b7651da63038f070a31c370f37b904.bundle"
+      },
+      {
+        "before": {
+          "bundle": "b4c1dfa3980c_dbc7f49aa32d0a2639857b6503a59b29",
+          "category": "unknown",
+          "crc": 3578216775,
+          "hash": "7294bbaa0d86534da5c8bc03a7ced09e",
+          "internalId": "patch_assets_patch_app.runtime.patch-1.1.0_7294bbaa0d86534da5c8bc03a7ced09e.bundle/asset/Android/dummy.net/https:/",
+          "key": "patch_assets_patch_app.runtime.patch-1.1.0_7294bbaa0d86534da5c8bc03a7ced09e.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 24722,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/patch_assets_patch_app.runtime.patch-1.1.0_7294bbaa0d86534da5c8bc03a7ced09e.bundle"
+        },
+        "key": "patch_assets_patch_app.runtime.patch-1.1.0_7294bbaa0d86534da5c8bc03a7ced09e.bundle"
+      },
+      {
+        "before": {
+          "bundle": "ada022e7228f_df254d3333025f1689ec68e99eb3a6e2",
+          "category": "unknown",
+          "crc": 2354207424,
+          "hash": "2d69a126b6e2a0059f71bf699c6bc570",
+          "internalId": "patch_assets_patch_mingle.runtime.patch-1.1.0_2d69a126b6e2a0059f71bf699c6bc570.bundle/asset/Android/dummy.net/https:/",
+          "key": "patch_assets_patch_mingle.runtime.patch-1.1.0_2d69a126b6e2a0059f71bf699c6bc570.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 3406,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/patch_assets_patch_mingle.runtime.patch-1.1.0_2d69a126b6e2a0059f71bf699c6bc570.bundle"
+        },
+        "key": "patch_assets_patch_mingle.runtime.patch-1.1.0_2d69a126b6e2a0059f71bf699c6bc570.bundle"
+      },
+      {
+        "before": {
+          "bundle": "feb1d1d90a0c_e5bea3589b8ccf1f714e8235b207845b",
+          "category": "scenario",
+          "crc": 1558698027,
+          "hash": "ae421f4ec4ad8e9c45463af165808ecb",
+          "internalId": "story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_ae421f4ec4ad8e9c45463af165808ecb.bundle/asset/Android/dummy.net/https:/",
+          "key": "story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_ae421f4ec4ad8e9c45463af165808ecb.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 37902,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_ae421f4ec4ad8e9c45463af165808ecb.bundle"
+        },
+        "key": "story_assets_story_banner_episode_ui_banner_chapter_5_episode_16_ae421f4ec4ad8e9c45463af165808ecb.bundle"
+      },
+      {
+        "before": {
+          "bundle": "074dfcfbac11_04f5339bbff9c04b125ad15a9ce83cb5",
+          "category": "scenario",
+          "crc": 2989736732,
+          "hash": "5f38b22c1cfee1b5e9abe488794ce96d",
+          "internalId": "story_assets_story_image_episode_ui_image_chapter_5_episode_16_5f38b22c1cfee1b5e9abe488794ce96d.bundle/asset/Android/dummy.net/https:/",
+          "key": "story_assets_story_image_episode_ui_image_chapter_5_episode_16_5f38b22c1cfee1b5e9abe488794ce96d.bundle",
+          "resourceType": "IAssetBundleResource.ResourceProviders.ResourceManagement.UnityEngine",
+          "size": 280064,
+          "url": "https://l14-prod-hk-patch-sirius.gamerfusiontech.com/prod/hk_27f3c91e8b62d6056c7a19f2e83b6d10/asset/Android/story_assets_story_image_episode_ui_image_chapter_5_episode_16_5f38b22c1cfee1b5e9abe488794ce96d.bundle"
+        },
+        "key": "story_assets_story_image_episode_ui_image_chapter_5_episode_16_5f38b22c1cfee1b5e9abe488794ce96d.bundle"
+      }
+    ]
+  },
+  "categories": {
+    "jacket": {
+      "added": 2,
+      "changed": 0,
+      "removed": 0
+    },
+    "live2d": {
+      "added": 1,
+      "changed": 0,
+      "removed": 1
+    },
+    "music_audio": {
+      "added": 7,
+      "changed": 0,
+      "removed": 0
+    },
+    "music_score": {
+      "added": 4,
+      "changed": 0,
+      "removed": 0
+    },
+    "scenario": {
+      "added": 6,
+      "changed": 0,
+      "removed": 6
+    },
+    "unknown": {
+      "added": 17,
+      "changed": 0,
+      "removed": 4
+    },
+    "voice": {
+      "added": 5,
+      "changed": 0,
+      "removed": 0
+    }
+  },
+  "charts": {
+    "added": [
+      "live_assets_live_musicscore_0201_0201_00_cb7e2a477c72ea444cc8ab250df0028e.bundle",
+      "live_assets_live_musicscore_0201_0201_01_e352cd11a6aad0d97d4e862c823b385b.bundle",
+      "live_assets_live_musicscore_0201_0201_02_b6556298200f1b1b9643e46164ae1166.bundle",
+      "live_assets_live_musicscore_0201_0201_03_19363ae656d4f28fea8049cb6684d3eb.bundle"
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "detectedAt": "2026-11-10T02:58:05Z",
+  "id": "intl-073510f24ab74c53",
+  "masterChanges": [
+    {
+      "after": {
+        "_anotherVocalIDs": [],
+        "_arrangerTextID": "Arranger_Name_100201",
+        "_backgroundCameraType": 1,
+        "_bandIDs": [
+          1
+        ],
+        "_bandNameTextID": "",
+        "_bestMusicTagIDs": [
+          1
+        ],
+        "_comboEasyLiveMusicRewardID": 6,
+        "_comboExpertLiveMusicRewardID": 9,
+        "_comboHardLiveMusicRewardID": 8,
+        "_comboNormalLiveMusicRewardID": 7,
+        "_comboRewardGroup": 1,
+        "_composerTextID": "Composer_Name_100201",
+        "_defaultUnlock": true,
+        "_easyID": 10020100,
+        "_expertID": 10020103,
+        "_gekisouCallSe": 1,
+        "_gekisouMission1": 2,
+        "_gekisouMission2": 3,
+        "_gekisouMission3": 1,
+        "_hardID": 10020102,
+        "_id": 100201,
+        "_jacketAssetName": "jkt_001_100201",
+        "_jingleSoundID": 1400000000201,
+        "_lazerLightMotionChorus": 3,
+        "_lazerLightMotionNormal": 3,
+        "_liveMusicPenLightColorID": 101,
+        "_liveScoreRankGroup": 1100201,
+        "_lyricistTextID": "Lyricist_Name_100201",
+        "_musicCategories": [
+          1
+        ],
+        "_musicLightColorIDChorus": 2,
+        "_musicLightColorIDNormal": 2,
+        "_musicSoundID": 1300000000201,
+        "_musicType": 1,
+        "_musicVideoIDs": [],
+        "_normalID": 10020101,
+        "_phoneticTextID": "Music_Phonetic_Tilte_100201",
+        "_rubyTitleTextID": "Music_Ruby_Tilte_100201",
+        "_scoreALiveMusicRewardID": 3,
+        "_scoreBLiveMusicRewardID": 2,
+        "_scoreCLiveMusicRewardID": 1,
+        "_scoreRankRewardGroup": 1,
+        "_scoreSLiveMusicRewardID": 4,
+        "_scoreSSLiveMusicRewardID": 5,
+        "_sortOrder": 10110201,
+        "_stageLightMotionChorus": 3,
+        "_stageLightMotionNormal": 3,
+        "_startAt": "2026/11/11 15:00:00",
+        "_titleTextID": "Music_Tilte_100201",
+        "_unlockConditionID": 0,
+        "_vjVideoPattern": 2,
+        "_vocalCharacterIDs": [
+          1
+        ]
+      },
+      "key": 100201,
+      "table": "MasterLiveMusic",
+      "type": "added"
+    },
+    {
+      "after": {
+        "_fullComboCount": 344,
+        "_id": 10020100,
+        "_musicScoreDisplayLevel": 7.0,
+        "_musicScoreLevel": 7,
+        "_musicScoreTextFileName": "0201/0201_00"
+      },
+      "key": 10020100,
+      "table": "MasterLiveMusicScore",
+      "type": "added"
+    },
+    {
+      "after": {
+        "_fullComboCount": 492,
+        "_id": 10020101,
+        "_musicScoreDisplayLevel": 13.0,
+        "_musicScoreLevel": 13,
+        "_musicScoreTextFileName": "0201/0201_01"
+      },
+      "key": 10020101,
+      "table": "MasterLiveMusicScore",
+      "type": "added"
+    },
+    {
+      "after": {
+        "_fullComboCount": 617,
+        "_id": 10020102,
+        "_musicScoreDisplayLevel": 17.0,
+        "_musicScoreLevel": 17,
+        "_musicScoreTextFileName": "0201/0201_02"
+      },
+      "key": 10020102,
+      "table": "MasterLiveMusicScore",
+      "type": "added"
+    },
+    {
+      "after": {
+        "_fullComboCount": 675,
+        "_id": 10020103,
+        "_musicScoreDisplayLevel": 24.0,
+        "_musicScoreLevel": 24,
+        "_musicScoreTextFileName": "0201/0201_03"
+      },
+      "key": 10020103,
+      "table": "MasterLiveMusicScore",
+      "type": "added"
+    }
+  ],
+  "schema": "our-notes-update-event/1",
+  "server": "intl",
+  "severity": "MINOR",
+  "snapshot": {
+    "path": "snapshots/intl-bcbfd3a1bb72cd10",
+    "revision": "intl-bcbfd3a1bb72cd10"
+  },
+  "songs": {
+    "added": [
+      "100201"
+    ],
+    "changed": [],
+    "removed": []
+  },
+  "source": {
+    "catalogAfter": "2f418c0440013e24231defc86810c50e",
+    "catalogBefore": "573444cbf94a6d5cd0cc0c9ba64cc2ef",
+    "catalogMasterAlignment": {
+      "catalogNamedChartCount": 452,
+      "catalogNamedWithoutMaster": [
+        "live_assets_live_musicscore_dev_gekisou_music_32d602978010b945e4e87610f7bbd330.bundle",
+        "live_assets_live_musicscore_dev_score_1step_default_formation_music_501cf83dd417cfcb012b8ad70ab484d6.bundle",
+        "live_assets_live_musicscore_dev_trace_guide_music_fb8fc80534a020126702f9d127ede949.bundle",
+        "live_assets_live_musicscore_option_main_preview_e1ab96d2d0693f67e2d1a169c39e7298.bundle",
+        "live_assets_live_musicscore_performance_music_expert_7c5c1da77be9346c06091a5826764926.bundle",
+        "live_assets_live_musicscore_short_music_9425d6268f1d486b6c94d2982a44910a.bundle",
+        "live_assets_live_musicscore_short_music_expert_b4876b17b8891cede6a0df7fd5d83981.bundle",
+        "live_assets_live_musicscore_short_music_hard_ee30e1c05cf3ab276bdf395d078ecd4a.bundle",
+        "live_assets_live_musicscore_short_music_normal_bcc8ccc0b8eeb6998f3f35a95deb3c40.bundle",
+        "live_assets_live_musicscore_timing_adjust_0d4f51e4e2c9447bb9927b4b205660c2.bundle",
+        "live_assets_live_musicscore_tut_flick2_50f374124f3208269363516d9acc43fd.bundle",
+        "live_assets_live_musicscore_tut_flick_f88c90bd3619be6413710cd49a8f75f2.bundle",
+        "live_assets_live_musicscore_tut_slide2_cc3ec2b549c9de2024b53da594d1320a.bundle",
+        "live_assets_live_musicscore_tut_slide_2d57962bbb93fc4055150692c9e5a8f8.bundle",
+        "live_assets_live_musicscore_tut_tap2_d883422305ca77864f26d70566161639.bundle",
+        "live_assets_live_musicscore_tut_tap_1d0b4e8131264fabe9a6a37f66d002ab.bundle",
+        "live_assets_live_musicscore_tutorial_flick_f254e058b1066ced2589447aa16cc58e.bundle",
+        "live_assets_live_musicscore_tutorial_gekisou_3b6901de447d8a61dce410522a9d75aa.bundle",
+        "live_assets_live_musicscore_tutorial_slide_15a0b492784fe5985b6dfc1ce3e94f63.bundle",
+        "live_assets_live_musicscore_tutorial_tap_d00c568a90ea0be38d28216d6c02373a.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_0_cb99f6d97cb2c0725f8aad7994bf1ac5.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_1_297c293eabfbb8d2194ee37b526ab5b7.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_2_437bb22b3eb114dc64c5968339694057.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_3_cc916316bc2330fe22f3263a7b229a5e.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_4_882e0ffc4ecca28b85943f7c71dca254.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_5_38c5f298f822c0f8a509b199640626f4.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_6_cbebb36335e95190f95ae6a858ae1acc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_7_e33652b3ea2e939e9ae69a60f0d33173.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_8_a01022496415a2342b92b4efa5d2ac0b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_9_66aff9559ac75a2e855b3e09750eb7cc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_cross_a0c3a5f81773f393e51cb03b4c2c23a2.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank1numberatlas_sp_gekisou_no1score_percent_9022865ccd0a5e996027c7a21f145012.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_0_8e76c3302b738a5cf27a1ff9793665dc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_1_8e7812d815f9b840e8ac7ee9c088ea20.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_2_f79ca1071350597b3fd7224ec583b45e.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_3_ed721720911b973d39365a1dd707e83e.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_4_67f0058d720b420c98b4db2a5b93a86a.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_5_cffb9857a1adf2aaf7425ba0b7851ef7.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_6_1a6af10061f7aff0336476ed55d4add9.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_7_285d55f57080af4fcb33d7eb011b5e1f.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_8_0147eeb890b39f896e624de4141748ea.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_9_d6a6c3b8a1707b787771dad638801097.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_cross_185bf0b51217edf19dbdf6d4cee8a00d.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank2numberatlas_sp_gekisou_no2score_percent_16707d10591708e902f6267346ce7938.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_0_5dd7208d66b1cec142a1b1dfc00ecf39.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_1_a88f15efca099cf9894bdc2de446ec1b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_2_ad2df2447b24d635697e92e772220da4.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_3_4b79cd248561106a98d5b433a79e0a6a.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_4_043568bed51283ea8bb2f250b7eb192b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_5_d57241e2c405a5ef665b71f691550132.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_6_7c4aac016caccb81334e54ee09c674a2.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_7_217ee83f420ecd71ae84bbdc2fede5cb.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_8_bdbb6f59304bd3b41c3e434965b1d369.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_9_335030b37371edabf695bb749821a8bc.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_cross_992695431f5fad8b8c164a7cbef926c9.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourank3numberatlas_sp_gekisou_no3score_percent_d2e45f4b5f2da7e7d7d72ce839919e8f.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_0_5640bb0f7acbe5153d5d627535481ab2.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_1_2e974fb279f6b1dc9b3c2f9094a5d92d.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_2_709185247c63461b39ae2eac92831e5b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_3_29ca7d174d68df07ed72c13a660656b1.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_4_7eff9cba2150759bf683148afc3f0dfb.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_5_8c9ca27eee5fde28cdfd19f4a872badf.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_6_b5785f261f9521fbfc7342ca968e7e31.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_7_20430ed84fefc0d40462effdbad2f0a4.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_8_3288393c0755840f70226251a2c3bb91.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_9_211bb09688f86b49f046d009d4cf9e56.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_cross_d7818f38aaddbc5582fde02ce343744b.bundle",
+        "live_assets_live_uispriteassets_atlassources_gekisourankothernumberatlas_sp_gekisou_score_percent_d3fe1b335f36e0fcf4e2549e2ddbb239.bundle"
+      ],
+      "masterReferencedChartCount": 384,
+      "masterReferencesWithoutCatalog": [],
+      "status": "CATALOG_PRELOADED_CHARTS"
+    },
+    "catalogVersionAfter": "1.1.0.400.51c13653",
+    "catalogVersionBefore": "1.1.0.301.3d7eee12",
+    "catalogVersionSourceAfter": "master-anchor",
+    "catalogVersionSourceBefore": "master-anchor",
+    "gameVersionAfter": null,
+    "gameVersionBefore": null,
+    "masterAfter": "b4085fb850c4ae0edbb02e6cb59c1bb2f763a7e3d4f4e587a466eded4566f402",
+    "masterAuthority": "official",
+    "masterBefore": "04c519b4258ebecfb9a8d5c50e53b5f93147ebce8b7388600fbb96b6a6856679",
+    "masterIndexAfter": "5e571b5ec6cadd26e12a9bd334497bc32799c756d1bedb1b372cf629261cd774",
+    "masterIndexBefore": "2a4c52a598e8b72ecb7d33e39598c7e198bd27fe1d15beb65ba87582cb3cc77f",
+    "masterManifestSha256After": "59fb4b7370f08c582ac7f63fde0c904c41dc397458ec6be2219b82b4619c7aaf",
+    "masterManifestSha256Before": "8f4c80e28c3db9545ec0bb1f84f7a0521106b571c3db84b68d452fee6267874c",
+    "masterResourceVersionAfter": "1.1.0.400.51c13653",
+    "masterResourceVersionBefore": "1.1.0.301.3d7eee12",
+    "masterSource": "official-master-cdn",
+    "masterVersionAfter": "0bf749e69b53328b5cc981ea8cdfe1c9",
+    "masterVersionBefore": "4fd97dac48eadfeb72efd51c9b837872",
+    "mirrorRevision": "b6b6fe0f407c12cf23e7452bcbfb80784d63c1da7224003651776e3fc66a7d51",
+    "mirrorStatus": "MIRROR_LAG_CONFIRMED",
+    "resourceManifestAfter": "2f418c0440013e24231defc86810c50e",
+    "resourceManifestBefore": "573444cbf94a6d5cd0cc0c9ba64cc2ef"
+  },
+  "summary": {
+    "assetsAdded": 42,
+    "assetsChanged": 0,
+    "assetsRemoved": 11,
+    "chartsAdded": 4,
+    "chartsChanged": 0,
+    "chartsRemoved": 0,
+    "masterAdded": 5,
+    "masterChanged": 0,
+    "masterRemoved": 0,
+    "songsAdded": 1,
+    "songsChanged": 0,
+    "songsRemoved": 0
+  }
+}
